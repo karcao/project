@@ -1,0 +1,258 @@
+page{
+    background: #f0eff5;
+}
+.index-all {
+    width: 100%;
+}
+
+.index-all .index-header {
+    width: 100%;
+    height: 88rpx;
+    line-height: 83rpx;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    background: #fff;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.index-all .index-header .head-tab {
+    width: 100%;
+    padding: 0 140rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.index-all .index-header .head-tab .tab-text {
+    color: #000;
+    font-size: 30rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}
+
+.index-all .index-header .head-tab .tab-text.active {
+    color: #3c9;
+    font-size: 30rpx;
+    border-bottom: 6rpx solid #3c9;
+    border-bottom-left-radius: 5rpx;
+    border-bottom-right-radius: 5rpx;
+    border-top-left-radius: 5rpx;
+    border-top-right-radius: 5rpx;
+}
+.xuanze{
+    width: 125rpx;
+    height: 60rpx;
+    background: #fff;
+    border-radius: 12rpx;
+    margin-top: 120rpx;
+    margin-bottom: 30rpx;
+    margin-left: 30rpx;
+    font-size: 28rpx;
+    color: #353535;
+    line-height: 60rpx;
+    padding-left: 20rpx;
+    box-sizing: border-box;
+}
+.fapiao{
+    width: 100%;
+    margin-top: 120rpx;
+    margin-bottom: 30rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    box-sizing: border-box  ;
+    line-height: 60rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.fapiao .note{
+    font-size: 28rpx;
+    color: #353535;
+}
+.fapiao .fill{
+    width: 240rpx;
+    height: 60rpx;
+    border-radius: 15rpx;
+    background: none;
+    color: #33cc99;
+    font-size: 28rpx;
+    border: 1rpx solid #33cc99;
+    line-height: 60rpx;
+    text-align: center;
+}
+.xuanze image{
+    width: 18rpx;
+    height: 8rpx;
+    margin-left: 20rpx;
+    margin-bottom: 5rpx;
+}
+.body{
+    /* margin-top: 130rpx; */
+    width: 100%;
+    /* border-top: 1rpx solid #d6d6d6; */
+    background: #fff;
+    padding-left: 36rpx;
+    padding-right: 30rpx;
+    box-sizing: border-box;
+}
+.body1{
+    margin-top: 130rpx;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 145rpx; */
+    /* border: 1rpx solid red; */
+    padding-top: 20rpx;
+    box-sizing: border-box;
+}
+.list .list-left{
+    margin-top: 15rpx;
+    line-height: 70rpx;
+    text-align: center;
+    background: #33cc99;
+    font-size: 34rpx;
+    color: #fff;
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 50%;
+}
+.list .list-left image{
+    width: 70rpx;
+    height: 70rpx;
+    border-image-repeat: 50%;
+}
+.list .list-right{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    line-height: 50rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    padding-right: 25rpx;
+    box-sizing: border-box;
+    /* position: relative; */
+}
+.list .list-right .kind{
+    font-size: 34rpx;
+    color: #000;
+}
+.list .list-right .name{
+    display: flex;
+}
+.list .list-right .position{
+    font-size: 26rpx;
+    color: #353535;
+    margin-right: 30rpx;
+}
+.list .list-right .time{
+    font-size: 26rpx;
+    color: #999;
+}
+.list .list-right .deduction{
+    font-size: 40rpx;
+    color: #ff3333;
+}
+/* /////////////////// */
+.watch1-list{
+    margin-top: 120rpx;
+    width: 100%;
+    background: #fff;
+}
+.watch1-list .list-tab{
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #d6d6d6;
+    display: flex;
+    justify-content: space-around;
+}
+.watch1-list .list-tab .tab-title{
+    font-size: 30rpx;
+    color: #000;
+}
+.watch1-list .list-tab .tab-title.active{
+    font-size: 30rpx;
+    color: #33cc99;
+    padding-left:10rpx;
+    padding-right:10rpx;
+    box-sizing: border-box;
+    border-bottom: 5rpx solid #33cc99;
+    border-bottom-left-radius: 5rpx;
+    border-bottom-right-radius: 5rpx;
+}
+.watch1-list .couponcontent{
+    display: none;
+}
+.watch1-list .couponcontent .body{
+    margin-top: 240rpx;
+}
+.watch1-list .couponcontent.active{
+    display: block;
+}
+.watch1-list .list-chat{
+    display: flex;
+    /* display: none; */
+    width: 100%;
+    height: 135rpx; 
+    /* border: 1rpx solid red; */
+    padding-left:36rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.watch1-list .list-chat .tips{
+    z-index: 9;
+    position: absolute;
+    right: 100rpx;
+    bottom: -230rpx;
+    width: 170rpx;
+    height: 250rpx;
+    background: #fff;
+    /* border: 1rpx solid red; */
+    text-align: center;
+    font-size: 36rpx;
+    color: #000;
+    line-height: 80rpx;
+    box-shadow: #bebbbb 1rpx 7rpx 40rpx 1rpx;
+}
+.watch1-list .list-chat .chat-left{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+    margin-top: 18rpx;
+    margin-right: 20rpx;
+}
+.watch1-list .list-chat .chat-left image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+}
+.watch1-list .list-chat .chat-right{
+    width: 100%;
+    height: 100%;
+    padding-right: 36rpx;
+    /* padding-left: 22rpx; */
+    padding-top: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.watch1-list .list-chat .chat-right .right-top{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50rpx;
+}
+.watch1-list .list-chat .chat-right .right-top .top-left{
+    color: #000;
+    font-size: 34rpx;
+}
+.watch1-list .list-chat .chat-right .right-top .top-right{
+    color: #bfbfbf;
+    font-size: 24rpx;
+}
+.watch1-list .list-chat .chat-right .right-bottom{
+    color: #aaa;
+    font-size: 28rpx;
+}

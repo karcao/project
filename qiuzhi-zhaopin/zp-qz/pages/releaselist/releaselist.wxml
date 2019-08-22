@@ -1,0 +1,183 @@
+<view class='list-content' bindtap='quxiaoall'>
+    <view class='con-top'>
+        <view class='top-top'>
+            <view class='top-left'>{{position.position_name}}</view>
+            <view class='top-right'>{{position.treatment_min_show}}-{{position.treatment_max_show}}/月</view>
+        </view>
+        <view class='top-bottom'>
+            <view class='bottom-left'>{{position.city}}
+                <text>|</text>{{position.education_name}}
+                <text>|</text>{{position.working_life}}年以上</view>
+            <!-- <view class='bottom-right'>123</view> -->
+        </view>
+    </view>
+    <scroll-view class='index-header'>
+        <view class='con-bottom'>
+            <view class='bottom-left flex {{currentTab==0?"active":""}}' data-current="0" bindtap="swichNav">
+                <image src='../../images/icon/onlookers.png'></image>
+                <text>围观{{onlooklist.length}}</text>
+            </view>
+            <view class='bottom-middle flex {{currentTab==1?"active":""}}' data-current="1" bindtap="swichNav1">
+                <image src='../../images/icon/Interested.png'></image>
+                <text>感兴趣{{interlist.length}}</text>
+            </view>
+            <view class='bottom-right flex {{currentTab==2?"active":""}}' data-current="2" bindtap="swichNav2">
+                <image src='../../images/icon/concerned.png'></image>
+                <text>我关注{{concerlist.length}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<swiper class="tab-content" current="{{currentTab}}" bindtap='quxiaoall' duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item>
+        <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='0' bindscrolltolower='scrolltolower'>
+            <!-- 围观列表 -->
+            <view class='watch-list'>
+                <view class='list-title'>
+                    <view class='title-left'>日期</view>
+                    <view class='title-middle'>昵称</view>
+                    <view class='title-right'>浏览时长</view>
+                </view>
+                <view class='list-time' wx:for="{{onlooklist}}" wx:key>
+                    <view>
+                        <view class='time-left'>{{item.watchDatetime}}</view>
+                        <view class='time-left'>{{item.time}}</view>
+                    </view>
+                    
+                    <view class='time-middle'>{{item.nackName}}</view>
+                    <view class='time-right'>{{item.watchDuration}}s</view>
+                    <view class='time-img' wx:if="{{item.watchDuration >= 5}}" bindtap="contacthim" data-index="{{index}}">联系Ta</view>
+                    <view class='time-img1' wx:if="{{item.watchDuration < 5}}">联系Ta</view>
+                </view>
+                <!-- <view class='list-time'>
+                    <view class='time-left'>19.11.11 09.12.50</view>
+                    <view class='time-middle'>张小宝</view>
+                    <view class='time-right'>10秒钟</view>
+                    <view class='time-img'>联系Ta</view>
+                </view>
+                <view class='list-time'>
+                    <view class='time-left'>19.11.11 09.12.50</view>
+                    <view class='time-middle'>张小宝</view>
+                    <view class='time-right'>10秒钟</view>
+                    <view class='time-img'>联系Ta</view>
+                </view>
+                <view class='list-time'>
+                    <view class='time-left'>19.11.11 09.12.50</view>
+                    <view class='time-middle'>张小宝</view>
+                    <view class='time-right'>10秒钟</view>
+                    <view class='time-img'>联系Ta</view>
+                </view> -->
+            </view>
+            <!-- 没有围观的情况下显示 -->
+            <!-- <view class='nolooker'>
+                    <view>暂时还没有人围观该信息</view>
+                    <view class='text'>赶快分享信息获得围观吧！</view>
+                    <view class='img'><image src='../../images/nolooker.png'></image></view>
+                </view> -->
+        </scroll-view>
+    </swiper-item>
+    <swiper-item>
+        <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='1' bindscrolltolower='scrolltolower'>
+            <!-- 感兴趣列表 -->
+            <view class='favorites-list'>
+                <view class='list-chat' wx:for="{{interlist}}" wx:key data-index="{{index}}" bindlongpress='ondelete' bindtap='navtochar'>
+                    <view class='chat-left'>
+                        <image src='{{item.headImg}}'></image>
+                    </view>
+                    <view class='chat-right'>
+                        <view class='right-top'>
+                            <view class='top-left'>{{item.nickName}}</view>
+                            <view class='top-right'>{{item.chatMessage.insertTiem}}</view>
+                        </view>
+                        <view class='right-bottom' wx:if="{{item.chatMessage.msgType == 0}}">{{item.chatMessage.msgContent}}</view>
+                        <view class='right-bottom' wx:if="{{item.chatMessage.msgType == 1}}">[图片]</view>
+                    </view>
+                    <!-- 提示按钮 -->
+                    <view class='tips' wx:if="{{inDex == index}}">
+                        <view catchtap='vae0' data-index="{{index}}" wx:if="{{inDex == index}}">查看简历</view>
+                        <view catchtap='vae1' data-index="{{index}}" wx:if="{{inDex == index && item.relaseFlag == 0}}">关注</view>
+                        <view catchtap='vae2' data-index="{{index}}" wx:if="{{inDex == index && item.relaseFlag == 1}}">取消关注</view>
+                        <!-- <view catchtap='vae3' data-index="{{index}}" wx:if="{{inDex == index}}">删除</view>
+                        <view catchtap='vae4' data-index="{{index}}" wx:if="{{inDex == index}}">举报</view> -->
+                    </view>
+                </view>
+            </view>
+            <!-- 没有收藏的情况下显示 -->
+            <!-- <view class='nolooker'>
+                <view>暂时还没有人收藏该信息</view>
+                <view class='text'>赶快去围观列表找人聊聊吧！</view>
+                <view class='img'>
+                    <image src='../../images/nolooker.png'></image>
+                </view>
+            </view> -->
+        </scroll-view>
+    </swiper-item>
+    <swiper-item>
+        <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='2' bindscrolltolower='scrolltolower'>
+            <!-- 关注列表 -->
+            <view class='watch1-list'>
+                <!-- <view class='list-tab'> -->
+                    <!-- <view class="tab-title {{tab.curHdIndex=='00'? 'active' : ''}}" bindtap="tabFun" id="tab-a" data-id="00">全部</view> -->
+                    <!-- <view class="tab-title {{curHdIndex==index? 'active' : ''}}" bindtap="tabFun1" data-index="{{index}}" wx:for="{{groupinglist}}" wx:key>{{item.tagName}}</view> -->
+                    <!-- <view class="tab-title {{tab.curHdIndex=='1'? 'active' : ''}}" bindtap="tabFun" id="tab-a" data-id="1">沟通中</view>
+                    <view class="tab-title {{tab.curHdIndex=='2'? 'active' : ''}}" bindtap="tabFun" id="tab-a" data-id="2">面试中</view>
+                    <view class="tab-title {{tab.curHdIndex=='3'? 'active' : ''}}" bindtap="tabFun" id="tab-a" data-id="3">不合适</view> -->
+                <!-- </view> -->
+                <!-- <view class="couponcontent {{curBdIndex==curHdIndex? 'active' : ''}}"> -->
+                    <view class="list-chat" wx:for="{{concerlist}}" wx:key data-index="{{index}}" bindlongpress='ondelete1' bindtap='navtochar1'>
+                        <view class='chat-left'>
+                            <image src='{{item.headImg}}'></image>
+                        </view>
+                        <view class='chat-right'>
+                            <view class='right-top'>
+                                <view class='top-left'>{{item.nickName}}</view>
+                                <view class='top-right'>{{item.chatMessage.insertTiem}}</view>
+                            </view>
+                            <view class='right-bottom' wx:if="{{item.chatMessage.msgType == 0}}">{{item.chatMessage.msgContent}}</view>
+                            <view class='right-bottom' wx:if="{{item.chatMessage.msgType == 1}}">[图片]</view>
+                        </view>
+                        <!-- 提示按钮 -->
+                        <view class='tips' wx:if="{{inDex1 == index}}">
+                            <!-- <view catchtap='vae4' data-index="{{index}}" wx:if="{{inDex1 == index}}">分组</view> -->
+                            <view catchtap='vae5' data-index="{{index}}" wx:if="{{inDex1 == index}}">查看简历</view>
+                            <view catchtap='vae6' data-index="{{index}}" wx:if="{{inDex1 == index}}">取消关注</view>
+                            <!-- <view catchtap='vae7' data-index="{{index}}" wx:if="{{inDex1 == index}}">删除</view> -->
+                        </view>
+                    </view>
+                <!-- </view> -->
+                <!-- <view class="couponcontent {{curBdIndex==index? 'active' : ''}}" data-index="{{index}}">
+                    <view class="list-chat" wx:for="{{concerlist}}" wx:key data-index="{{index}}" bindlongpress='ondelete1' bindtap='navtochar1'>
+                        <view class='chat-left'>
+                            <image src='{{item.headImg}}'></image>
+                        </view>
+                        <view class='chat-right'>
+                            <view class='right-top'>
+                                <view class='top-left'>{{item.nickName}}</view>
+                                <view class='top-right'>{{item.chatMessage.insertTiem}}</view>
+                            </view>
+                            <view class='right-bottom' wx:if="{{item.chatMessage.msgType == 0}}">{{item.chatMessage.msgContent}}</view>
+                            <view class='right-bottom' wx:if="{{item.chatMessage.msgType == 1}}">[图片]</view>
+                        </view>
+                        <view class='tips' wx:if="{{inDex1 == index}}">
+                            <view catchtap='vae4' data-index="{{index}}" wx:if="{{inDex1 == index}}">分组</view>
+                            <view catchtap='vae5' data-index="{{index}}" wx:if="{{inDex1 == index}}">查看简历</view>
+                            <view catchtap='vae6' data-index="{{index}}" wx:if="{{inDex1 == index}}">取消关注</view>
+                            <view catchtap='vae7' data-index="{{index}}" wx:if="{{inDex1 == index}}">删除</view>
+                        </view>
+                    </view>
+                </view> -->
+                <!-- <view class="couponcontent {{tab.curBdIndex=='2'? 'active' : ''}}">
+                    
+                </view>
+                <view class="couponcontent {{tab.curBdIndex=='3'? 'active' : ''}}">
+                    
+                </view> -->
+            </view>
+            <!-- 没有关注的情况下显示 -->
+            <!-- <view class='nolooker'>
+                    <view class='text'>空空如也</view>
+                    <view class='img'><image src='../../images/nolooker.png'></image></view>
+                </view> -->
+        </scroll-view>
+    </swiper-item>
+</swiper>

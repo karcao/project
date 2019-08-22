@@ -1,0 +1,157 @@
+<form bindsubmit="formSubmit" report-submit="true">
+    <view class="editposition">
+        <view class='mentposition'>联系人信息</view>
+        <!-- 名称 -->
+        <view class='nameall'>
+            <view class='po-name' bindtap='clickcall'>
+                <view class='name-left'>
+                    <text>称谓</text>
+                </view>
+                <view class='name-right'>
+                    <text>{{callName}}</text>
+                    <image src='../../images/icon/path.png'></image>
+                </view>
+            </view>
+            <!-- bindtap='clickphone' -->
+            <view class='po-name po-name1'>
+                <view class='name-left'>
+                    <text>电话</text>
+                </view>
+                <view class='name-right'>
+                    <text>{{phoneName}}</text>
+                    <view class='phonebtn' bindtap='hqphone' wx:if="{{userphone}}">自动获取</view>
+                </view>
+            </view>
+        </view>
+        <!-- 基本信息 -->
+        <view class='information'>公司信息</view>
+        <view class='mation'>
+            <view class='po-name' bindtap='editcomname'>
+                <view class='name-left'>
+                    <text>名称</text>
+                </view>
+                <view class='name-right'>
+                    <text>{{comName}}</text>
+                    <image src='../../images/icon/path.png'></image>
+                </view>
+            </view>
+            <view class='same'>
+                <view class='same-left'>
+                    <text>性质</text>
+                </view>
+                <view class='same-right'>
+                    <picker mode='selector' bindchange='bindcompanyTypeChange' value='{{[companyTypeindex]}}' range='{{companyTypeList}}' range-key="{{'companyTypeName'}}">
+                        <view class='picker'>
+                            <text>{{companyTypeList[companyTypeindex].companyTypeName}}</text>
+                            <image src='../../images/icon/path.png'></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='same'>
+                <view class='same-left'>
+                    <text>规模</text>
+                </view>
+                <view class='same-right'>
+                    <picker mode='selector' bindchange='bindcompanyScaleChange' value='{{[companyScaleIndex]}}' range='{{companyScaleList}}' range-key="{{'companyScaleName'}}">
+                        <view class='picker'>
+                            <text>{{companyScaleList[companyScaleIndex].companyScaleName}}</text>
+                            <image src='../../images/icon/path.png'></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='same'>
+                <view class='same-left'>
+                    <text>行业</text>
+                </view>
+                <view class='same-right'>
+                    <picker bindchange="bindindustryChange" value="{{industryIndex}}" range="{{industryList}}" range-key="{{'industryName'}}">
+                        <view class='picker'>
+                            <text>{{industryList[industryIndex].industryName}}</text>
+                            <image src='../../images/icon/path.png'></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='location'>
+                <view class='same-left'>
+                    <text>地点</text>
+                </view>
+                <view class='same-right'>
+                    <view class='dizhi' bindtap='onChangeAddress'>
+                        <view class='address'>{{address}}</view>
+                        <image src='../../images/icon/path.png'></image>
+                    </view>
+                </view>
+            </view>
+            <view class='same po-name1'>
+                <view class='same-left'>
+                    <text>品牌logo</text>
+                </view>
+            </view>
+            <view class='photo'>
+                <view class='fang upload' bindtap='chooseImg'>
+                    <view class='img'>
+                        <image src='../../images/photo.png'></image>
+                    </view>
+                    <view class='text'>上传logo</view>
+                </view>
+                <view class='fang logo'>
+                    <image src='{{imglogo}}'></image>
+                </view>
+            </view>
+        </view>
+        <button class='btn' bindtap='navtoworking' formType="submit">下一步</button>
+    </view>
+    <!-- 遮罩层弹出窗 -->
+    <!-- 编辑称谓 -->
+    <view class='bglayer' wx:if="{{callshow}}"></view>
+    <view class='calls' wx:if="{{callshow}}">
+        <view class='pop-top'>
+            <view class='top-title'>称谓</view>
+            <input type='text' data-name='callname' name="callname" bindinput="callname" value='{{callname}}' maxlength="20"></input>
+            <view class='top-number'>
+                <text>{{callcount}}</text>/20</view>
+            <view class='top-tips'>请输入称谓</view>
+        </view>
+        <view class='pop-bottom' bindtap='savecallname'>保存</view>
+        <view class='close' bindtap='closecallname'>关闭</view>
+    </view>
+    <!-- 编辑电话 -->
+    <view class='bglayer' wx:if="{{phoneshow}}"></view>
+    <view class='calls' wx:if="{{phoneshow}}">
+        <view class='pop-top'>
+            <view class='top-title'>电话</view>
+            <input type='number' data-name='phone' name="phone" bindinput="phone" value='{{phone}}' maxlength="11"></input>
+            <view class='top-number'>
+                <text>{{phonecount}}</text>/11</view>
+            <view class='top-tips'>请输入电话号码</view>
+        </view>
+        <view class='pop-bottom' bindtap='savephone'>保存</view>
+        <view class='close' bindtap='closephone'>关闭</view>
+    </view>
+    <!-- 编辑公司名称 -->
+    <view class='bglayer' wx:if="{{comnameshow}}"></view>
+    <view class='calls' wx:if="{{comnameshow}}">
+        <view class='pop-top'>
+            <view class='top-title'>公司名称</view>
+            <input data-name='account' name="account" bindinput="companyname" value='{{account}}' maxlength="30"></input>
+            <view class='top-number'>
+                <text>{{wordcount}}</text>/30</view>
+            <view class='top-tips'>请输入公司名称</view>
+        </view>
+        <view class='pop-bottom' bindtap='savecomname'>保存</view>
+        <view class='close' bindtap='closecomname'>关闭</view>
+    </view>
+</form>
+
+<!-- 点击授权手机号 -->
+<view class='modal-container1' wx:if="{{modalShow1}}">
+    <view class='auth-content'>
+        <view class='auth-login-title'>获取手机号码</view>
+        <view class='auth-login-text'>为了提供更好的服务</view>
+        <view class='auth-login-text1'>【速来】需要获取您的手机号码</view>
+        <button class='auth-login-btn' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">确认手机号</button>
+    </view>
+</view>

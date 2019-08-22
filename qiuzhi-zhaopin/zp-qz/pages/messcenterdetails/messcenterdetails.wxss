@@ -1,0 +1,23 @@
+.details{
+    padding: 55rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+}
+.details .title{
+    font-size: 34rpx;
+    color: #000;
+    text-align: center;
+    margin-bottom: 60rpx;
+}
+.details .con{
+    font-size: 28rpx;
+    color: #353535;
+    line-height: 55rpx;
+    margin-bottom: 10rpx;
+    width: 100%;
+}
+.details .time{
+    text-align: right;
+    font-size: 26rpx;
+    color: #999;
+    margin-top: 50rpx;
+}

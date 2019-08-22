@@ -1,0 +1,27 @@
+<view class="myteam">
+    <view class='list' bindtap='navtochats' bindlongpress='ondelete' data-index="{{index}}" wx:for="{{teamlist}}" wx:key>
+        <view class='list-left'>
+            <image src='{{item.headimgurl}}'></image>
+        </view>
+        <view class='list-right'>
+            <view class='left-top'>
+            <!-- <text wx:if="{{item.remark}}">/{{item.remark}}</text> -->
+                <view class='top-left'>{{item.teamMemberName}}</view>
+                <view class='top-right' wx:if="{{item.status == 0}}">等待用户验证通过</view>
+                <view class='top-right' wx:if="{{item.status == 2}}">该用户拒绝加入</view>
+                <view class='top-right' wx:if="{{item.status == 3}}">该用户已退出</view>
+                <view class='top-right' wx:if="{{item.status == 4}}">已删除该用户</view>
+            </view>
+            <view class='left-bottom'>
+                <view class='bottom-left'>{{item.phone}}</view>
+                <view class='bottom-right'>分享次数：{{item.shareCount}}</view>
+            </view>
+        </view>
+        <!-- 提示按钮 -->
+        <view class='tips' wx:if="{{inDex == index}}">
+            <view catchtap='vae1' data-index="{{index}}">备注</view>
+            <view catchtap='vae2' data-index="{{index}}" wx:if="{{item.status == 0 || item.status == 2 || item.status == 3}}">删除</view>
+        </view>
+    </view>
+</view>
+<button bindtap='navtoaddsteam'>添加成员</button>

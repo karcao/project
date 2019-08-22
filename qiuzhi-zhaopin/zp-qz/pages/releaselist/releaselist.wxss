@@ -1,0 +1,327 @@
+page{
+    background: #efeff4;
+}
+.list-content {
+    width: 100%;
+    /* height: 240rpx; */
+    background: #fff;
+    /* border-bottom: 1px solid red; */
+    margin-bottom: 20rpx;
+    padding: 40rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+}
+.list-content .index-header{
+    overflow: hidden;
+}
+.list-content .con-top {
+    width: 100%;
+    border-bottom: 1rpx solid #e5e5e5;
+    padding-bottom: 18rpx;
+    box-sizing: border-box;
+}
+
+.list-content .con-top .top-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 34rpx;
+    line-height: 60rpx;
+}
+
+.list-content .con-top .top-top .top-left {
+    color: #000;
+}
+
+.list-content .con-top .top-top .top-right {
+    color: #f33;
+}
+
+.list-content .con-top .top-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26rpx;
+    color: #888;
+    line-height: 60rpx;
+}
+
+.list-content .con-top .top-bottom text {
+    margin: 0 22rpx;
+}
+
+.list-content .con-bottom {
+    height:85rpx;
+    padding: 20rpx 20rpx 0 20rpx;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    color: #353535;
+    display: flex;
+    justify-content: space-between;
+}
+.list-content .con-bottom .flex.active {
+    border-bottom: 6rpx solid #33cc99;
+    border-bottom-left-radius: 5rpx;
+    border-bottom-right-radius: 5rpx;
+}
+.list-content .con-bottom .bottom-left image {
+    width: 31rpx;
+    height: 25rpx;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.list-content .con-bottom .bottom-middle image {
+    width: 29rpx;
+    height: 25rpx;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.list-content .con-bottom .bottom-right image {
+    width: 29rpx;
+    height: 29rpx;
+    vertical-align: middle;
+    margin-right: 8rpx;
+}
+
+.list-content .con-bottom text {
+    vertical-align: middle;
+}
+.tab-content{
+    background: #fff;
+}
+.watch-list{
+    width: 100%;
+    padding: 0 36rpx;
+    box-sizing: border-box;
+    border-top: 1rpx solid #d6d6d6;
+}
+.watch-list .list-title{
+    display: flex;
+    font-size: 32rpx;
+    color: #000;
+    justify-content: space-between;
+    width: 100%;
+    height: 89rpx;
+    line-height: 89rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    padding-left: 50rpx;
+    padding-right: 125rpx;
+    box-sizing: border-box;
+}
+.watch-list .list-title .title-left{
+    margin-right: 60rpx;
+}
+.watch-list .list-title .title-middle{
+    /* margin-left: 80rpx;
+    margin-right: 65rpx; */
+}
+.watch-list .list-time{
+    display: flex;
+    justify-content: space-between;
+    color: #353535;
+    font-size: 28rpx;
+    padding-left: 5rpx;
+    box-sizing: border-box;
+    height: 89rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    line-height: 89rpx;
+}
+.watch-list .list-time .time-left{
+    text-align: center;
+    line-height: 45rpx;
+    font-size: 24rpx;
+}
+.watch-list .list-time .time-middle{
+    text-align: center;
+    width: 200rpx;
+    overflow: hidden; 
+    text-overflow:ellipsis; 
+    white-space: nowrap;
+}
+.watch-list .list-time .time-img{
+    width: 120rpx;
+    height: 60rpx;
+    color: #fff;
+    background: #33cc99;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    margin-top: 15rpx;
+}
+.watch-list .list-time .time-img1{
+    width: 120rpx;
+    height: 60rpx;
+    color: #fff;
+    background: #7e7e7e;
+    line-height: 60rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    margin-top: 15rpx;
+}
+/* 收藏列表 */
+.favorites-list{
+    width: 100%;
+    padding-left:36rpx;
+    box-sizing: border-box;
+    border-top: 1rpx solid #d6d6d6;
+}
+
+.favorites-list .list-chat{
+    display: flex;
+    width: 100%;
+    height: 135rpx; 
+    position: relative;
+}
+.favorites-list .list-chat .tips{
+    z-index: 9;
+    position: absolute;
+    right: 100rpx;
+    bottom: -58rpx;
+    width: 170rpx;
+    /* height: 250rpx; */
+    background: #fff;
+    /* border: 1rpx solid red; */
+    text-align: center;
+    font-size: 36rpx;
+    color: #000;
+    line-height: 80rpx;
+    box-shadow: #bebbbb 1rpx 7rpx 40rpx 1rpx;
+}
+.favorites-list .list-chat .chat-left{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-top: 18rpx;
+    margin-right: 20rpx;
+}
+.favorites-list .list-chat .chat-left image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.favorites-list .list-chat .chat-right{
+    width: 100%;
+    height: 100%;
+    padding-right: 36rpx;
+    /* padding-left: 22rpx; */
+    padding-top: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.favorites-list .list-chat .chat-right .right-top{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50rpx;
+}
+.favorites-list .list-chat .chat-right .right-top .top-left{
+    width: 50%;
+    font-size: 34rpx;
+    color: #000;
+    margin-right: 10rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.favorites-list .list-chat .chat-right .right-top .top-right{
+    color: #bfbfbf;
+    font-size: 24rpx;
+}
+.favorites-list .list-chat .chat-right .right-bottom{
+    color: #aaa;
+    font-size: 28rpx;
+}
+/* 关注列表 */
+.watch1-list{
+    width: 100%;
+    border-top: 1rpx solid #d6d6d6;
+}
+.watch1-list .list-tab{
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #d6d6d6;
+    display: flex;
+    justify-content: space-around;
+}
+.watch1-list .list-tab .tab-title{
+    font-size: 30rpx;
+    color: #000;
+}
+.watch1-list .list-tab .tab-title.active{
+    font-size: 30rpx;
+    color: #33cc99;
+    padding-left:10rpx;
+    padding-right:10rpx;
+    box-sizing: border-box;
+    border-bottom: 5rpx solid #33cc99;
+    border-bottom-left-radius: 5rpx;
+    border-bottom-right-radius: 5rpx;
+}
+.watch1-list .couponcontent{
+    display: none;
+}
+.watch1-list .couponcontent.active{
+    display: block;
+}
+.watch1-list .list-chat{
+    display: flex;
+    /* display: none; */
+    width: 100%;
+    height: 135rpx; 
+    /* border: 1rpx solid red; */
+    padding-left:36rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.watch1-list .list-chat .tips{
+    z-index: 9;
+    position: absolute;
+    right: 100rpx;
+    bottom: -200rpx;
+    width: 170rpx;
+    /* height: 250rpx; */
+    background: #fff;
+    /* border: 1rpx solid red; */
+    text-align: center;
+    font-size: 32rpx;
+    color: #000;
+    line-height: 80rpx;
+    box-shadow: #bebbbb 1rpx 7rpx 40rpx 1rpx;
+}
+.watch1-list .list-chat .chat-left{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-top: 18rpx;
+    margin-right: 20rpx;
+}
+.watch1-list .list-chat .chat-left image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.watch1-list .list-chat .chat-right{
+    width: 100%;
+    height: 100%;
+    padding-right: 36rpx;
+    /* padding-left: 22rpx; */
+    padding-top: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.watch1-list .list-chat .chat-right .right-top{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50rpx;
+}
+.watch1-list .list-chat .chat-right .right-top .top-left{
+    color: #000;
+    font-size: 34rpx;
+}
+.watch1-list .list-chat .chat-right .right-top .top-right{
+    color: #bfbfbf;
+    font-size: 24rpx;
+}
+.watch1-list .list-chat .chat-right .right-bottom{
+    color: #aaa;
+    font-size: 28rpx;
+}

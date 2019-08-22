@@ -1,0 +1,6 @@
+<view class="statistics">
+    <view class='img' style='background: url("{{two}}") no-repeat 0 0;background-size:100% 250rpx;' bindtap='memberdata'>成员数据</view>
+    <view class='img' style='background: url("{{three}}") no-repeat 0 0;background-size:100% 250rpx;' bindtap='scrollline'>日期统计</view>
+    <view class='img' style='background: url("{{four}}") no-repeat 0 0;background-size:100% 250rpx;' bindtap='pie'>时段统计</view>
+    <view class='img' style='background: url("{{one}}") no-repeat 0 0;background-size:100% 250rpx;' bindtap='progress'>成员对比</view>
+</view>

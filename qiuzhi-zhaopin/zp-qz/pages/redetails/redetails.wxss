@@ -1,0 +1,548 @@
+page {
+    background: #fff;
+}
+
+.redetails {
+    width: 100%;
+    padding: 30rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+}
+/* 个人信息 */
+.redetails .rede-user{
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.redetails .rede-user .user-a{
+    display: flex;
+    justify-content: space-between;
+}
+.redetails .rede-user .user-a .a-left .left-top{
+    display: flex;
+}
+.redetails .rede-user .user-a .a-left .left-top .top-name{
+    font-size: 38rpx;
+    color: #000;
+    font-weight: 700;
+}
+.redetails .rede-user .user-a .a-left .left-top text{
+    margin: 0 20rpx;
+    color: #d9d9d9;
+}
+.redetails .rede-user .user-a .a-left .left-top .group{
+    margin-left: 40rpx;
+    width: 130rpx;
+    height: 60rpx;
+    border: 1rpx solid #33cc99;
+    border-radius: 10rpx;
+    background: #fff;
+    color: #33cc99;
+    font-size: 26rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+.redetails .rede-user .user-a .a-left .left-bottom{
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+    display: flex;
+}
+.redetails .rede-user .user-a .a-left .left-bottom .b-content{
+    font-size: 30rpx;
+    color: #353535;
+    /* line-height: 50rpx; */
+}
+.redetails .rede-user .user-a .a-left .left-bottom .shu{
+    margin: 0 15rpx;
+    color: #d9d9d9;
+    font-size: 30rpx;
+}
+.redetails .rede-user .user-a .a-right{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+}
+.redetails .rede-user .user-a .a-right image{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+}
+.redetails .rede-user .user-b{
+    
+}
+.redetails .rede-user .user-b .user {
+    display: flex;
+}
+.redetails .rede-user .user-b .user-c .c-img {
+    width: 30rpx;
+    height: 27rpx;
+    margin-right: 20rpx;
+}
+
+.redetails .rede-user .user-b .user-c .c-img image {
+    width: 30rpx;
+    height: 27rpx;
+}
+
+.redetails .rede-user .user-b .user-d {
+    position: relative;
+}
+
+.redetails .rede-user .user-b .user-d .call {
+    position: absolute;
+    right: 0;
+    top: 2rpx;
+    /* width: 120rpx; */
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    height: 50rpx;
+    line-height: 45rpx;
+    color: #3c9;
+    font-size: 26rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    border: 4rpx solid #3c9;
+    text-align: center;
+}
+
+.redetails .rede-user .user-b .user-d .d-img {
+    width: 20rpx;
+    height: 30rpx;
+    margin-right: 20rpx;
+    margin-left: 5rpx;
+}
+
+.redetails .rede-user .user-b .user-d .d-img image {
+    width: 20rpx;
+    height: 30rpx;
+}
+
+.redetails .rede-user .user-b .user-e .e-img {
+    width: 26rpx;
+    height: 26rpx;
+    margin-right: 20rpx;
+    margin-left: 3rpx;
+}
+
+.redetails .rede-user .user-b .user-e .e-img image {
+    width: 26rpx;
+    height: 26rpx;
+}
+
+.redetails .rede-user .user-b .unite {
+    font-size: 28rpx;
+    color: #000;
+    line-height: 60rpx;
+}
+
+.redetails .rede-user .user-b .unite text {
+    font-size: 28rpx;
+    color: #888;
+    margin: 0 10rpx;
+}
+/* 个人简介 */
+.redetails .rede-personal {
+    padding-top: 50rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.redetails .rede-personal .personel-title {
+    display: flex;
+}
+
+.redetails .rede-personal .personel-title .yuan {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background: #3c9;
+    vertical-align: middle;
+    margin-top: 24rpx;
+    margin-right: 10rpx;
+}
+
+.redetails .rede-personal .personel-title .title {
+    font-size: 36rpx;
+    color: #000;
+    vertical-align: middle;
+}
+
+.redetails .rede-personal .personel-content {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    color: #4b4b4b;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.redetails .rede-personal .ellipsis{
+  -webkit-line-clamp:3; 
+  opacity: 0.75 ;
+  /* padding-left: 22rpx; */
+  box-sizing: border-box;
+}
+.redetails .rede-personal .unellipsis{
+  -webkit-line-clamp:0; 
+  opacity: 1 ;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.redetails .rede-personal .xianshiall{
+    font-size: 28rpx;
+    color: #33cc99;
+    text-align: right;
+    padding-top: 10rpx;
+    padding-right: 40rpx;
+    box-sizing: border-box;
+}
+/* 工作经历 */
+.redetails .rede-worker {
+    padding-top: 50rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    box-sizing: border-box;
+}
+.redetails .rede-worker .worker-title {
+    display: flex;
+    
+}
+
+.redetails .rede-worker .worker-title .yuan {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background: #3c9;
+    vertical-align: middle;
+    margin-top: 24rpx;
+    margin-right: 10rpx;
+}
+
+.redetails .rede-worker .worker-title .title {
+    font-size: 36rpx;
+    color: #000;
+    vertical-align: middle;
+}
+.redetails .rede-worker .name-time{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22rpx 0 0;
+    margin-top: 20rpx;
+}
+.redetails .rede-worker .name-time .name{
+    font-size: 36rpx;
+    color: #000;
+}
+.redetails .rede-worker .name-time .time{
+    font-size: 26rpx;
+    color: #888;
+}
+.redetails .rede-worker .work-position{
+    padding: 0 22rpx 0 0;
+}
+.redetails .rede-worker .work-position{
+    font-size: 28rpx;
+    color: #353535;
+}
+.redetails .rede-worker .work-position text{
+    font-size: 28rpx;
+    color: #888;
+    margin: 0 12rpx;
+}
+.redetails .rede-worker .personel-content {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    color: #4b4b4b;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.redetails .rede-worker .ellipsis1{
+  -webkit-line-clamp:2; 
+  opacity: 0.75 ;
+  /* padding-left: 22rpx; */
+  box-sizing: border-box;
+}
+.redetails .rede-worker .unellipsis1{
+  -webkit-line-clamp:0; 
+  opacity: 1 ;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.redetails .rede-worker .xianshiall{
+    font-size: 28rpx;
+    color: #33cc99;
+    text-align: right;
+    padding-top: 10rpx;
+    padding-right: 40rpx;
+    box-sizing: border-box;
+}
+/* 项目经历 */
+.redetails .rede-project {
+    padding-top: 50rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    box-sizing: border-box;
+}
+.redetails .rede-project .worker-title {
+    display: flex;
+}
+
+.redetails .rede-project .worker-title .yuan {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background: #3c9;
+    vertical-align: middle;
+    margin-top: 24rpx;
+    margin-right: 10rpx;
+}
+
+.redetails .rede-project .worker-title .title {
+    font-size: 36rpx;
+    color: #000;
+    vertical-align: middle;
+}
+.redetails .rede-project .name-time{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22rpx 0 0;
+    margin-top: 20rpx;
+}
+.redetails .rede-project .name-time .name{
+    font-size: 32rpx;
+    color: #000;
+}
+.redetails .rede-project .name-time .time{
+    font-size: 26rpx;
+    color: #888;
+}
+.redetails .rede-project .work-position{
+    padding: 0 22rpx;
+}
+.redetails .rede-project .work-position{
+    font-size: 28rpx;
+    color: #353535;
+}
+.redetails .rede-project .work-position text{
+    font-size: 28rpx;
+    color: #888;
+    margin: 0 12rpx;
+}
+.redetails .rede-project .personel-content {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    color: #4b4b4b;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.redetails .rede-project .ellipsis2{
+  -webkit-line-clamp:2; 
+  opacity: 0.75 ;
+  /* padding-left: 22rpx; */
+  box-sizing: border-box;
+}
+.redetails .rede-project .unellipsis2{
+  -webkit-line-clamp:0; 
+  opacity: 1 ;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.redetails .rede-project .xianshiall{
+    font-size: 28rpx;
+    color: #33cc99;
+    text-align: right;
+    padding-top: 10rpx;
+    padding-right: 40rpx;
+    box-sizing: border-box;
+}
+/* 教育经历 */
+.redetails .rede-education {
+    padding-top: 50rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    box-sizing: border-box;
+}
+.redetails .rede-education .worker-title {
+    display: flex;
+}
+
+.redetails .rede-education .worker-title .yuan {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background: #3c9;
+    vertical-align: middle;
+    margin-top: 24rpx;
+    margin-right: 10rpx;
+}
+
+.redetails .rede-education .worker-title .title {
+    font-size: 36rpx;
+    color: #000;
+    vertical-align: middle;
+}
+.redetails .rede-education .name-time{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22rpx 0 0;
+    margin-top: 20rpx;
+}
+.redetails .rede-education .name-time .name{
+    font-size: 36rpx;
+    color: #000;
+}
+.redetails .rede-education .name-time .time{
+    font-size: 26rpx;
+    color: #888;
+}
+.redetails .rede-education .work-position{
+    padding: 0 22rpx 0 0;
+}
+.redetails .rede-education .work-position{
+    font-size: 28rpx;
+    color: #353535;
+}
+.redetails .rede-education .work-position text{
+    font-size: 28rpx;
+    color: #888;
+    margin: 0 12rpx;
+}
+/* 评价信息 */
+.redetails .rede-evaluation {
+    padding-top: 50rpx;
+    padding-bottom: 15rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.redetails .rede-evaluation .worker-title {
+    display: flex;
+    margin-bottom: 15rpx;
+}
+
+.redetails .rede-evaluation .worker-title .yuan {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background: #3c9;
+    vertical-align: middle;
+    margin-top: 24rpx;
+    margin-right: 10rpx;
+}
+
+.redetails .rede-evaluation .worker-title .title {
+    font-size: 36rpx;
+    color: #000;
+    vertical-align: middle;
+}
+.redetails .rede-evaluation .infor{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22rpx 0 0;
+    box-sizing: border-box;
+    line-height: 70rpx;
+
+}
+.redetails .rede-evaluation .infor .infor-left{
+    font-size: 34rpx;
+    color: #000;
+    display: flex;
+}
+.redetails .rede-evaluation .infor .infor-left .img{
+    width: 70rpx;
+    height: 70rpx;
+    border-radius: 20rpx;
+    margin-right: 20rpx;
+}
+.redetails .rede-evaluation .infor .infor-left .img image{
+     width: 70rpx;
+    height: 70rpx;
+}
+.redetails .rede-evaluation .infor .infor-right{
+    font-size: 26rpx;
+    color: #888;
+}
+.redetails .rede-evaluation .evalu{
+    padding-left: 88rpx;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    color: #353535;
+
+}
+.redetails .rede-evaluation .click{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top:50%;
+}
+.redetails .rede-evaluation .click view{
+    font-size: 34rpx;
+    color: #000;
+    margin-bottom: 20rpx;
+}
+.redetails .rede-evaluation .click button{
+    font-size: 34rpx;
+    color: #fff;
+    background: #33cc99;
+    height: 90rpx;
+    line-height: 90rpx;
+}
+.redetails .rede-evaluation .blurry.active{
+    filter: blur(3px);
+}
+/* 温馨提示 */
+.redetails .rede-tips{
+    margin-top: 30rpx;
+    font-size: 26rpx;
+    color: #353535;
+}
+.redetails .rede-tips text{
+    color: #fc0000;
+}
+.redetails .fankui{
+    font-size: 26rpx;
+    color: #888;
+    padding-bottom: 120rpx;
+    box-sizing: border-box;
+}
+.redetails .fankui text{
+    font-size: 26rpx;
+    color: #576b95;
+}
+.rede-btn{
+    /* z-index: 9; */
+    background: #fff;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100rpx;
+    border-top: 1rpx solid #e5e5e5;
+    padding: 18rpx 30rpx 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.rede-btn .btn-left{
+    width: 325rpx;
+    height: 70rpx;
+    background: #fff;
+    border: 1rpx solid #33cc99;
+    line-height: 70rpx;
+    text-align: center;
+    color: #33cc99;
+    font-size: 32rpx;
+    border-radius: 15rpx;
+}
+.rede-btn .btn-right{
+    width: 325rpx;
+    height: 70rpx;
+    background: #33cc99;
+    border: 1rpx solid #fff;
+    line-height: 70rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 32rpx;
+    border-radius: 15rpx;
+}

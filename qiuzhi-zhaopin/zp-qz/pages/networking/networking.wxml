@@ -1,0 +1,154 @@
+<view class="redetails">
+    <!-- 个人信息 -->
+    <view class='rede-user'>
+        <view class='user-a'>
+            <view class='a-left'>
+                <view class='left-top'>
+                    <!-- <view class='top-name'>{{resume.CustomerName}}</view> -->
+                    <view class='top-name' wx:if="{{!resume.phone && resume.CustomerSex == false}}">{{resume.asd}}先生</view>
+                    <view class='top-name' wx:if="{{!resume.phone && resume.CustomerSex == true}}">{{resume.asd}}女士</view>
+                    <view class='top-name' wx:if="{{!resume.phone && resume.CustomerSex != false && resume.CustomerSex != true}}">{{resume.asd}}XX</view>
+                    <view class='top-name' wx:if="{{resume.phone}}">{{resume.CustomerName}}</view>
+                    <text>|</text>
+                    <view class='top-name'>{{resume.positionName}}</view>
+                    <!-- <view class='group'>分组</view> -->
+                </view>
+                <view class='left-bottom'>
+                    <view class='b-content' wx:if="{{resume.CustomerSex == false}}">男</view>
+                    <view class='b-content' wx:if="{{resume.CustomerSex == true}}">女</view>
+                    <view class='b-content' wx:if="{{resume.CustomerSex != false && resume.CustomerSex != true}}">保密</view>
+                    <view class='shu'>|</view>
+                    <view class='b-content'>{{resume.age}}岁</view>
+                    <view class='shu'>|</view>
+                    <view class='b-content'>{{resume.DirectWorkLife}}年经验</view>
+                    <view class='shu'>|</view>
+                    <view class='b-content'>{{resume.educationName}}</view>
+                    <!-- <view class='shu'>|</view>
+                    <view class='b-content'>{{resume.city}}</view> -->
+                </view>
+            </view>
+            <view class='a-right'>
+                <!-- <image src='../../images/avatar6.png'></image> -->
+            </view>
+        </view>
+        <view class='user-b'>
+            <view class='user-c user'>
+                <view class='c-img'>
+                    <image src='../../images/icon/money-logo.png'></image>
+                </view>
+                <view class='unite' wx:if="{{resume.ExpectationSalary == '面议'}}">{{resume.ExpectationSalary}}</view>
+                <view class='unite' wx:if="{{resume.ExpectationSalary != '面议'}}">{{resume.ExpectationSalary}}元/月</view>
+            </view>
+            <view class='user-d user'>
+                <view class='d-img'>
+                    <image src='../../images/icon/phone-logo.png'></image>
+                </view>
+                <!-- <view class='unite'>12345678912</view> -->
+                <view class='unite' wx:if="{{!resume.phone}}">***********</view>
+                <view class='unite' wx:else>{{resume.phone}}</view>
+            </view>
+            <view class='user-e user'>
+                <view class='e-img'>
+                    <image src='../../images/icon/time-logo.png'></image>
+                </view>
+                <view class='unite'>随时到岗
+                    <text>|</text>全职</view>
+            </view>
+        </view>
+    </view>
+    <!-- 个人简介 -->
+    <view class='rede-personal'>
+        <view class='personel-title'>
+            <!-- <view class='yuan'></view> -->
+            <view class='title'>个人简介</view>
+        </view>
+        <text class="personel-content {{ellipsis?'ellipsis':'unellipsis'}}">{{resume.profile}}</text>
+        <view class='xianshiall' bindtap='ellipsis' wx:if="{{hidden}}">显示全部</view>
+    </view>
+    <!-- 工作经历 -->
+    <view class='rede-worker'>
+        <view class='worker-title'>
+            <!-- <view class='yuan'></view> -->
+            <view class='title'>工作经历</view>
+        </view>
+        <view wx:for="{{resume.workList}}" wx:key>
+            <view class='name-time'>
+                <view class='name'>{{item.companyName}}</view>
+                <view class='time'>{{item.startTime}}-{{item.endTime}}</view>
+            </view>
+            <view class='work-position'>
+                {{item.jobTitle}}
+                <text>|</text>{{item.department}}
+            </view>
+            <text class="personel-content {{ellipsis1?'ellipsis1':'unellipsis1'}}">{{item.performance}}</text>
+        </view>
+        <view class='xianshiall' bindtap='ellipsis1' wx:if="{{hidden1}}">显示全部</view>
+    </view>
+    <!-- 项目经历 -->
+    <view class='rede-project'>
+        <view class='worker-title'>
+            <view class='title'>项目经历</view>
+        </view>
+        <view wx:for="{{resume.projectList}}" wx:key>
+            <view class='name-time'>
+                <view class='name'>{{item.projectName}}</view>
+                <view class='time'>{{item.joinProjectTime}}-{{item.quitProjectTime}}</view>
+            </view>
+            <text class="personel-content {{ellipsis2?'ellipsis2':'unellipsis2'}}">{{item.projectIntroduction}}</text>
+        </view>
+        <view class='xianshiall' bindtap='ellipsis2' wx:if="{{hidden2}}">显示全部</view>
+    </view>
+    <!-- 教育经理 -->
+    <view class='rede-education'>
+        <view class='worker-title'>
+            <view class='title'>教育经历</view>
+        </view>
+        <view wx:for="{{resume.educationList}}" wx:key>
+            <view class='name-time'>
+                <view class='name'>{{item.schoolName}}</view>
+                <view class='time'>{{item.addtime}}-{{item.endTime}}</view>
+            </view>
+            <view class='work-position'>
+                {{item.degree}}
+                <text>|</text>{{item.major}}
+            </view>
+        </view>
+    </view>
+    <!-- 评价信息 -->
+    <!-- <view class='rede-evaluation'>
+        <view class='worker-title'>
+            <view class='title'>评价信息</view>
+        </view>
+        <view class="blurry {{resume.tel?'':'active'}}">
+            <view wx:for="{{resume.resumeEvaluateList}}" wx:key>
+                <view class='infor'>
+                    <view class='infor-left'>
+                        <view class='img'>
+                            <image src='{{item.headimgurl}}'></image>
+                        </view>
+                        <view class='name'>{{item.nickname}}</view>
+                    </view>
+                    <view class='infor-right'>{{item.insertTime}}</view>
+                </view>
+                <view class='evalu'>{{item.content}}</view>
+            </view>
+        </view>
+
+    </view> -->
+    <!-- 温馨提示 -->
+    <!-- <view class='rede-tips'>
+        <text>*</text>温馨提示：</view>
+    <view class='fankui'>如果获取联系有问题，或联系方式无法接通，请点击
+        <text>反馈</text>
+    </view> -->
+</view>
+<view class='click' wx:if="{{!resume.phone && resume.resumeMoney}}">
+    <!-- <view>非会员该信息模糊显示，查看详情需购买会员</view> -->
+    <button bindtap='buy'>点击购买￥{{resume.resumeMoney}}</button>
+</view>
+<!-- <view class='rede-btn'>
+    <view class='btn-left' wx:if="{{!resume.tel}}" bindtap='collection'><text wx:if="{{!resume.collectionId}}">收藏</text><text wx:else>取消收藏</text></view>
+    <view class='btn-left' wx:else bindtap='withhechat'>和Ta聊聊</view>
+    <view class='btn-right' wx:if="{{!resume.tel}}" bindtap='buyphone'>获取联系方式</view>
+    <view class='btn-right' wx:else bindtap='dial'>一键拨号</view>
+</view> -->

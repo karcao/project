@@ -1,0 +1,3 @@
+<view class='text'>【称谓/微信昵称】于2019-06-18 邀请您加入他的团队，是否同意</view>
+<button bindtap='navtoaddsteam'>同意</button>
+<button bindtap='navtoaddsteam1' class='btnjj'>拒绝</button>

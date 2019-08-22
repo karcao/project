@@ -1,0 +1,7 @@
+<view class="details">
+    <view class='title'>{{content.news_type_name}}</view>
+    <view class='con'>{{content.content}}</view>
+    <!-- <view class='con'>2.新增客户账期功能，自动生成回款计划，防错漏，与账龄分析结合，加速资金回笼；</view>
+    <view class='con'>3.新增采购多单位功能，支持采购、仓库、生产等不同场景下不同单位自动换算；</view> -->
+    <view class='time'>{{content.insert_time}}</view>
+</view>

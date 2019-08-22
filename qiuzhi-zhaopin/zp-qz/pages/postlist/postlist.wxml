@@ -1,0 +1,7 @@
+<view class="postlist">
+    <view class='title'>职位靓点</view>
+    <view class='list'>
+        <view class="{{item.checked ? 'active':'list-item'}}" bindtap='clickitem' wx:for="{{postlist}}" data-index="{{index}}" wx:key>{{item.bright}}</view>
+    </view>
+</view>
+<button bindtap='save'>保存</button>

@@ -1,0 +1,23 @@
+<view class="messcenter">
+    <view class='mess-list' bindtap='navtomesscenterdetails' wx:for="{{newslist}}" wx:key data-index="{{index}}">
+        <view class='list-left'>
+            <view class='content'>[{{item.news_type_name}}] {{item.content}}</view>
+            <view class='time'>{{item.insert_time}}</view>
+        </view>
+        <view class='list-right'><image src='../../images/icon/path3.png'></image></view>
+    </view>
+    <!-- <view class='mess-list'>
+        <view class='list-left'>
+            <view class='content'>[功能更新] 本次更新主要涉及个别按、缓新主要涉及个别按、缓存存</view>
+            <view class='time'>2018-09-19 12:23</view>
+        </view>
+        <view class='list-right'><image src='../../images/icon/path3.png'></image></view>
+    </view>
+    <view class='mess-list'>
+        <view class='list-left'>
+            <view class='content'>[功能更新] 本次更新主要涉及个别按、缓新主要涉及个别按、缓存存</view>
+            <view class='time'>2018-09-19 12:23</view>
+        </view>
+        <view class='list-right'><image src='../../images/icon/path3.png'></image></view>
+    </view> -->
+</view>

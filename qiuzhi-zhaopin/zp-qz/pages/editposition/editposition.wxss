@@ -1,0 +1,293 @@
+.editposition{
+    width: 100%;
+}
+.editposition .mentposition{
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #eeeeee;
+    font-size: 30rpx;
+    color: #353535;
+}
+/* 名称 */
+.editposition .po-name{
+    width: 100%;
+    /* height: 85rpx; */
+    padding: 29rpx 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.editposition .po-name .star{
+    color: #f22929;
+}
+.editposition .po-name input{
+    text-align: right;
+    color: #888;
+}
+.editposition .po-name .name-right{
+    width: 80%;
+    text-align: right;
+    font-size: 28rpx;
+    line-height: 55rpx;
+    color: #888;
+    word-break: break-word; 
+}
+.editposition .po-name .name-right text{}
+.editposition .po-name .name-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left:20rpx;
+}
+/* 基本信息 */
+.editposition .information{
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #eeeeee;
+    font-size: 30rpx;
+    color: #353535;
+}
+.editposition .mation{
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+.editposition .mation .same{
+    width: 100%;
+    border-bottom: 1rpx solid #e5e5e5;
+    /* height: 90rpx; */
+    padding: 25rpx 30rpx 25rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.editposition .mation .same .same-left .star{
+    color: #f22929;
+}
+.editposition .mation .same .same-right{
+    text-align: right;
+    width: 75%;
+}
+.editposition .mation .same .same-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left: 35rpx;
+}
+.editposition .mation .same .same-right .picker{
+    width: 100%;
+    color: #888;
+    text-align: right;
+    font-size: 28rpx;
+}
+.editposition .mation .location .same-right .dizhi{
+    text-align: right;
+    display: flex;
+    color: #888;
+    justify-content:flex-end;
+    font-size: 28rpx;
+    line-height: 55rpx;
+}
+/* .editposition .mation .location .same-right .dizhi .address{
+    text-align: ;
+} */
+.editposition .mation .location .same-right .dizhi image{
+    margin-top: 15rpx;
+}
+.editposition .mation .same .same-right .picker .text{
+    margin-right: 10rpx;
+}
+.editposition .mation .same .same-right .daiyu{
+    display: flex;
+    justify-content: flex-end;
+}
+.editposition .mation .same .same-right .daiyu .gang{
+    margin: 0 15rpx;
+}
+.editposition .mation .same .same-right .daiyu .mony{
+    width: 120rpx;
+    height: 55rpx;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 55rpx;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    color: #888888;
+}
+/* .editposition .mation .same .same-right .daiyu .money{
+    vertical-align: middle;
+} */
+.editposition .mation .same .same-right .daiyu image{
+    margin-top: 15rpx;
+}
+.editposition .mation .location{
+    width: 100%;
+    /* border-bottom: 1rpx solid #e5e5e5; */
+    /* height: 90rpx; */
+    padding: 25rpx 30rpx 25rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.editposition .mation .location .same-left .star{
+    color: #f22929;
+}
+.editposition .mation .location .same-right{
+    text-align: right;
+    width: 75%;
+    
+}
+.editposition .mation .location .same-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left: 35rpx;
+}
+.editposition .mation .location .same-right .picker{
+    width: 100%;
+    color: #888;
+    
+}
+/* 工作描述 */
+.editposition .work{
+    width: 100%;
+    height: 300rpx;
+    padding: 30rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.editposition .work textarea{
+    font-size: 30rpx;
+    color: #888;
+    width: 100%;
+    padding-bottom: 30rpx;
+    box-sizing: border-box;
+}
+.editposition .work .wordcount{
+    font-size: 28rpx;
+    color: #888;
+    position: absolute;
+    right: 30rpx;
+    bottom: 20rpx;
+}
+.editposition .work .wordcount text{
+    color: #33cc99;
+}
+/* 岗位靓点 */
+.editposition .post{
+    width: 100%;
+    border-bottom: 1rpx solid #e5e5e5;
+    /* height: 90rpx; */
+    padding: 25rpx 30rpx 25rpx 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.editposition .post .post-left{
+    display: flex;
+    flex-wrap: wrap;
+}
+.editposition .post .post-left .welfare{
+    width: 180rpx;
+    height: 60rpx;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color: #353535;
+    background: #eeeeee;
+    margin-right: 20rpx;
+    border-radius: 10rpx;
+    margin-bottom: 20rpx;
+}
+.editposition .post .post-right{
+    font-size: 34rpx;
+    color: #888;
+}
+.editposition .post .post-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left: 35rpx;
+}
+.editposition .btn{
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
+    width: 690rpx;
+    height: 90rpx;
+    color: #fff;
+    font-size: 36rpx;
+    background: #33cc99;
+}
+/* 背景遮罩弹窗 */
+.bglayer{
+    position:fixed;
+    z-index: 9;
+    width:100%;
+    height:100%;
+    top:0;
+    bottom: 0;
+    background:rgba(75, 74, 74, 0.5);
+}
+.popups{
+    width: 600rpx;
+    position: relative;
+    background: #ffffff;
+    border-radius: 15rpx;
+    position: fixed;
+    top: 140rpx;
+    left: 50%;
+    margin-left: -300rpx;
+    z-index: 11;
+}
+.popups .pop-top .top-title{
+    font-size: 32rpx;
+    color: #000;
+    text-align: center;
+    line-height: 100rpx;
+}
+.popups .pop-top input{
+    width: 480rpx;
+    height: 90rpx;
+    border: 1rpx solid #ccc;
+    font-size: 28rpx;
+    margin: 0 auto;
+    border-radius: 10rpx;
+    color: #ccc;
+    text-align: center;
+}
+.popups .pop-top .top-number{
+    line-height: 60rpx;
+    padding-right: 60rpx;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 22rpx;
+    color: #888888;
+}
+.popups .pop-top .top-number text{
+    color: #33cc99;
+}
+.popups .pop-top .top-tips{
+    font-size: 22rpx;
+    color: #888;
+    text-align: center;
+}
+.popups .pop-bottom{
+    border-top: 1rpx solid #e3e3e3;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 32rpx;
+    color: #33cc99;
+    line-height: 100rpx;
+    margin-top: 20rpx;
+}
+.popups .close{
+    font-size: 28rpx;
+    color: #33cc99;
+    position: absolute;
+    right: 40rpx;
+    top: 30rpx;
+}

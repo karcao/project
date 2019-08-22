@@ -1,0 +1,225 @@
+<view class="resume" bindtap='quxiaoall'>
+    <!-- 搜索框 -->
+    <view class='searchfor'>
+        <view class="page__bd">
+            <view class="weui-search-bar">
+                <view class="weui-search-bar__form">
+                    <view class="weui-search-bar__box">
+                        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                            <icon type="clear" size="14"></icon>
+                        </view>
+                    </view>
+                    <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                        <icon class="weui-icon-search" type="search" size="20"></icon>
+                        <view class="weui-search-bar__text">搜索岗位名称或简历名字</view>
+                    </label>
+                </view>
+                <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+            </view>
+            <!-- <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+                <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <view>实时搜索文本</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <view>实时搜索文本</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <view>实时搜索文本</view>
+                    </view>
+                </navigator>
+                <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+                    <view class="weui-cell__bd">
+                        <view>实时搜索文本</view>
+                    </view>
+                </navigator>
+            </view> -->
+        </view>
+    </view>
+    <!-- 分类 -->
+    <scroll-view class='index-header'>
+        <view class='con-bottom'>
+            <view class='flex {{currentTab==0?"active":""}}' data-current="0" bindtap="swichNav">
+                <view class='bottom-left'>
+                    <text>浏览记录</text>
+                </view>
+            </view>
+            <view class='flex {{currentTab==1?"active":""}}' data-current="1" bindtap="swichNav1">
+                <view class='bottom-middle'>
+                    <text>收藏简历</text>
+                </view>
+            </view>
+            <view class='flex {{currentTab==2?"active":""}}' data-current="2" bindtap="swichNav2">
+                <view class='bottom-right'>
+                    <text>我的简历库</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <!-- 列表 -->
+    <swiper class="tab-content" current="{{currentTab}}" bindtap='quxiaoall' duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+        <!-- 我的简历库列表 -->
+        <swiper-item>
+            <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='0'>
+                <view class='watch1-list'>
+                    <view class="list-chat" wx:for="{{browserecord}}" wx:key data-index="{{index}}" catchtap='myresume3' wx:if="{{item.resumeName}}">
+                        <view class='chat-border'>
+                            <view class='chat-top'>
+                                <view class='top-left'>
+                                    <text class='text1' wx:if="{{item.sex == '男'}}">{{item.asd}}先生</text>
+                                    <text class='text1' wx:if="{{item.sex == '女'}}">{{item.asd}}女士</text>
+                                    <text class='text1' wx:if="{{item.sex == '保密'}}">{{item.asd}}XX</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.positionName}}</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.treatmentName}}</text>
+                                </view>
+                                <view class='top-right'>{{item.time}}日</view>
+                            </view>
+                            <view class='chat-bottom'>
+                                <text class='text1'>{{item.sex}}</text>
+                                <text class='text2'>|</text>
+                                <text class='text1'>{{item.birthday}}岁</text>
+                                <text class='text2'>|</text>
+                                <text class='text1' wx:if="{{item.workBegin == 0}}">1年经验</text>
+                                <text class='text1' wx:else>{{item.workBegin}}年经验</text>
+                                <text class='text2'>|</text>
+                                <text class='text1'>{{item.educationName}}</text>
+                                <text class='text2'>|</text>
+                                <text class='text1'>{{item.city}}</text>
+                            </view>
+                        </view>
+                        <!-- 提示按钮 -->
+                        <view class='tips' wx:if="{{inDex3 == index}}">
+                            <view catchtap='vae02' data-index="{{index}}" wx:if="{{inDex3 == index}}">查看简历</view>
+                            <view catchtap='vae5' data-index="{{index}}" wx:if="{{inDex3 == index}}">收藏简历</view>
+                            <!-- <view catchtap='vae6' data-index="{{index}}" wx:if="{{inDex3 == index &&item.isBuy == 0}}">购买简历</view>
+                            <view data-index="{{index}}" wx:if="{{inDex3 == index &&item.isBuy == 1}}">已购买</view> -->
+                        </view>
+                    </view>
+                </view>
+                <!-- 没有关注的情况下显示 -->
+                <!-- <view class='nolooker'>
+                    <view class='text'>空空如也</view>
+                    <view class='img'><image src='../../images/nolooker.png'></image></view>
+                </view> -->
+            </scroll-view>
+        </swiper-item>
+        <!-- 收藏简历列表 -->
+        <swiper-item>
+            <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='1'>
+                <view class='watch1-list'>
+                    <!-- <view class="couponcontent {{tab1.curBdIndex=='0'? 'active' : ''}}"> -->
+                        <view class="list-chat" wx:for="{{favoriteresume}}" wx:key data-index="{{index}}" catchtap='myresume2' wx:if="{{item.resumeName}}">
+                            <view class='chat-border'>
+                                <view class='chat-top'>
+                                    <view class='top-left'>
+                                        <text class='text1' wx:if="{{item.sex == '男'}}">{{item.asd}}先生</text>
+                                        <text class='text1' wx:if="{{item.sex == '女'}}">{{item.asd}}女士</text>
+                                        <text class='text1' wx:if="{{item.sex == '保密'}}">{{item.asd}}XX</text>
+                                        <text class='text2'>|</text>
+                                        <text class='text1'>{{item.positionName}}</text>
+                                        <text class='text2'>|</text>
+                                        <text class='text1'>{{item.educationName}}</text>
+                                    </view>
+                                    <view class='top-right'>{{item.time}}日</view>
+                                </view>
+                                <view class='chat-bottom'>
+                                    <text class='text1'>{{item.sex}}</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.birthday}}岁</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1' wx:if="{{item.workBegin == 0}}">1年经验</text>
+                                    <text class='text1' wx:else>{{item.workBegin}}年经验</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.educationName}}</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.city}}</text>
+                                </view>
+                            </view>
+                            <!-- 提示按钮 -->
+                            <view class='tips' wx:if="{{inDex2 == index}}">
+                                <view catchtap='vae01' data-index="{{index}}" wx:if="{{inDex2 == index}}">查看简历</view>
+                                <view catchtap='vae3' data-index="{{index}}" wx:if="{{inDex2 == index}}">取消收藏</view>
+                                <!-- <view catchtap='vae4' data-index="{{index}}" wx:if="{{inDex2 == index &&item.isBuy == 0}}">购买简历</view>
+                                <view data-index="{{index}}" wx:if="{{inDex2 == index &&item.isBuy == 1}}">已购买</view> -->
+                            </view>
+                        </view>
+                    <!-- </view> -->
+                </view>
+                <!-- 没有关注的情况下显示 -->
+                <!-- <view class='nolooker'>
+                    <view class='text'>空空如也</view>
+                    <view class='img'><image src='../../images/nolooker.png'></image></view>
+                </view> -->
+            </scroll-view>
+        </swiper-item>
+        <!-- 浏览记录列表 -->
+        <swiper-item>
+            <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='2'>
+                <view class='watch1-list'>
+                    <!-- <view class="couponcontent {{tab2.curBdIndex=='0'? 'active' : ''}}"> -->
+                        
+                        <view class="list-chat" wx:for="{{resumelibrary}}" wx:key data-index="{{index}}" catchtap='vae0' wx:if="{{item.resumeName}}">
+                            <view class='chat-border'>
+                                <view class='chat-top'>
+                                    <view class='top-left'>
+                                        <text class='text1'>{{item.resumeName}}</text>
+                                        <text class='text2'>|</text>
+                                        <text class='text1'>{{item.positionName}}</text>
+                                        <text class='text2'>|</text>
+                                        <text class='text1'>{{item.educationName}}</text>
+                                    </view>
+                                    <view class='top-right'>{{item.time}}日</view>
+                                </view>
+                                <view class='chat-bottom'>
+                                    <text class='text1'>{{item.sex}}</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.birthday}}岁</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1' wx:if="{{item.workBegin == 0}}">1年经验</text>
+                                    <text class='text1' wx:else>{{item.workBegin}}年经验</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.educationName}}</text>
+                                    <text class='text2'>|</text>
+                                    <text class='text1'>{{item.city}}</text>
+                                </view>
+                            </view>
+                            <!-- 提示按钮 -->
+                            <view class='tips' wx:if="{{inDex1 == index}}">
+                                <view catchtap='vae0' data-index="{{index}}" wx:if="{{inDex1 == index}}">查看简历</view>
+                                <view catchtap='vae1' data-index="{{index}}" wx:if="{{inDex1 == index && item.tel}}">一键拨号</view>
+                                <!-- <view catchtap='vae2' data-index="{{index}}" wx:if="{{inDex1 == index}}">填写评价</view> -->
+                            </view>
+                        </view>
+                    <!-- </view> -->
+                    <!-- <view class="couponcontent {{tab2.curBdIndex=='1'? 'active' : ''}}">
+
+                    </view>
+                    <view class="couponcontent {{tab2.curBdIndex=='2'? 'active' : ''}}">
+
+                    </view>
+                    <view class="couponcontent {{tab2.curBdIndex=='3'? 'active' : ''}}">
+
+                    </view> -->
+                </view>
+                <!-- 没有关注的情况下显示 -->
+                <!-- <view class='nolooker'>
+                    <view class='text'>空空如也</view>
+                    <view class='img'><image src='../../images/nolooker.png'></image></view>
+                </view> -->
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
+<!-- 发布按钮 -->
+<view class='btnrelease' bindtap='btnrelease'>
+    <view class='qw'>全网</view>
+    <view class='text'>搜简历</view>
+</view>

@@ -1,0 +1,81 @@
+.tuikuan{
+    width: 100%;
+    padding: 40rpx;
+    box-sizing: border-box;
+}
+/* 申请退款 */
+.tuikuan .sqtk .title{
+    font-size: 32rpx;
+    color: rgb(143, 139, 139);
+    margin-bottom: 50rpx;
+}
+.tuikuan .sqtk textarea{
+    width: 100%;
+    height: 200rpx;
+    font-size: 28rpx;
+    color:rgb(143, 139, 139);
+    border: 1rpx solid rgb(221, 213, 213);
+    margin-bottom: 100rpx;
+}
+.tuikuan .sqtk .btn{
+    width: 100%;
+    height: 88rpx;
+    background: rgb(69, 185, 85);
+    line-height: 88rpx;
+    font-size: 32rpx;
+    color: #fff;
+}
+/* 审核中 */
+.tuikuan .shz{
+    margin-top: 150rpx;
+}
+.tuikuan .shz .img{
+    width: 128rpx;
+    height: 128rpx;
+    margin: 0 auto 75rpx;
+}
+.tuikuan .shz .img image{
+    width: 128rpx;
+    height: 128rpx;
+}
+.tuikuan .shz .text{
+    color: rgb(143, 139, 139);
+    font-size: 34rpx;
+    text-align: center;
+}
+/* 审核中 */
+.tuikuan .ypy{
+    margin-top: 150rpx;
+}
+.tuikuan .ypy .img{
+    width: 128rpx;
+    height: 128rpx;
+    margin: 0 auto 75rpx;
+}
+.tuikuan .ypy .img image{
+    width: 128rpx;
+    height: 128rpx;
+}
+.tuikuan .ypy .text{
+    color: rgb(143, 139, 139);
+    font-size: 34rpx;
+    text-align: center;
+}
+/* 审核中 */
+.tuikuan .ycl{
+    margin-top: 150rpx;
+}
+.tuikuan .ycl .img{
+    width: 128rpx;
+    height: 128rpx;
+    margin: 0 auto 75rpx;
+}
+.tuikuan .ycl .img image{
+    width: 128rpx;
+    height: 128rpx;
+}
+.tuikuan .ycl .text{
+    color: rgb(143, 139, 139);
+    font-size: 34rpx;
+    text-align: center;
+}

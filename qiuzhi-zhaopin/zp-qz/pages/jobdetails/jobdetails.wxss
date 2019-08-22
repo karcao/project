@@ -1,0 +1,295 @@
+page {
+    background: #efeff4;
+}
+
+.jobdetails .job {
+    background: #fff;
+    padding: 40rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .job .job-top {
+    padding-bottom: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+.jobdetails .job .job-top .top-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobdetails .job .job-top .top-top .top-left {
+    font-size: 40rpx;
+    color: #000;
+}
+
+.jobdetails .job .job-top .top-top .top-right {
+    color: #f33;
+    font-size: 34rpx;
+}
+
+.jobdetails .job .job-top .top-bottom {
+    color: #888;
+    font-size: 26rpx;
+}
+
+.jobdetails .job .job-top .top-bottom text {
+    margin: 0 15rpx;
+}
+
+.jobdetails .job .job-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobdetails .job .job-bottom .bottom-left {
+    padding: 24rpx 0 22rpx 0;
+    display: flex;
+}
+
+.jobdetails .job .job-bottom .bottom-left .left-left {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 20rpx;
+    margin-right: 30rpx;
+}
+
+.jobdetails .job .job-bottom .bottom-left .left-left image {
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.jobdetails .job .job-bottom .bottom-left .left-right {
+    padding-top: 20rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .job .job-bottom .bottom-left .left-right .entername {
+    font-size: 34rpx;
+    color: #000;
+}
+
+.jobdetails .job .job-bottom .bottom-left .left-right .scale {
+    font-size: 26rpx;
+    color: #888;
+}
+
+.jobdetails .job .job-bottom .bottom-left .left-right .scale text {
+    margin: 0 10rpx;
+}
+
+.jobdetails .job .job-bottom .bottom-right {
+    width: 16rpx;
+    height: 25rpx;
+    margin-top: 50rpx;
+}
+
+.jobdetails .job .job-bottom .bottom-right image {
+    width: 16rpx;
+    height: 25rpx;
+}
+
+.jobdetails .duties {
+    margin: 20rpx 0;
+    background: #fff;
+    padding: 50rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .duties .duc-title {
+    color: #000;
+    font-size: 36rpx;
+    margin-bottom: 35rpx;
+}
+
+.jobdetails .duties .duc-content {
+    font-size: 30rpx;
+    color: #353535;
+    line-height: 55rpx;
+}
+
+.jobdetails .duties .claim {
+    margin: 35rpx 0 35rpx 0;
+    color: #000;
+    font-size: 36rpx;
+}
+
+.jobdetails .offlocation {
+    background: #fff;
+    padding: 40rpx 30rpx 40rpx 30rpx;
+    box-sizing: border-box;
+    margin-bottom: 120rpx;
+}
+
+.jobdetails .offlocation .off-top {
+    color: #000;
+    font-size: 36rpx;
+    /* margin-bottom:25rpx; */
+}
+
+.jobdetails .offlocation .off-bottom image {
+    width: 26rpx;
+    height: 30rpx;
+    vertical-align: middle;
+    margin-right: 15rpx;
+}
+
+.jobdetails .offlocation .off-bottom text {
+    font-size: 30rpx;
+    color: #353535;
+    vertical-align: middle;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    height: 100rpx;
+    padding: 10rpx 30rpx 10rpx 70rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1rpx solid #e5e5e5;
+}
+
+.footer .foot-left {
+    display: flex;
+}
+
+.footer .foot-left .left-left {
+    text-align: center;
+    margin-right: 65rpx;
+}
+
+.footer .foot-left .left-right {
+    text-align: center;
+}
+
+.footer .foot-left .text {
+    font-size: 20rpx;
+    color: #888;
+}
+
+.footer .foot-left .img {
+    width: 36rpx;
+    height: 36rpx;
+    margin-bottom: 12rpx;
+}
+
+.footer .foot-left .img image {
+    width: 36rpx;
+    height: 36rpx;
+}
+
+.footer .foot-right {
+    width: 440rpx;
+    height: 78rpx;
+    display: flex;
+}
+
+.footer .foot-right .right-left {
+    width: 50%;
+    height: 100%;
+    background: #efc032;
+    /* background: none; */
+    border-top-left-radius: 50rpx;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50rpx;
+    border-bottom-right-radius: 0;
+    font-size: 28rpx;
+    color: #fff;
+    line-height: 78rpx;
+    text-align: center;
+}
+
+.footer .foot-right .right-right {
+    width: 50%;
+    height: 100%;
+    background: #3c9;
+    border-top-left-radius: 0;
+    border-top-right-radius: 50rpx;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 50rpx;
+    font-size: 28rpx;
+    color: #fff;
+    line-height: 78rpx;
+    text-align: center;
+}
+.btnrelease{
+    z-index: 10;
+    position: fixed;
+    right: 30rpx;
+    bottom: 150rpx;
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 22rpx;
+    color: #fff;
+    background: #33cc99;
+    border-radius: 50%;
+    text-align: center;
+}
+/* canvas绘图及按钮样式 */
+
+canvas {
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 30rpx; */
+    /* left: 100%; */
+    background: #ffe200;
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.preview image {
+    width: 80%;
+    height:82%;
+    position: fixed;
+    top: 50rpx;
+    left: 50%;
+    margin-left: -40%;
+    z-index: 10;
+    border: 1px dashed #fff;
+}
+
+.preview .save {
+    width: 50%;
+    height: 70rpx;
+    font-size:28rpx;
+    line-height: 70rpx;
+    position: fixed;
+    bottom: 60rpx;
+    left: 10%;
+    background: #eac11d;
+    color: #fff;
+    border-radius: 44rpx;
+    /* z-index: 15; */
+}
+
+.preview .nosave {
+    width: 25%;
+    height: 70rpx;
+    font-size: 28rpx;
+    color: #353535;
+    line-height: 70rpx;
+    position: fixed;
+    bottom:60rpx;
+    right: 10%;
+    border-radius: 44rpx;
+    background: rgb(194, 192, 192);
+    z-index: 10;
+}

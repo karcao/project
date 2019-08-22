@@ -1,0 +1,29 @@
+page{
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+.text{
+    text-align: center;
+    font-size: 34rpx;
+    color: #000;
+    margin: 130rpx 0;
+}
+button{
+    margin-top: 150rpx;
+    border-radius: 15rpx;
+    line-height: 100rpx;
+    width: 690rpx;
+    height: 100rpx;
+    background: #33cc99;
+    color: #fff;
+    font-size: 34rpx;
+}
+button::after {
+    border: 0; 
+}
+.btnjj{
+    background: #fbfafc;
+    color: #000;
+    border: 1rpx solid #d6d5d6;
+    margin-top: 50rpx;
+}

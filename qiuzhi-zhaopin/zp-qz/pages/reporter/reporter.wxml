@@ -1,0 +1,17 @@
+<view class="reporter">
+    <view class='report-title'>举报对象</view>
+    <view class='wxname'>
+        <view class='img'><image src='../../images/avatar3.png'></image></view>
+        <view class='name'>微信昵称</view>
+    </view>
+    <view class='report-title'>详细描述</view>
+    <view class='description'>
+        <textarea type='text' data-name='account' value='{{account}}' name="account" placeholder='请详细描述举报对象的恶意行为' bindinput="dutyChange" maxlength='2000'></textarea>
+        <view class='photo'>
+            <view class='photo-add' bindtap='chooseImg'><image src='../../images/icon/add.png'></image></view>
+            <view class='photo-photo' wx:for="{{img_arr}}" wx:key><image mode='aspectFill' class='img' src='{{item}}'></image><image src='../../images/icon/delete.png' class='img1' data-index="{{index}}" catchtap='deleteimg'></image></view>
+            <!-- <view class='text'>(最多4张)</view> -->
+        </view>
+    </view>
+    <button class='btn' bindtap='reporter'>举报</button>
+</view>

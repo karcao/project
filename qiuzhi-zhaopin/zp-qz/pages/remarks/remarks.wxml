@@ -1,0 +1,13 @@
+<view class="remarks">
+    <view class='remark'>备注名</view>
+    <view class='ipt1'>
+        <input bindinput="bindinput" bindfocus="bindfocus" bindblur="bindblur" placeholder='添加姓名' placeholder-style="color:#333;font-size:36rpx;" value='{{name}}'></input>
+        <image catchtap='deletename' src='../../images/icon/delete1.png' wx:if="{{nameimg}}"></image>
+    </view>
+    <!-- <view class='remark'>电话号码</view>
+    <view class='ipt2'>
+        <input bindinput="bindinput1" bindfocus="bindfocus1" bindblur="bindblur1" placeholder='添加电话号码' placeholder-style="color:#333;font-size:36rpx;" value='{{phone}}' maxlength="11"></input>
+        <image catchtap='deletename1' src='../../images/icon/delete1.png' wx:if="{{phoneimg}}"></image>
+    </view> -->
+</view>
+<button bindtap='navtoaddsteam'>完成</button>

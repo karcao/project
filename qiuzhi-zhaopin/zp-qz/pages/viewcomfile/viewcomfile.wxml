@@ -1,0 +1,42 @@
+<view class="viewcomfile">
+    <view class='job-bottom'>
+        <view class='bottom-left'>
+            <view class='left-left'>
+                <image src='{{companyDetail.logo}}'></image>
+            </view>
+            <view class='left-right'>
+                <view class='entername'>{{companyDetail.companyName}}</view>
+                <view class='scale'>{{companyDetail.industryName}}
+                    <text>|</text>{{companyDetail.companyTypeName}}
+                    <text>|</text>{{companyDetail.companyScaleName}}</view>
+            </view>
+        </view>
+    </view>
+    <!-- 公司简介 -->
+    <view class='rede-personal'>
+        <view class='personel-title'>
+            <view class='yuan'></view>
+            <view class='title'>公司简介</view>
+        </view>
+        <text class="personel-content {{ellipsis?'ellipsis':'unellipsis'}}">{{companyDetail.introduction}}</text>
+        <view class='xianshiall' bindtap='ellipsis' wx:if="{{hidden}}">显示全部</view>
+        <button class='bjbtn' bindtap='editcompanyinfor'>编辑公司信息</button>
+    </view>
+    <!-- 公司简介 -->
+    <view class='rede-personal'>
+        <view class='personel-title'>
+            <view class='yuan'></view>
+            <view class='title'>工作环境</view>
+        </view>
+        <swiper class="swiper" circular="true" indicator-dots="true" indicator-color="rgba(239,239,244,1)" indicator-active-color="rgba(51,204,153,1)">
+            <block wx:for="{{imagesUrl}}" wx:key="index">
+                <swiper-item class="item">
+                    <image mode="aspectFill" src="{{item.picUrl}}" class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+        <button class='bjbtn' bindtap='addphoto' wx:if="{{addphoto}}">添加/编辑图片</button>
+        <button class='bjbtn' bindtap='license' wx:if="{{!companyDetail.licenseUrl}}">添加公司营业执照</button>
+        <button class='bjbtn' bindtap='license' wx:if="{{companyDetail.licenseUrl}}">修改公司营业执照<text class='state' wx:if="{{companyDetail.licenseStatus == 0}}">审核中</text><text class='state' wx:if="{{companyDetail.licenseStatus == 1}}">已通过</text><text class='state' wx:if="{{companyDetail.licenseStatus == 2}}">未通过</text></button>
+    </view>
+</view>

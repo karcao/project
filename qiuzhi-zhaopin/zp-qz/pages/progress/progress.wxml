@@ -1,0 +1,80 @@
+<view class="header">
+    <view class='head'>
+        <view class='title'>每日冠军</view>
+        <view wx:if="{{datadata.firstCount}}">
+            <view class='img imgrad1'>
+                <image src='{{datadata.headimgurl}}'></image>
+            </view>
+            <view class='name'>{{datadata.nickname}}</view>
+            <view class='tiao'>
+                <image src='{{yi}}'></image>
+            </view>
+        </view>
+        <view wx:else class='zanwu'>暂无数据</view>
+    </view>
+    <view class='head'>
+        <view class='title1'>每周冠军</view>
+        <view wx:if="{{datadata1.firstCount}}">
+            <view class='img imgrad2'>
+                <image src='{{datadata1.headimgurl}}'></image>
+            </view>
+            <view class='name'>{{datadata1.nickname}}</view>
+            <view class='tiao'>
+                <image src='{{yi}}'></image>
+            </view>
+        </view>
+        <view wx:else class='zanwu'>暂无数据</view>
+    </view>
+    <view class='head'>
+        <view class='title2'>每月冠军</view>
+        <view wx:if="{{datadata2.firstCount}}">
+            <view class='img imgrad3'>
+                <image src='{{datadata2.headimgurl}}'></image>
+            </view>
+            <view class='name'>{{datadata2.nickname}}</view>
+            <view class='tiao'>
+                <image src='{{yi}}'></image>
+            </view>
+        </view>
+        <view wx:else class='zanwu'>暂无数据</view>
+    </view>
+</view>
+<view class='content'>
+    <view class='content1'>
+        <view class='tips'>每日对比</view>
+        <view class='tipss' wx:if="{{datadata.firstCount}}">
+            <text>{{datadata.oneselfCount}}</text>/{{datadata.firstCount}}
+        </view>
+        <view class='tipss' wx:else>
+            <text>{{datadata.oneselfCount}}</text>/0
+        </view>
+        <progress class='day1' percent="{{datanum}}" show-info active border-radius="5" stroke-width="15" />
+        <view></view>
+    </view>
+    <view class='content1'>
+        <view class='tips'>每周对比</view>
+        <view class='tipss' wx:if="{{datadata1.firstCount}}">
+            <text>{{datadata1.oneselfCount}}</text>/{{datadata1.firstCount}}
+        </view>
+        <view class='tipss' wx:else>
+            <text>{{datadata1.oneselfCount}}</text>/0
+        </view>
+        <progress class='day1' percent="{{datanum1}}" show-info active border-radius="5" stroke-width="15" />
+        <view></view>
+    </view>
+    <view class='content1'>
+        <view class='tips'>每月对比</view>
+        <view class='tipss' wx:if="{{datadata2.firstCount}}">
+            <text>{{datadata2.oneselfCount}}</text>/{{datadata2.firstCount}}
+        </view>
+        <view class='tipss' wx:else>
+            <text>{{datadata2.oneselfCount}}</text>/0
+        </view>
+        <progress class='day1' percent="{{datanum2}}" show-info active border-radius="5" stroke-width="15" />
+        <view></view>
+    </view>
+</view>
+<!-- <view class='canvas'> -->
+<canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+<view style="margin-top:30px;text-align:center;font-size:28rpx;">拖动图表查看</view>
+<!-- </view> -->

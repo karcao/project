@@ -1,0 +1,12 @@
+<view class='bg-gray'>
+    <view class='main'>
+        <view class='tit'>选择充值金额</view>
+        <view class='flex'>
+            <view class="{{activeIndex == index ? 'active':''}}" wx:key wx:for="{{numArray}}" bindtap='activethis' data-thisindex='{{index}}'>
+                {{item.money}}元
+            </view>
+        </view>
+    </view>
+    <button class='btn' bindtap='chongzhi'>立即充值</button>
+    <view class='tk' bindtap='shenqing'>申请退款</view>
+</view>

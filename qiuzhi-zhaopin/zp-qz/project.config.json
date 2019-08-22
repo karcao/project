@@ -1,0 +1,264 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wxc92a754728c3a2a3",
+	"projectname": "%E4%BA%94%E4%B8%80%E6%9B%B4%E6%8B%9B%E8%81%98%E7%AB%AF",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 30,
+			"list": [
+				{
+					"id": -1,
+					"name": "编辑职位页面",
+					"pathName": "pages/editposition/editposition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "围观列表",
+					"pathName": "pages/releaselist/releaselist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "职位详情",
+					"pathName": "pages/jobdetails/jobdetails",
+					"query": "positionId=1071",
+					"scene": 1007
+				},
+				{
+					"id": -1,
+					"name": "冲洗上线",
+					"pathName": "pages/onlineagain/onlineagain",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "简历详情",
+					"pathName": "pages/redetails/redetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "沟通页面",
+					"pathName": "pages/communication/communication",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "面试评价",
+					"pathName": "pages/interview/interview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "对话聊天页面",
+					"pathName": "pages/chats/chats",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消息中心",
+					"pathName": "pages/messcenter/messcenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消息中心详情",
+					"pathName": "pages/messcenterdetails/messcenterdetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消费",
+					"pathName": "pages/excord/excord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "编辑公司页面",
+					"pathName": "pages/editcompany/editcompany",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "工作环境",
+					"pathName": "pages/working/working",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/orderdetails/orderdetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "查看公司概况",
+					"pathName": "pages/viewcomfile/viewcomfile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "举报人",
+					"pathName": "pages/reporter/reporter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "举报职位",
+					"pathName": "pages/reportposition/reportposition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "(通过分享进入)职位详情",
+					"pathName": "pages/sharejob/sharejob",
+					"query": "positionId=1059",
+					"scene": 1008
+				},
+				{
+					"id": -1,
+					"name": "测试扫码",
+					"pathName": "pages/saoma/saoma",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 20,
+					"name": "购买时注册",
+					"pathName": "pages/landing/landing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购买时登陆",
+					"pathName": "pages/registered/registered",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提示",
+					"pathName": "pages/teamtips/teamtips",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "进度条",
+					"pathName": "pages/progress/progress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新的发布页面",
+					"pathName": "pages/neweditposition/neweditposition",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "134243",
+					"pathName": "pages/chats/chats",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1111",
+					"pathName": "pages/tuikuan/tuikuan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "通知",
+					"pathName": "pages/tongzhi/tongzhi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sharejob/sharejob",
+					"pathName": "pages/sharejob/sharejob",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/privacypolicy/privacypolicy",
+					"pathName": "pages/privacypolicy/privacypolicy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/agreement/agreement",
+					"pathName": "pages/agreement/agreement",
+					"scene": null
+				}
+			]
+		}
+	}
+}

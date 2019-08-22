@@ -1,0 +1,6 @@
+input{
+    border: 1rpx solid #435354;
+}
+button{
+    margin-top: 50rpx;
+}

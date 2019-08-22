@@ -1,0 +1,94 @@
+page{
+    background: #eeeeee;
+}
+.working{
+    width: 100%;
+}
+.working .introduction{
+    width: 100%;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    color: #353535;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+.working .textarea{
+    width: 100%;
+    background: #fff;
+    padding: 30rpx;
+    box-sizing: border-box;
+    font-size: 30rpx;
+    color: #888;
+}
+.working .textarea textarea{
+    width: 100%;
+}
+.working .number{
+    text-align: right;
+}
+.working .number text{
+    color: #33cc99;
+}
+.working .photo{
+    width: 100%;
+    background: #fff;
+    padding: 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.working .photo .fang{
+    width: 160rpx;
+    height: 160rpx;
+    border: 2rpx solid #dddddd;
+    margin-right: 10rpx;
+}
+.working .photo .upload{
+    text-align: center;
+    background: #efefef;
+    padding-top: 30rpx;
+    box-sizing: border-box;
+    margin-right: 10rpx;
+}
+.working .photo .upload .text{
+    color: #888;
+    font-size: 26rpx;
+}
+.working .photo .upload .img{
+    margin: 0 auto 20rpx;
+    width: 70rpx;
+    height: 55rpx;
+}
+.working .photo .upload .img image{
+    width: 70rpx;
+    height: 55rpx;
+}
+.working .photo .logo{
+    position: relative;
+}
+.working .photo .logo .img{
+    width: 160rpx;
+    height: 160rpx;
+}
+.working .photo .logo .img1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36rpx;
+    height: 36rpx;
+}
+.working .save{
+    width: 690rpx;
+    height: 88rpx;
+    color: #fff;
+    font-size: 36rpx;
+    background: #33cc99;
+    margin: 60rpx auto 30rpx ;
+}
+.working .jump{
+    width: 690rpx;
+    height: 88rpx;
+    color: #000;
+    font-size: 36rpx;
+    background: #fff;
+}

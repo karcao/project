@@ -1,0 +1,198 @@
+page{
+    background: #eee;
+}
+.index-list {
+    width: 100%;
+}
+.index-list .list-content {
+    /* margin:25rpx auto 20rpx; */
+    width: 100%;
+    /* height: 348rpx; */
+    background: #fff;
+    /* border: 1px solid red; *//* border-radius: 15rpx; *//* box-shadow: #bebbbb 1rpx 7rpx 40rpx 1rpx; *//* margin-bottom: 20rpx; */
+    padding: 30rpx 30rpx 2rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.index-list .list-content .job-top {
+    padding-bottom: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+
+.index-list .list-content .job-top .top-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.index-list .list-content .job-top .top-top .top-left {
+    font-size: 40rpx;
+    color: #000;
+}
+
+.index-list .list-content .job-top .top-top .top-right {
+    color: #f33;
+    font-size: 34rpx;
+}
+
+.index-list .list-content .job-top .top-bottom {
+    color: #888;
+    font-size: 26rpx;
+}
+
+.index-list .list-content .job-top .top-bottom text {
+    margin: 0 15rpx;
+}
+
+.index-list .list-content .content-in {
+    width: 100%;
+    font-size: 28rpx;
+    color: #353535;
+    /* line-height: 20rpx; */
+}
+
+.index-list .list-content .content-bottom {
+    margin-top: 4rpx;
+    width: 100%;
+    height: 80rpx;
+    /* border: 1px solid red; */
+    line-height: 80rpx;
+    display: flex;
+    direction: rtl;
+    border-top: 1px dotted #d6d6d6;
+}
+
+.index-list .list-content .content-bottom image {
+    width: 29rpx;
+    height: 29rpx;
+    margin-top: 25rpx;
+    /* vertical-align: middle; */
+}
+
+.index-list .list-content .content-bottom .text {
+    font-size: 28rpx;
+    color: #353535;
+    /* vertical-align: middle; */
+    margin-left: 10rpx;
+}
+
+.index-list .list-content .content-bottom-sc {
+    margin-top: 4rpx;
+    width: 100%;
+    height: 80rpx;
+    /* border: 1px solid red; */
+    line-height: 80rpx;
+    display: flex;
+    font-size: 26rpx;
+    color: #888;
+    /* border-top: 1px dotted #d6d6d6; */
+}
+/* ////////////////////////////// */
+.mation{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    box-sizing: border-box;
+    background: #fff;
+    margin-top: 20rpx;
+    border: 1rpx solid #e5e5e5;
+}
+.mation .same{
+    width: 100%;
+    border-bottom: 1rpx solid #e5e5e5;
+    /* height: 90rpx; */
+    padding: 25rpx 0 25rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.mation .same .same-left .star{
+    color: #f22929;
+}
+.mation .same .same-right{
+    text-align: right;
+    width: 75%;
+}
+.mation .same .same-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left: 15rpx;
+}
+.mation .same .same-right .picker{
+    width: 100%;
+    color: #888;
+    text-align: right;
+}
+.mation .location .same-right .dizhi{
+    text-align: right;
+    display: flex;
+    color: #888;
+    justify-content:flex-end;
+}
+/* .mation .location .same-right .dizhi .address{
+    text-align: ;
+} */
+.mation .location .same-right .dizhi image{
+    margin-top: 15rpx;
+}
+.mation .same .same-right .picker .text{
+    margin-right: 10rpx;
+}
+.mation .same .same-right .daiyu{
+    display: flex;
+    justify-content: flex-end;
+}
+.mation .same .same-right .daiyu .gang{
+    margin: 0 15rpx;
+}
+.mation .same .same-right .daiyu .mony{
+    width: 120rpx;
+    height: 55rpx;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 55rpx;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    color: #888888;
+}
+/* .mation .same .same-right .daiyu .money{
+    vertical-align: middle;
+} */
+.mation .same .same-right .daiyu image{
+    margin-top: 15rpx;
+}
+.mation .same1{
+    width: 100%;
+    /* border-bottom: 1rpx solid #e5e5e5; */
+    /* height: 90rpx; */
+    padding: 25rpx 0 25rpx 0;
+    box-sizing: border-box;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-align: right;
+    font-size: 34rpx;
+}
+.mation .same1 .text{
+    font-size: 36rpx;
+    color: #000;
+}
+.mation .same1 .number{
+    font-size: 36rpx;
+    color: #ff3333;
+    margin-left: 15rpx;
+}
+.save{
+    width: 690rpx;
+    height: 88rpx;
+    color: #fff;
+    font-size: 36rpx;
+    background: #33cc99;
+    margin: 180rpx auto 30rpx ;
+}
+.jump{
+    width: 690rpx;
+    height: 88rpx;
+    color: #000;
+    font-size: 36rpx;
+    background: #fff;
+}

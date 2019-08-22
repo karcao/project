@@ -1,0 +1,49 @@
+page{
+    background: #e9f0f5;
+}
+.main{
+  padding: 60rpx 30rpx 0;
+  color: gray;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+.main .tit{
+    margin-bottom: 50rpx;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex view{
+    width: 30%;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-radius: 15rpx;
+    text-align: center;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+.flex view.active{
+    background: #ddf0ff;
+    border: 2rpx solid #5cbcfe;
+    color: #2c98ef;
+}
+.btn{
+    width: 300rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin: 100rpx auto 0;
+    color: #fff;
+    background: #2c98ef;
+}
+.tk{
+    padding-right: 50rpx;
+    box-sizing: border-box;
+    margin-top: 50rpx;
+    text-align: right;
+    color: rgb(92, 153, 223);
+    font-size: 28rpx;
+}

@@ -1,0 +1,103 @@
+<scroll-view scroll-y="true" class="scoll-h" id="flag" scroll-top="{{scrollTop}}" bindscroll="bindscroll" bindtap='bindscroll'>
+    <view class='index-list'>
+        <view class='list-content' bindlongpress="longTap1" bindtap='releaselist'>
+            <view class='job-top'>
+                <view class='top-top'>
+                    <view class='top-left'>{{position.position_name}}</view>
+                    <view class='top-right'>{{position.treatment_min_show}}-{{position.treatment_max_show}}/月</view>
+                </view>
+                <view class='top-bottom'>
+                    {{position.city}}
+                    <text>|</text>{{position.education_name}}
+                    <text>|</text>{{position.working_life}}年以上
+                </view>
+            </view>
+            <view class='content-bottom-sc'>{{sendcontentlist[0].insertTiem.month}} {{sendcontentlist[0].insertTiem.day}} 由你发起的沟通</view>
+        </view>
+    </view>
+    <!-- 对话 -->
+    <view class='chaters' wx:for="{{sendcontentlist}}" wx:key>
+        <view class='data' wx:if="{{item.insertTiem.time1 >= 5}}">{{item.insertTiem.month}} {{item.insertTiem.day}}</view>
+        <!-- <view class='data' wx:elif="{{!(item.insertTiem.time1)}}">{{item.insertTiem.month}} {{item.insertTiem.day}}</view> -->
+        <!-- 别人说话的内容 -->
+        <view class='he-she' wx:if="{{item.sendUnionid != unionid}}">
+            <view class='headurl'>
+                <image src='{{otherheadimg}}'></image>
+            </view>
+            <view class="{{item.msgType == 0?'content':'active'}}">
+                <view class='jt' wx:if="{{item.msgType == 0}}"></view>
+                <text class='topic' wx:if="{{item.msgType == 0}}">{{item.msgContent}}</text>
+                <image src='{{item.msgContent}}' data-src="{{item.msgContent}}" wx:if="{{item.msgType == 1}}" bindtap='previewImg'></image>
+            </view>
+        </view>
+        <!-- 我说话的内容 -->
+        <view class='my-me' wx:if="{{item.sendUnionid == unionid}}">
+            <view class="{{item.msgType == 0?'content':'active'}}">
+                <view class='state' wx:if="{{item.readState == 0}}">未读</view>
+                <view class='state' wx:if="{{item.readState == 1}}">已读</view>
+                <view class='jt' wx:if="{{item.msgType == 0}}"></view>
+                <text class='topic' wx:if="{{item.msgType == 0}}">{{item.msgContent}}</text>
+                <image src='{{item.msgContent}}' data-src="{{item.msgContent}}" wx:if="{{item.msgType == 1}}" bindtap='previewImg'></image>
+            </view>
+            <view class='headurl'>
+                <image src='{{userInfo.headimgurl}}'></image>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+<!-- <view id="flag"></view> -->
+<!-- 底部输入信息框 -->
+<form bindsubmit="formSubmit" report-submit="true">
+    <view class='allfooter'>
+        <view class='footmsg'>
+            <view class='cyy' bindtap='clickcyy'>常用语</view>
+            <input class='ipt' placeholder='请输入消息' value="{{message}}" bindinput='bindChange' confirm-type="done"></input>
+            <!-- <image src='../../images/icon/exp.png' wx:if="{{bol}}"></image> -->
+            <image src='../../images/icon/add1.png' wx:if="{{bol}}" bindtap="addappear"></image>
+            <button class="btn" bindtap='send' formType="submit" wx:if="{{send}}">发送</button>
+        </view>
+        <view class='photo' wx:if="{{appear}}" bindtap='chooseImage'>
+            <image src='../../images/photo.png'></image>
+        </view>
+        <view class='phototext' wx:if="{{appear}}" bindtap='chooseImage'>相册</view>
+        <view class='cyy-list' wx:if="{{language}}">
+            <scroll-view style='height:400rpx;background:#fff;padding-bottom: 100rpx;box-sizing: border-box;' scroll-y>
+                <view class='list-list' wx:for="{{commonlanguage}}" wx:key data-id="{{index}}" bindtap='copycyy'>
+                    <text>{{item.text}}</text>
+                    <image src='../../images/icon/-.png' class='img1' data-id="{{index}}" catchtap='copydel' wx:if="{{delBj}}"></image>
+                    <image src='../../images/icon/bianji.png' class='img2' data-id="{{index}}" catchtap='copybj' wx:if="{{delBj}}"></image>
+                </view>
+            </scroll-view>
+            <view class='fixed' wx:if="{{footadd}}">
+                <view class='fixed-left' bindtap='addcyy'>+新增常用语</view>
+                <view class='fixed-right' bindtap='sett'>
+                    <image src='../../images/icon/sett.png'></image>
+                </view>
+            </view>
+            <view class='fixed' wx:if="{{carryout}}" bindtap='carryout'>
+                <view class='fixed-wc'>完成</view>
+            </view>
+        </view>
+    </view>
+</form>
+<view class='cyybianji' wx:if="{{editbox}}">
+    <view class='content'>
+        <view class='title'>常用语</view>
+        <textarea placeholder='请输入您的常用回复，请不要填写QQ、微信等练习方式或广告信息，否则系统讲封禁您的账号' value='{{editcontent}}' bindinput="textareainput"></textarea>
+        <view class='btn'>
+            <view class='btn1' bindtap='quxiao'>取消</view>
+            <view bindtap='baocun'>保存</view>
+        </view>
+    </view>
+</view>
+<view class='cyybianji' wx:if="{{editbox1}}">
+    <view class='content'>
+        <view class='title'>常用语</view>
+        <textarea placeholder='请输入您的常用回复，请不要填写QQ、微信等练习方式或广告信息，否则系统讲封禁您的账号' value='{{editcontent1}}' bindinput="textareainput1"></textarea>
+        <view class='btn'>
+            <view class='btn1' bindtap='quxiao1'>取消</view>
+            <view bindtap='baocun1'>保存</view>
+        </view>
+    </view>
+</view>

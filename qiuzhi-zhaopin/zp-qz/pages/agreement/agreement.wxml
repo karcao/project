@@ -1,0 +1,18 @@
+<view class="tongzhi">
+    <view class="title">信息确认</view>
+    <view class="content">速来深知个人信息对您的重要性，我们将按照法律法规的规定，保护您的个人信息及隐私安全。我们制定本“隐私政策”并特别提示：希望您在使用速来及相关服务前仔细阅读并理解本隐私政策.为了方便您的操作体验。我们会遵循隐私政策收集、使用信息，将代替您上传简历；</view>
+    <!-- <view class='content1'>您可以查看完整版<text bindtap='fujian'>隐私政策</text></view> -->
+    <view class="btn">
+        <view class="flex btn1" bindtap="tongyi">我知道了</view>
+        <view class="flex btn2"  bindtap='fujian'>了解更多</view>
+    </view>
+</view>
+
+<!-- 点击授权 -->
+<view class='modal-container' wx:if="{{modalShow}}">
+    <view class='auth-content'>
+        <view class='auth-login-title'>登录</view>
+        <view class='auth-login-text'>【速来】需要获取您的授权</view>
+        <button class='auth-login-btn' open-type='getUserInfo' bindgetuserinfo="getUserDetails">确定</button>
+    </view>
+</view>

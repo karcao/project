@@ -1,0 +1,2 @@
+<input placeholder='请输入消息' value="{{message}}" bindinput='bindChange'></input>
+<button bindtap='over'>确定</button>

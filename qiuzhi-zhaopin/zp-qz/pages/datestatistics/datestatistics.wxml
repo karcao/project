@@ -1,0 +1,22 @@
+<view class="container">
+    <view class="title">
+        <view>{{chartTitle}}(次)</view>
+        <!-- <view class='side_r'>统计维度：
+            <view wx:for="{{statimes}}" bindtap='changeSales' wx:key="{{statimes}}" data-navon="{{index}}" class="{{index==navon?'on':''}}">{{item}}</view>
+        </view> -->
+        <picker mode="date" value='{{date1}}' start="1949-01" end="2019-06" bindchange="bindDateChange1">
+            <text class='{{active1 == true?"active1":""}}'>日</text>
+        </picker>
+        <picker bindchange="bindDateChangezhou" value="{{state}}" range="{{objectArray}}" range-key='name'>
+            <text class='{{active2 == true?"active1":""}}'>周</text>
+        </picker>
+        <picker mode="date" value="{{date}}" start="1949-01" end="2019-06" bindchange="bindDateChange">
+            <text class='{{active == true?"active":""}}'>月</text>
+        </picker>
+    </view>
+    <!-- <picker mode="date" value="{{date}}" start="1949-01" end="2019-04" bindchange="bindDateChange">
+        
+    </picker> -->
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas>
+    <view style="margin-top:30px;text-align:center">拖动图表查看</view>
+</view>

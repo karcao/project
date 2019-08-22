@@ -1,0 +1,82 @@
+<view class="jobdetails">
+    <view class='job'>
+        <view class='job-top'>
+            <view class='top-top'>
+                <view class='top-left'>{{position.position_name}}</view>
+                <view class='top-right'>{{position.treatment_min_show}}-{{position.treatment_max_show}}/月</view>
+            </view>
+            <view class='top-bottom'>
+                {{position.city}}
+                <text>|</text>{{position.education_name}}
+                <text>|</text>{{position.working_life}}年以上
+            </view>
+        </view>
+        <view class='job-bottom' bindtap='navtocompany'>
+            <view class='bottom-left'>
+                <view class='left-left'>
+                    <image src='{{position.logo}}'></image>
+                </view>
+                <view class='left-right'>
+                    <view class='entername'>{{position.company_name}}</view>
+                    <view class='scale'>{{position.INDUSTRY_NAME}}
+                        <text>|</text>{{position.company_type_name}}
+                        <text>|</text>{{position.company_scale_name}}</view>
+                </view>
+            </view>
+            <view class='bottom-right'>
+                <image src='../../images/icon/path1.png'></image>
+            </view>
+        </view>
+    </view>
+    <view class='duties'>
+        <view class='duc-title'>工作描述</view>
+        <view class='duc-content' style="word-wrap : break-word">
+            <text>{{position.duty}}</text>
+        </view>
+        <!-- <view class='claim'>任职要求</view>hgfhwncjhuesjdjehah
+        <view class='duc-content' style="white-space:pre-line">{{position.position_require}}</view> -->
+    </view>
+    <view class='offlocation' bindtap='viewlocation'>
+        <view class='off-top'>办公地点</view>
+        <view class='off-bottom'>
+            <image src='../../images/icon/location.png'></image>
+            <text>{{position.address}}</text>
+        </view>
+    </view>
+    <!-- 底部修改分享 -->
+    <view class='footer' wx:if="{{footer}}">
+        <view class='foot-left'>
+            <view class='left-left' bindtap='edit'>
+                <view class='img'>
+                    <image src='../../images/icon/homepage.png'></image>
+                </view>
+                <view class='text'>编辑</view>
+            </view>
+            <view class='left-right' bindtap='offline'>
+                <view class='img'>
+                    <image src='../../images/icon/offline.png'></image>
+                </view>
+                <view class='text'>下线</view>
+            </view>
+        </view>
+        <view class='foot-right'>
+            <button class='right-left' bindtap='generateCardEnv'>
+                <view>生成海报</view>
+            </button>
+            <button class='right-right' open-type='share'>
+                <view>转发</view>
+            </button>
+        </view>
+    </view>
+</view>
+<!-- 发布按钮 -->
+<view class='btnrelease' bindtap='btnrelease'>简历匹配</view>
+<!-- 画布大小按需定制 这里我按照背景图的尺寸定的  -->
+<canvas canvas-id='shareImg' style="width: 375px;height: 667px;position:fixed;top:9999px"></canvas>
+<!-- 预览区域  -->
+<view hidden='{{hidden}}' class='preview'>
+    <image src='{{prurl}}' class='preimg'></image>
+    <button bindtap='save' class='save' hidden='{{saveImgBtnHidden}}'>保存分享图</button>
+    <button class='save' open-type="openSetting" bindopensetting='handleSetting' hidden='{{openSettingBtnHidden}}'>去授权</button>    
+    <button size='mini' bindtap='nosave' class='nosave'>取消</button>
+</view>

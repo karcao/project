@@ -1,0 +1,118 @@
+.tongzhi{
+    width: 100%;
+    padding: 100rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+}
+.tongzhi .title{
+    text-align: center;
+    font-size: 40rpx;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 100rpx;
+}
+.tongzhi .content{
+    text-indent:2em;
+    margin-bottom: 100rpx;
+    font-size: 32rpx;
+    color: #333;
+    font-weight: 500;
+    line-height: 80rpx;
+}
+.tongzhi .content1{
+    margin-bottom: 100rpx;
+    font-size: 32rpx;
+    color: #333;
+    font-weight: 500;
+    line-height: 80rpx;
+}
+.tongzhi .content1 text{
+    color: #3799e9;
+    margin-left: 5rpx;
+}
+.tongzhi .btn{
+    width: 100%;
+    height: 80rpx;
+    display: flex;
+    font-size: 32rpx;
+    justify-content: space-around;
+}
+.tongzhi .btn .flex{
+    border-radius: 10rpx;
+    line-height: 80rpx;
+}
+.tongzhi .btn .btn1{
+    color: #fff;
+    background: #33cc99;
+    border: 1rpx solid #33cc99;
+    text-align: center;
+    width: 55%;
+    height: 100%;
+}
+.tongzhi .btn .btn2{
+    color: #fff;
+    background: #808181;
+    border: 1rpx solid #a1a5a8;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+}
+.tongzhi .btn3{
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #fff;
+    background: #808181;
+    border: 1rpx solid #a1a5a8;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10rpx;
+    text-align: center;
+}
+/* 隐藏的弹出框 */
+.modal-container {
+    background: rgba(29, 28, 28, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.modal-container .auth-content {
+    width: 600rpx;
+    height: 400rpx;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4rpx;
+    transform: translate(-50%, -50%);
+}
+
+.modal-container .auth-login-title {
+    padding: 20rpx;
+    text-align: center;
+    color: rgb(100, 86, 3);
+    font-size: 32rpx;
+    border: solid #eee;
+    border-width: 0 0 2rpx 0;
+}
+
+.modal-container .auth-login-text {
+    font-size: 30rpx;
+    color: rgb(103, 99, 104);
+    text-align: center;
+    margin-top: 70rpx;
+    padding:  0 50rpx;
+    box-sizing: border-box;
+}
+
+.modal-container .auth-login-btn {
+    background: #49a22a;
+    color: #fff;
+    line-height: 65rpx;
+    font-size: 26rpx;
+    text-align: center;
+    width: 200rpx;
+    margin-top: 70rpx;
+}

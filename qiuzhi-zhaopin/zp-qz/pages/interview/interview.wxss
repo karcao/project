@@ -1,0 +1,218 @@
+page{
+    background: #f0eff5;
+}
+.interview{
+    background: #fff;
+}
+.interview .skill{
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    line-height: 80rpx;
+    /* height: 100rpx; */
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.interview .skill{
+    display: flex;
+    justify-content: space-between;
+}
+.interview .skill .skill-left{
+    display: flex;
+
+}
+.interview .skill .skill-left .text{
+    margin-right: 50rpx;
+    font-size: 36rpx;
+    color: #000;
+}
+.interview .skill .skill-left .img{
+    /* width: 100%; */
+    margin-right: 30rpx;
+}
+/* .interview .skill .skill-left .img image{
+    width: 34rpx;
+    height: 34rpx;
+} */
+.interview .skill .skill-left .img .star-item {
+  display: inline-block;
+  height: 34rpx;
+  width: 34rpx;
+  margin-right: 30rpx;
+}
+.interview .skill .skill-right{
+    font-size: 28rpx;
+    color: #888;
+}
+/* /////////// */
+.interview .ability{
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    line-height: 80rpx;
+    /* height: 100rpx; */
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.interview .ability{
+    display: flex;
+    justify-content: space-between;
+}
+.interview .ability .skill-left{
+    display: flex;
+
+}
+.interview .ability .skill-left .text{
+    margin-right: 50rpx;
+    font-size: 36rpx;
+    color: #000;
+}
+.interview .ability .skill-left .img{
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 30rpx;
+}
+.interview .ability .skill-left .img image{
+    width: 34rpx;
+    height: 34rpx;
+}
+.interview .ability .skill-right{
+    font-size: 28rpx;
+    color: #888;
+}
+/* /////////// */
+.interview .attitude{
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    line-height: 80rpx;
+    /* height: 100rpx; */
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.interview .attitude{
+    display: flex;
+    justify-content: space-between;
+}
+.interview .attitude .skill-left{
+    display: flex;
+
+}
+.interview .attitude .skill-left .text{
+    margin-right: 50rpx;
+    font-size: 36rpx;
+    color: #000;
+}
+.interview .attitude .skill-left .img{
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 30rpx;
+}
+.interview .attitude .skill-left .img image{
+    width: 34rpx;
+    height: 34rpx;
+}
+.interview .attitude .skill-right{
+    font-size: 28rpx;
+    color: #888;
+}
+/* /////////// */
+.interview .brief{
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    line-height: 80rpx;
+    /* height: 100rpx; */
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.interview .brief{
+    display: flex;
+    justify-content: space-between;
+}
+.interview .brief .skill-left{
+    display: flex;
+
+}
+.interview .brief .skill-left .text{
+    margin-right: 50rpx;
+    font-size: 36rpx;
+    color: #000;
+}
+.interview .attitude .skill-left .img{
+    width: 34rpx;
+    height: 34rpx;
+    margin-right: 30rpx;
+}
+/* /// */
+.interview .feel{
+    width: 100%;
+    padding: 30rpx 30rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+    font-size: 30rpx;
+    color: #888;
+}
+/* //// */
+.interview .anonymous{
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80rpx;
+}
+.interview .anonymous .mous-left{
+    display: flex;
+}
+.interview .anonymous .mous-left .img{
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.interview .anonymous .mous-left .img image{
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+}
+.interview .anonymous .mous-left .nm{
+    font-size: 28rpx;
+    color: #353535;
+}
+.interview .anonymous .mous-right{
+    font-size: 28rpx;
+    color: #888;
+}
+/* //// */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    height: 100rpx;
+    padding: 15rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1rpx solid #e5e5e5;
+}
+.footer .foot-left{
+    width: 340rpx;
+    height: 70rpx;
+    background: #fff;
+    color: #33cc99;
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 32rpx;
+    border-radius:10rpx;
+    border: 1rpx solid #33cc99;
+}
+.footer .foot-right{
+    width: 340rpx;
+    height: 70rpx;
+    background: #33cc99;
+    color: #fff;
+    line-height: 70rpx;
+    text-align: center;
+    font-size: 32rpx;
+    border-radius:10rpx;
+}

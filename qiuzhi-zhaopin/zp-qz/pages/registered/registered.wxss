@@ -1,0 +1,61 @@
+page {
+    background-color: whitesmoke;
+}
+
+.login-img {
+    width: 750rpx;
+}
+.login-from{
+    width: 100%;
+}
+/*表单内容*/
+.inputView1{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    line-height: 45px;
+    padding: 0 40rpx;
+}
+.inputleft{
+    width: 30%;
+}
+/*输入框*/
+.nameImage, .keyImage {
+    /* margin-left: 22px; */
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.loginLabel {
+    margin: 15px 15px 15px 10px;
+    color: gray;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.inputText {
+    /* float: right; */
+    text-align: right;
+    /* margin-right: 22px; */
+    margin-top: 11px;
+    font-size: 15px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: gainsboro;
+    margin-top: 1px;
+}
+
+/*按钮*/
+.loginBtn {
+    width: 80%;
+    margin-top: 35px;
+}
+
+.goRegistBtn {
+    width: 80%;
+    margin-top: 15px;
+}

@@ -1,0 +1,40 @@
+<view class="jobdetails">
+    <view class='job'>
+        <view class='job-top'>
+            <view class='top-top'>
+                <view class='top-left'>{{position.position_name}}</view>
+                <view class='top-right'>{{position.treatment_min_show}}-{{position.treatment_max_show}}/月</view>
+            </view>
+            <view class='top-bottom'>
+                {{position.city}}<text>|</text>{{position.education_name}}<text>|</text>{{position.working_life}}年以上
+            </view>
+        </view>
+        <view class='job-bottom'>
+            <view class='bottom-left'>
+                <view class='left-left'><image src='{{position.logo}}'></image></view>
+                <view class='left-right'>
+                    <view class='entername'>{{position.company_name}}</view>
+                    <view class='scale'>{{position.INDUSTRY_NAME}}<text>|</text>{{position.company_type_name}}<text>|</text>{{position.company_scale_name}}</view>
+                </view>
+            </view>
+            <view class='bottom-right'><image src='../../images/icon/path1.png'></image></view>
+        </view>
+    </view>
+    <view class='duties'>
+        <view class='duc-title'>岗位职责</view>
+        <view class='duc-content' style="white-space:pre-line">
+            <view>{{position.duty}}</view>
+        </view>
+        <view class='claim'>任职要求</view>
+        <view class='duc-content' style="white-space:pre-line">{{position.position_require}}</view>
+    </view>
+    <view class='offlocation'>
+        <view class='off-top'>办公地点</view>
+        <view class='off-bottom'><image src='../../images/icon/location.png'></image><text>{{position.address}}</text></view>
+    </view>
+    <!-- 底部修改分享 -->
+    <view class='footer'>
+        <view class='foot-left' bindtap='edit'>重新编辑</view>
+        <view class='foot-right' bindtap='release'>重新发布</view>
+    </view>
+</view> 

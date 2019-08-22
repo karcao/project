@@ -1,0 +1,23 @@
+<view class="tuikuan">
+    <!-- 申请退款 -->
+    <view class='sqtk' wx:if="{{comer}}">
+        <view class='title'>请认真填写您的退款信息</view>
+        <textarea placeholder='请填写退款信息' value='{{infor}}' bindinput='shuruxinxi'></textarea>
+        <button class='btn' bindtap='btnbtn'>提交申请</button>
+    </view>
+    <!-- 审核中 -->
+    <view class='shz' wx:if="{{state.phoneType == 0}}">
+        <view class='img'><image src='../../images/icon/tk-a.png'></image></view>
+        <view class='text'>退款申请审核中</view>
+    </view>
+    <!-- 已查看 -->
+    <view class='ypy' wx:if="{{state.phoneType == 1}}">
+        <view class='img'><image src='../../images/icon/tk-b.png'></image></view>
+        <view class='text'>退款申请已查看</view>
+    </view>
+    <!-- 已处理 -->
+    <view class='ycl' wx:if="{{state.phoneType == 2}}">
+        <view class='img'><image src='../../images/icon/tk-c.png'></image></view>
+        <view class='text'>退款申请已处理</view>
+    </view>
+</view>

@@ -1,0 +1,46 @@
+<view class="index-all" bindtap='quxiaoall'>
+    <view class='list' bindtap='navtochats' wx:for="{{chatlist}}" wx:key data-index="{{index}}" bindlongpress='ondelete'>
+        <view class='old'>
+            <view class='list-left'>
+                <image src='{{item.headImg}}'></image>
+            </view>
+            <view class='list-right'>
+                <view class='left-top'>
+                    <view>
+                        <text class='name'>{{item.nickName}}</text>
+                        <!-- <text class='content'>{{item.positionInfo.positionName}}</text> -->
+                        <text class='content' wx:if="{{item.otherFlag == 1}}">已关注</text>
+                    </view>
+                    <view class='time' catchtap='xuanze' data-index="{{index}}">
+                        <!-- <image src='../../images/icon/sandian.png'></image> -->
+                    </view>
+                </view>
+                <view class='left-bottom'>
+                    <!-- <view class='read' wx:if="{{item.chatMessage.readState != 1}}">[未读]</view>
+                                <view class='read' wx:if="{{item.chatMessage.readState == 1}}">[已读]</view> -->
+                    <view class='wechat' wx:if="{{item.chatMessage.msgType == 0}}">{{item.chatMessage.msgContent}}</view>
+                    <view class='wechat' wx:if="{{item.chatMessage.msgType == 1}}">[图片]</view>
+                    <view class='time1'>{{item.chatMessage.insertTiem}}</view>
+                </view>
+                <!-- 时间 -->
+            </view>
+        </view>
+        <view class='newadd'>
+            <view class='newadd-left'>
+                <image src='../../images/icon/positionmin.png'></image>
+                <text>{{item.positionInfo.positionName}}</text>
+            </view>
+            <view class='newadd-right'>发布于{{item.positionInfo.relaseDate}}日</view>
+        </view>
+        <!-- 提示按钮 -->
+        <view class='tips' wx:if="{{inDex == index}}">
+            <view catchtap='vae0' data-index="{{index}}">查看简历</view>
+            <view catchtap='vae1' data-index="{{index}}" wx:if="{{item.relaseFlag != 1}}">关注</view>
+            <view catchtap='vae2' data-index="{{index}}" wx:if="{{item.relaseFlag == 1}}">取消关注</view>
+            <!-- <view catchtap='vae3' data-index="{{index}}" wx:if="{{inDex == index}}">删除</view>
+                            <view catchtap='vae4' data-index="{{index}}" wx:if="{{inDex == index}}">举报</view> -->
+        </view>
+        <!-- 提示 -->
+        <icon class='icon-icon' wx:if="{{item.chatMessage.readState != 1 && item.chatMessage.sendUnionid != item.unionid}}"></icon>
+    </view>
+</view>

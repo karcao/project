@@ -1,0 +1,162 @@
+page{
+    background: #efeff4;
+}
+.resume{
+    width: 100%;
+    position: relative;
+}
+.resume .searchfor{
+    width: 100%;
+    /* margin-bottom: 88rpx; */
+    background: #33cc99;
+    padding-top: 15rpx;
+    padding-bottom: 5rpx;
+    box-sizing: border-box;
+}
+.resume .index-header{
+    overflow: hidden;
+    background: #fff;
+    /* margin-bottom: 30rpx; */
+}
+.resume .con-bottom {
+    /* height:85rpx; */
+    /* padding: 30rpx 0 30rpx 0; */
+    /* line-height: 90rpx; */
+    box-sizing: border-box;
+    font-size: 30rpx;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+.resume .flex{
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    padding: 30rpx 0 30rpx 0;
+}
+.resume .con-bottom .bottom-left{
+    border-right: 1rpx solid #cccccc; 
+}
+.resume .con-bottom .bottom-middle{
+    border-right: 1rpx solid #cccccc; 
+}
+.resume .flex.active {
+    color: #33cc99;
+    font-size: 30rpx;
+    border-bottom: 6rpx solid #33cc99;
+    border-bottom-left-radius: 5rpx;
+    border-bottom-right-radius: 5rpx;
+    height: 100%;
+}
+.resume .con-bottom text {
+    vertical-align: middle;
+}
+.tab-content{
+    background: #fff;
+}
+/* 关注列表 */
+.watch1-list{
+    width: 100%;
+    border-top: 1rpx solid #d6d6d6;
+}
+.watch1-list .list-tab{
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #d6d6d6;
+    display: flex;
+    justify-content: space-around;
+}
+.watch1-list .list-tab .tab-title{
+    font-size: 30rpx;
+    color: #000;
+}
+.watch1-list .list-tab .tab-title.active{
+    font-size: 30rpx;
+    color: #33cc99;
+    padding-left:10rpx;
+    padding-right:10rpx;
+    box-sizing: border-box;
+    border-bottom: 5rpx solid #33cc99;
+    border-bottom-left-radius: 5rpx;
+    border-bottom-right-radius: 5rpx;
+}
+.watch1-list .couponcontent{
+    display: none;
+}
+.watch1-list .couponcontent.active{
+    display: block;
+}
+.watch1-list .list-chat{
+    padding: 50rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.watch1-list .list-chat .chat-border{
+    border-bottom: 1rpx solid #cccccc;
+    padding-bottom: 40rpx;
+    box-sizing: border-box;
+}
+.watch1-list .list-chat .chat-top{
+    display: flex;
+    justify-content: space-between;
+}
+.watch1-list .list-chat .chat-top .top-left .text1{
+    font-size: 34rpx;
+    color: #000;
+    /* font-weight: 700; */
+}
+.watch1-list .list-chat .chat-top .top-left .text2{
+    font-size: 34rpx;
+    color: #cccccc;
+    margin: 0 18rpx;
+}
+.watch1-list .list-chat .chat-top .top-right{
+    font-size: 26rpx;
+    color: #888;
+    line-height: 62rpx;
+}
+.watch1-list .list-chat .chat-bottom text{
+    font-size: 28rpx;
+    color: #888888;
+    /* font-weight: 700; */
+}
+.watch1-list .list-chat .chat-bottom .text2{
+    margin: 0 18rpx;
+}
+.watch1-list .list-chat .tips{
+    z-index: 9;
+    position: absolute;
+    right: 100rpx;
+    bottom: -100rpx;
+    width: 170rpx;
+    /* height: 250rpx; */
+    background: #fff;
+    /* border: 1rpx solid red; */
+    text-align: center;
+    font-size: 36rpx;
+    color: #000;
+    line-height: 80rpx;
+    box-shadow: #cfcece 1rpx 7rpx 35rpx 1rpx;
+}
+.btnrelease{
+    z-index: 10;
+    position: fixed;
+    right: 30rpx;
+    bottom: 130rpx;
+    width: 120rpx;
+    height: 120rpx;
+    background: #33cc99;
+    border-radius: 50%;
+    text-align: center;
+}
+.btnrelease .qw{
+    font-size: 24rpx;
+    color: #fff;
+    line-height: 65rpx;
+}
+.btnrelease .text{
+    font-size: 24rpx;
+    color: #fff;
+    line-height: 30rpx;
+}

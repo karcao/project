@@ -1,0 +1,98 @@
+<view class="mine" style='background: url("{{bgcolor}}") no-repeat 0 0;background-size:100% 218rpx;'>
+    <view class='card'>
+        <view class='card-left'>
+            <image src='{{company.headimgurl}}'></image>
+        </view>
+        <view class='card-right'>
+            <view class='right-top'>{{company.company_name}}</view>
+            <view class='right-bottom'>
+                <view class='flex'>
+                    <view class='no-member'>余额:</view>
+                    <view class='no-member'>{{company.balance}}</view>
+                </view>
+                <view class='cz' bindtap='navtorecharge'>充值</view>
+            </view>
+        </view>
+    </view>
+
+</view>
+<view class='list'>
+    <view class='list-list' bindtap='navtomesscenter'>
+        <view class='list-left'>
+            <image src='../../images/icon/news.png'></image>
+        </view>
+        <view class='list-right'>
+            <view class='text'>消息中心</view>
+            <view class='img'>
+                <image src='../../images/icon/path2.png'></image>
+            </view>
+        </view>
+    </view>
+    <view class='list-list' bindtap='navtocomfile'>
+        <view class='list-left1'>
+            <image src='../../images/icon/house.png'></image>
+        </view>
+        <view class='list-right'>
+            <view class='text'>公司信息</view>
+            <view class='img'>
+                <image src='../../images/icon/path2.png'></image>
+            </view>
+        </view>
+    </view>
+    <view class='list-list' bindtap='navtoexcord'>
+        <view class='list-left2'>
+            <image src='../../images/icon/money.png'></image>
+        </view>
+        <view class='list-right'>
+            <view class='text'>消费记录</view>
+            <view class='img'>
+                <image src='../../images/icon/path2.png'></image>
+            </view>
+        </view>
+    </view>
+    <view class='list-list' bindtap='navtoyteam'>
+        <view class='list-left4'>
+            <image src='../../images/icon/teamment.png'></image>
+        </view>
+        <view class='list-right'>
+            <view class='text'>团队管理</view>
+            <view class='img'>
+                <image src='../../images/icon/path2.png'></image>
+            </view>
+        </view>
+    </view>
+    <!-- wx:if="{{company.team_id}}" -->
+    <view class='list-list' bindtap='navtostatistics'>
+        <view class='list-left5'>
+            <image src='../../images/icon/report.png'></image>
+        </view>
+        <view class='list-right'>
+            <view class='text'>报表统计</view>
+            <view class='img'>
+                <image src='../../images/icon/path2.png'></image>
+            </view>
+        </view>
+    </view>
+    <view class='list-list' bindtap='kefu'>
+        <view class='list-left3'>
+            <image src='../../images/icon/service.png'></image>
+        </view>
+        <view class='list-right'>
+            <view class='text'>绑定公司账号</view>
+            <view class='img'>
+                <image src='../../images/icon/path2.png'></image>
+            </view>
+        </view>
+    </view>
+    <!-- <view class='list-list'>
+        <view class='list-left6'>
+            <image src='../../images/icon/tongzhi.png'></image>
+        </view>
+        <button class='list-right1' open-type='share'>
+            <view class='text'>通知</view>
+            <view class='img'>
+                <image src='../../images/icon/path2.png'></image>
+            </view>
+        </button>
+    </view> -->
+</view>

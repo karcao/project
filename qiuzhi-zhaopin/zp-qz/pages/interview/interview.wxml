@@ -1,0 +1,52 @@
+<view class="interview">
+    <view class='skill'>
+        <view class='skill-left'>
+            <view class='text'>专业技能</view>
+            <view class='img'>
+                <view class='star-item' wx:for="{{stars}}" wx:key="" style='background:url("{{item.flag==1?item.lightImg:item.blackImg}}") no-repeat top;background-size:100%;' data-index="{{index}}" bindtap='starClick'></view>
+            </view>
+        </view>
+        <view class='skill-right'>{{starDesc}}</view>
+    </view>
+    <view class='skill'>
+        <view class='skill-left'>
+            <view class='text'>沟通能力</view>
+            <view class='img'>
+                <view class='star-item' wx:for="{{stars1}}" wx:key="" style='background:url("{{item.flag==1?item.lightImg:item.blackImg}}") no-repeat top;background-size:100%;' data-index="{{index}}" bindtap='starClick1'></view>
+            </view>
+        </view>
+        <view class='skill-right'>{{starDesc1}}</view>
+    </view>
+    <view class='skill'>
+        <view class='skill-left'>
+            <view class='text'>工作态度</view>
+            <view class='img'>
+                <view class='star-item' wx:for="{{stars2}}" wx:key="" style='background:url("{{item.flag==1?item.lightImg:item.blackImg}}") no-repeat top;background-size:100%;' data-index="{{index}}" bindtap='starClick2'></view>
+            </view>
+        </view>
+        <view class='skill-right'>{{starDesc2}}</view>
+    </view>
+    <view class='brief'>
+        <view class='skill-left'>
+            <view class='text'>简要描述</view>
+        </view>
+    </view>
+    <view class='feel'>
+        <textarea type='text' data-name='account' value='{{account}}' name="account" placeholder="请简要描述评价内容" bindinput="dutyChange" maxlength='2000'></textarea>
+    </view>
+    <view class='anonymous'>
+        <view class='mous-left' bindtap="chooseImgtab">
+            <view class='img'>
+                <image src="{{curIDx ? '../../images/icon/mous-active.png':'../../images/icon/mous.png'}}"></image>
+                <!-- <image src='../../images/icon/mous.png'></image> -->
+            </view>
+            <view class='nm'>匿名</view>
+        </view>
+        <view class='mous-right'>你的评价能帮助其他小伙伴哦</view>
+    </view>
+</view>
+<!-- 底部修改分享 -->
+<view class='footer'>
+    <view class='foot-left'>取消</view>
+    <view class='foot-right' bindtap='submit'>提交</view>
+</view>

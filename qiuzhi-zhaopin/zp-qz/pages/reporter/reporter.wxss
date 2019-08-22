@@ -1,0 +1,83 @@
+page{
+    background: #eeeeee;
+}
+.reporter .report-title{
+    font-size: 30rpx;
+    color: #353535;
+    line-height: 80rpx;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+.reporter .wxname{
+    background: #fff;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30rpx;
+    color: #353535;
+}
+.reporter .wxname .img{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 20rpx;
+    margin: 0 auto 20rpx;
+}
+.reporter .wxname .img image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 20rpx;
+}
+.reporter .description{
+    background: #fff;
+    padding: 30rpx;
+    
+    font-size: 30rpx;
+    color: #888;
+    box-sizing: border-box;
+}
+.reporter .description textarea{
+    width: 100%;
+    height: 170rpx;
+    margin-bottom: 20rpx;
+}
+.reporter .description .photo{
+    display: flex;
+    line-height: 115rpx;
+}
+.reporter .description .photo .photo-add{
+    width: 115rpx;
+    height: 115rpx;
+    border: 1rpx solid #cccccc;
+    margin-right: 15rpx;
+    text-align: center;
+}
+.reporter .description .photo .photo-add image{
+    width: 56rpx;
+    height: 56rpx;
+    margin-top: 30rpx;
+}
+.reporter .description .photo .photo-photo{
+    position: relative;
+    width: 116rpx;
+    height: 116rpx;
+    margin-right: 15rpx;
+}
+.reporter .description .photo .photo-photo .img{
+    width: 116rpx;
+    height: 116rpx;
+}
+.reporter .description .photo .photo-photo .img1{
+    position: absolute;
+    right: 5rpx;
+    top: 5rpx;
+    width: 28rpx;
+    height: 28rpx;
+}
+.reporter .btn{
+    width: 690rpx;
+    margin-top: 60rpx;
+    background: #33cc99;
+    font-size: 36rpx;
+    color: #fff;
+}

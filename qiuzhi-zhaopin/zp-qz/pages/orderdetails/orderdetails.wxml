@@ -1,0 +1,50 @@
+<view class='index-list'>
+    <view class='list-content' bindlongpress="longTap1" bindtap='releaselist'>
+        <view class='job-top'>
+            <view class='top-top'>
+                <view class='top-left'>{{reume.positionName}}</view>
+                <view class='top-right'>{{reume.treatmentMinShow}}-{{reume.treatmentMaxShow}}/月</view>
+            </view>
+            <view class='top-bottom'>
+                {{reume.city}}
+                <text>|</text>{{reume.educationName}}
+                <text>|</text>{{reume.workBegin}}年以上
+            </view>
+        </view>
+        <view class='content-bottom-sc'>订单编号：{{price.orderId}}</view>
+    </view>
+    <!-- <view class='mation'>
+        <view class='same'>
+            <view class='same-left'>
+                <text>置顶天数</text>
+            </view>
+            <view class='same-right'>
+                <picker mode='selector' bindchange='bindEducationChange' value='' range='{{educationArray}}' range-key="{{'educationName'}}">
+                    <view class='picker'>请选择
+                        <image src='../../images/icon/path.png'></image>
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class='same'>
+            <view class='same-left'>
+                <text>置顶时间</text>
+            </view>
+            <view class='same-right'>
+                <picker mode='selector' bindchange='bindEducationChange' value='{{[educationIndex]}}' range='{{educationArray}}' range-key="{{'educationName'}}">
+                    <view class='picker'>请选择
+                        <image src='../../images/icon/path.png'></image>
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class='same1'>
+            <view class='same1-left'>
+                <text class='text'>订单金额</text>
+                <text class='number'>￥57.00</text>
+            </view>
+        </view>
+    </view> -->
+    <button class='save' bindtap='payment'>微信支付￥{{price.amount}}</button>
+    <!-- <button class='jump'>不支付，直接发布</button> -->
+</view>

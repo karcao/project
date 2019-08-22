@@ -1,0 +1,20 @@
+<view class="container">
+    <view class='homebox'>
+        <view class="title">
+            <view>{{chartTitle}}(次)</view>
+            <!-- <view class='side_r'>统计维度：
+                <view wx:for="{{statimes}}" bindtap='changeSales' wx:key="{{statimes}}" data-navon="{{index}}" class="{{index==navon?'on':''}}">{{item}}</view>
+            </view> -->
+            <picker mode="date" value='{{date1}}' start="1949-01" end="2019-06" bindchange="bindDateChangeri">
+                <text class='{{active1 == true?"active1":""}}'>日</text>
+            </picker>
+            <picker bindchange="bindDateChangezhou" value="{{state}}" range="{{objectArray}}" range-key='name'>
+                <text class='{{active2 == true?"active1":""}}'>周</text>
+            </picker>
+            <picker mode="date" value="{{date}}" start="1949-01" end="2019-06" bindchange="bindDateChangeyue">
+                <text class='{{active == true?"active":""}}'>月</text>
+            </picker>
+        </view>
+        <canvas canvas-id="columnCanvas" class="canvas" data-id="columnCanvas" bindtouchstart="touchstartSales" bindtouchmove="touchmoveSales" bindtouchend="touchendSales"></canvas>
+    </view>
+</view>

@@ -1,0 +1,103 @@
+<view class="index-all">
+    <!--  tab切换 -->
+    <scroll-view class='index-header'>
+        <view class='head-tab'>
+            <view class="tab-text {{currentTab==0?'active':''}}" data-current="0">消费记录</view>
+            <!-- <view class="tab-text {{currentTab==1?'active':''}}" data-current="1" bindtap="over">发票信息</view> -->
+        </view>
+    </scroll-view>
+    <!-- <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx"> -->
+        <!-- <swiper-item> -->
+            <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='0'>
+                <!-- <view class='xuanze'>
+                    <text>本月</text>
+                    <image src='../../images/icon/down.png'></image>
+                </view> -->
+                <view class="body body1">
+                    <view class='list' bindtap='navtochats' wx:for="{{queryOrderList}}" wx:key data-index="{{index}}">
+                        <view class='list-left'>职</view>
+                        <view class='list-right'>
+                            <view>
+                                <view class='kind' wx:if="{{item.type == 1}}">购买简历</view>
+                                <view class='kind' wx:if="{{item.type == 0}}">充值</view>
+                                <view class='name'>
+                                    <view class='position' wx:if="{{item.type == 1}}">{{item.CustomerName}}</view>
+                                    <view class='position' wx:if="{{item.type == 1}}">{{item.name}}</view>
+                                </view>
+                                <view class='time'>{{item.addTime}}</view>
+                            </view>
+                            <view class='deduction' wx:if="{{item.type == 1}}">-{{item.money}}</view>
+                            <view class='deduction' wx:if="{{item.type == 0}}">+{{item.money}}</view>
+                        </view>
+                    </view>
+                    <!-- <view class='list' bindtap='navtochats'>
+                        <view class='list-left'>职</view>
+                        <view class='list-right'>
+                            <view>
+                                <view class='kind'>职位置顶</view>
+                                <view class='position'>软件开发工程师</view>
+                                <view class='time'>2018-11-19 16:20:31</view>
+                            </view>
+                            <view class='deduction'>-57</view>
+                        </view>
+                    </view>
+                    <view class='list' bindtap='navtochats'>
+                        <view class='list-left'>职</view>
+                        <view class='list-right'>
+                            <view>
+                                <view class='kind'>职位置顶</view>
+                                <view class='position'>软件开发工程师</view>
+                                <view class='time'>2018-11-19 16:20:31</view>
+                            </view>
+                            <view class='deduction'>-57</view>
+                        </view>
+                    </view> -->
+                </view>
+            </scroll-view>
+        <!-- </swiper-item> -->
+        <!-- <swiper-item>
+            <scroll-view style="height:{{winHeight}}rpx" scroll-y="true" class="scoll-h" data-type='2' bindscrolltolower='scrolltolower'>
+                <view class='fapiao'>
+                    <view class='note'>注：消费满100元可开具发票</view>
+                    <view class='fill'>填写发票信息</view>
+                </view>
+                <view class="body">
+                    <view class='list' bindtap='navtochats'>
+                        <view class='list-left'>职</view>
+                        <view class='list-right'>
+                            <view>
+                                <view class='kind'>职位置顶</view>
+                                <view class='position'>软件开发工程师</view>
+                                <view class='time'>2018-11-19 16:20:31</view>
+                            </view>
+                            <view class='deduction'>-57</view>
+                        </view>
+                    </view>
+                    <view class='list' bindtap='navtochats'>
+                        <view class='list-left'>职</view>
+                        <view class='list-right'>
+                            <view>
+                                <view class='kind'>职位置顶</view>
+                                <view class='position'>软件开发工程师</view>
+                                <view class='time'>2018-11-19 16:20:31</view>
+                            </view>
+                            <view class='deduction'>-57</view>
+                        </view>
+                    </view>
+                    <view class='list' bindtap='navtochats'>
+                        <view class='list-left'>职</view>
+                        <view class='list-right'>
+                            <view>
+                                <view class='kind'>职位置顶</view>
+                                <view class='position'>软件开发工程师</view>
+                                <view class='time'>2018-11-19 16:20:31</view>
+                            </view>
+                            <view class='deduction'>-57</view>
+                        </view>
+                    </view>
+                </view>
+            </scroll-view>
+        </swiper-item> -->
+    <!-- </swiper> -->
+
+</view>

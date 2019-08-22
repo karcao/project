@@ -1,0 +1,127 @@
+.viewcomfile .job-bottom{
+    display: flex;
+    justify-content: space-between;
+    border: 1rpx solid #e5e5e5;
+}
+.viewcomfile .job-bottom .bottom-left{
+    padding: 30rpx 0 30rpx 30rpx;
+    display: flex;
+}
+.viewcomfile .job-bottom .bottom-left .left-left{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 20rpx;
+    margin-right: 30rpx;
+}
+.viewcomfile .job-bottom .bottom-left .left-left image{
+    width: 130rpx;
+    height: 130rpx;
+}
+.viewcomfile .job-bottom .bottom-left .left-right{
+    padding-top: 20rpx;
+    box-sizing: border-box;
+}
+.viewcomfile .job-bottom .bottom-left .left-right .entername{
+    font-size: 34rpx;
+    color: #000;
+    margin-bottom: 10rpx;
+}
+.viewcomfile .job-bottom .bottom-left .left-right .scale{
+    margin-top: 10rpx;
+    font-size: 26rpx;
+    color: #888888;
+}
+.viewcomfile .job-bottom .bottom-left .left-right .scale text{
+    margin:  0 10rpx;
+}
+.viewcomfile .rede-personal {
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    /* border-bottom: 1rpx solid #e5e5e5; */
+    box-sizing: border-box;
+}
+
+.viewcomfile .rede-personal .personel-title {
+    display: flex;
+}
+
+.viewcomfile .rede-personal .personel-title .yuan {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 50%;
+    background: #3c9;
+    vertical-align: middle;
+    margin-top: 24rpx;
+    margin-right: 10rpx;
+}
+
+.viewcomfile .rede-personal .personel-title .title {
+    font-size: 36rpx;
+    color: #000;
+    vertical-align: middle;
+    margin-bottom: 30rpx;
+}
+
+.viewcomfile .rede-personal .personel-content {
+    text-indent:50rpx;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    color: #353535;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.viewcomfile .rede-personal .ellipsis{
+  -webkit-line-clamp:2; 
+  opacity: 0.75 ;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.viewcomfile .rede-personal .unellipsis{
+  -webkit-line-clamp:0; 
+  opacity: 1 ;
+  padding-left: 22rpx;
+  box-sizing: border-box;
+}
+.viewcomfile .rede-personal .xianshiall{
+    font-size: 28rpx;
+    color: #33cc99;
+    text-align: right;
+    padding-top: 10rpx;
+    padding-right: 40rpx;
+    box-sizing: border-box;
+}
+.viewcomfile .rede-personal .bjbtn{
+    color: #000;
+    font-size: 34rpx;
+    background: #fbfafc;
+    margin-top:20rpx;
+    position: relative;
+}
+.viewcomfile .rede-personal .bjbtn .state{
+    position: absolute;
+    top: 10rpx;
+    right: 20rpx;
+    color: #378524;
+    font-size: 24rpx;
+    /* margin-left: 30rpx; */
+    /* margin-bottom: 55rpx;  */
+}
+.swiper {
+    height: 375rpx;
+    width: 100%;
+}
+
+.swiper .item {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .item image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

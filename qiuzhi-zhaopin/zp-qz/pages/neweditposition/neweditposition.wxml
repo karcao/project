@@ -1,0 +1,72 @@
+<form bindsubmit="formSubmit" report-submit="true">
+    <view class="neweditposition">
+        <!-- 职位名称 -->
+        <view class='positionname'>
+            <view class='position-title'>我要招聘</view>
+            <input class='position-ipt' placeholder='请填写职位名称' value='{{comName}}' bindinput="companyname"></input>
+            <!-- <image src='../../images/icon/path.png'></image> -->
+        </view>
+        <!-- 经验/学历/薪资 -->
+        <view class='triple'>
+            <view class='triple-triple triple-experience'>
+                <view class='triple-title'>经验要求</view>
+                <picker bindchange="bindWorkingLifeChange" value="{{workLifeIndex}}" range="{{workLife}}">
+                    <view class='picker'>
+                        <view wx:if="{{qingxuanze1}}" class='qingxuanze'>请选择</view>
+                        <view class='text'>{{workLife[workLifeIndex]}}</view>
+                    </view>
+                </picker>
+            </view>
+            <view class='triple-triple triple-education'>
+                <view class='triple-title'>最低学历</view>
+                <picker mode='selector' bindchange='bindEducationChange' value='{{[educationIndex]}}' range='{{educationArray}}' range-key="{{'educationName'}}">
+                    <view class='picker'>
+                        <view wx:if="{{qingxuanze2}}" class='qingxuanze'>请选择</view>
+                        <view class='text'>{{educationArray[educationIndex].educationName}}</view>
+                    </view>
+                </picker>
+            </view>
+            <view class='triple-triple triple-salary'>
+                <view class='triple-title'>薪资范围</view>
+                <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                    <view class='picker'>
+                        <view wx:if="{{qingxuanze3}}" class='qingxuanze'>请选择</view>
+                        <view class='text' wx:if="{{hidden1}}">{{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}</view>
+                        <!-- <view class='mony' wx:if="{{hidden1}}">{{multiArray[0][multiIndex[0]]}}</view>
+                    <view class='gang' wx:if="{{hidden1}}">-</view>
+                    <view class='mony' wx:if="{{hidden1}}">{{multiArray[1][multiIndex[1]]}}</view> -->
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <!-- 职位描述 -->
+        <view class='jobdescription'>
+            <view class='position-title'>职位描述</view>
+            <view class='work'>
+                <textarea maxlength="3000" placeholder="请填写工作内容/工作要求" bindinput="bindTextwork" value='{{word}}'></textarea>
+                <view class='wordcount'>
+                    <text>{{textcount}}</text>/3000</view>
+            </view>
+        </view>
+        <!-- 职位靓点 -->
+        <view class='positiondefect'>
+            <view class='position-title'>职位靓点</view>
+            <view bindtap='navtopostdefect' class='flex'>
+                <view class='qingxuanze' wx:if="{{qingxuanze4}}">请选择职位靓点</view>
+                <view class='welfare' wx:for="{{defectarr}}" wx:key>{{item.bright}}</view>
+                <image src='../../images/icon/path.png'></image>
+            </view>
+        </view>
+        <!-- 工作地点 -->
+        <view class='workplace'>
+            <view class='position-title'>工作地点</view>
+            <view bindtap='onChangeAddress' class='flex'>
+                <view class='qingxuanze' wx:if="{{qingxuanze5}}">请选择工作地点</view>
+                <view class='qingxuanze1'>{{address}}</view>
+                <image src='../../images/icon/path.png'></image>
+            </view>
+        </view>
+        <!-- 发布 -->
+        <button class='btn' bindtap='release' formType="submit" disabled='{{disabled}}'>发布</button>
+    </view>
+</form>

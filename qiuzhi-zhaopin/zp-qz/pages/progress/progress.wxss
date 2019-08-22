@@ -1,0 +1,95 @@
+.header{
+    /* padding-top: 20rpx;
+    box-sizing: border-box; */
+    width: 100%;
+    /* height: 300rpx; */
+    /* border: 1rpx solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+.header .head .zanwu{
+    margin-top: 100rpx;
+}
+.header .head{
+    position: relative;
+    color: #666;
+    font-size: 28rpx;
+    width: 33%;
+    height: 100%;
+    /* border: 1rpx solid blue; */
+    text-align: center;
+}
+.header .head .title{
+    margin: 20rpx 0 ;
+    color: rgb(221, 28, 28);
+    font-weight: 700;
+}
+.header .head .title1{
+    margin: 20rpx 0 ;
+    color: rgb(16, 48, 233);
+    font-weight: 700;
+}
+.header .head .title2{
+    margin: 20rpx 0 ;
+    color: rgb(197, 27, 231);
+    font-weight: 700;
+}
+.header .head .img{
+    margin: 60rpx auto 20rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    border: 1rpx solid salmon;
+}
+.header .head .imgrad1{
+    border: 1rpx solid rgb(221, 28, 28);
+}
+.header .head .imgrad2{
+    border: 1rpx solid rgb(16, 48, 233);
+}
+.header .head .imgrad3{
+    border: 1rpx solid rgb(197, 27, 231);
+}
+.header .head .img image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.header .head .tiao{
+    position: absolute;
+    top: 100rpx;
+    right: 50rpx;
+    width: 60rpx;
+    height: 60rpx;
+}
+.header .head .tiao image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.content1{
+    display: flex;
+    padding-left: 75rpx;
+    box-sizing: border-box;
+    margin-bottom: 80rpx;
+    margin-top: 80rpx;
+}
+.content1 .tips{
+    color: #666;
+    font-size: 28rpx;
+    margin-right: 80rpx;
+}
+.content1 .tipss{
+    color: #666;
+    font-size: 28rpx;
+    margin-right: 30rpx;
+}
+.content1 .tipss text{
+    color: rgb(228, 49, 36);
+    font-size: 28rpx;
+}
+.day1{
+    width: 50%;
+}
+.canvas{
+    width: 100%;
+}

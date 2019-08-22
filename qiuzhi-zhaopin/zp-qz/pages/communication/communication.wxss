@@ -1,0 +1,272 @@
+page{
+    background: #f0eff5;
+}
+.index-all {
+    /* margin-top: 120rpx; */
+    width: 100%;
+    /* border-top: 1rpx solid #d6d6d6; */
+    
+    
+}
+
+.list{
+    /* height: 145rpx; */
+    padding-left: 36rpx;
+    padding-right: 36rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    padding-top: 20rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.list .old{
+    display: flex;
+    /* height: 145rpx; */
+    border-bottom: 1rpx solid #e5e5e5;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.list .newadd{
+    display: flex;
+    justify-content: space-between;
+    line-height: 80rpx;
+}
+.list .newadd .newadd-left{
+    font-size: 28rpx;
+    color: #353535;
+}
+.list .newadd image{
+    width: 28rpx;
+    height: 28rpx;
+    margin-right: 20rpx;
+}
+.list .newadd .newadd-right{
+    font-size: 24rpx;
+    color: #999999;
+}
+.list .icon-icon{
+    width: 10rpx;
+    height: 10rpx;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 100rpx;
+    top: 15rpx;
+}
+.list .tips{
+    width: 500rpx;
+    z-index: 999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -250rpx;
+    border-radius: 15rpx;
+    background: #fff;
+    text-align: center;
+    font-size: 36rpx;
+    color: #000;
+    line-height: 100rpx;
+    box-shadow: #bebbbb 1rpx 7rpx 40rpx 1rpx;
+}
+.list .tips .tips-tip{
+    border-bottom: 1rpx solid #eeeeee;
+}
+.list .list-left{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-right: 20rpx;
+}
+.list .list-left image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.list .list-right{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    width: 100%;
+    height: 100%;
+    /* border-bottom: 1rpx solid #e5e5e5; */
+    padding-right: 15rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.list .list-right .left-top{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-right: 30rpx;
+    /* font-size: 32rpx;
+    color: #888; */
+}
+.list .list-right .left-top {
+    display: flex;
+}
+.list .list-right .left-top  .name{
+    width: 200rpx;
+    font-size: 34rpx;
+    color: #000;
+    margin-right: 10rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.list .list-right .left-top  .content{
+    font-size: 26rpx;
+    color: #aaa;
+}
+.list .list-right .left-top .top-right{
+    font-size: 26rpx;
+    color: #aaa;
+}
+.list .list-right .left-bottom{
+    justify-content: space-between;
+    font-size: 28rpx;
+    display: flex;
+    color: #aaa;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 17rpx;
+}
+.list .list-right .left-bottom .read{
+    margin-right: 12rpx;
+}
+.list .list-right .time{
+    color: #bfbfbf;
+    font-size: 24rpx;
+    position: absolute;
+    right:36rpx;
+    top: 15rpx;
+}
+.list .list-right .time image{
+    width: 36rpx;
+    height: 8rpx;
+}
+.list .list-right .wechat{
+    width: 380rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+/* /////////////////// */
+.watch1-list{
+    margin-top: 120rpx;
+    width: 100%;
+    background: #fff;
+}
+.watch1-list .list-tab{
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #d6d6d6;
+    display: flex;
+    justify-content: space-around;
+}
+.watch1-list .list-tab .tab-title{
+    font-size: 30rpx;
+    color: #000;
+}
+.watch1-list .list-tab .tab-title.active{
+    font-size: 30rpx;
+    color: #33cc99;
+    padding-left:10rpx;
+    padding-right:10rpx;
+    box-sizing: border-box;
+    border-bottom: 5rpx solid #33cc99;
+    border-bottom-left-radius: 5rpx;
+    border-bottom-right-radius: 5rpx;
+}
+.watch1-list .couponcontent{
+    display: none;
+}
+.watch1-list .couponcontent .body{
+    margin-top: 0;
+}
+.watch1-list .couponcontent.active{
+    display: block;
+}
+.watch1-list .list-chat{
+    display: flex;
+    /* display: none; */
+    width: 100%;
+    height: 135rpx; 
+    /* border: 1rpx solid red; */
+    padding-left:36rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.watch1-list .list-chat .tips{
+    z-index: 9;
+    position: absolute;
+    right: 100rpx;
+    bottom: -230rpx;
+    width: 170rpx;
+    height: 250rpx;
+    background: #fff;
+    /* border: 1rpx solid red; */
+    text-align: center;
+    font-size: 36rpx;
+    color: #000;
+    line-height: 80rpx;
+    box-shadow: #bebbbb 1rpx 7rpx 40rpx 1rpx;
+}
+.watch1-list .list-chat .chat-left{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+    margin-top: 18rpx;
+    margin-right: 20rpx;
+}
+.watch1-list .list-chat .chat-left image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+}
+.watch1-list .list-chat .chat-right{
+    width: 100%;
+    height: 100%;
+    padding-right: 36rpx;
+    /* padding-left: 22rpx; */
+    padding-top: 20rpx;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.watch1-list .list-chat .chat-right .right-top{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50rpx;
+}
+.watch1-list .list-chat .chat-right .right-top .top-left{
+    color: #000;
+    font-size: 34rpx;
+}
+.watch1-list .list-chat .chat-right .right-top .top-right{
+    color: #bfbfbf;
+    font-size: 24rpx;
+}
+.watch1-list .list-chat .chat-right .right-bottom{
+    color: #aaa;
+    font-size: 28rpx;
+}
+.bgcolor{
+    background: rgba(29, 28, 28, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.bgcolor1{
+    background: rgba(29, 28, 28, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}

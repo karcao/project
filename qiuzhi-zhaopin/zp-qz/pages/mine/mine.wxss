@@ -1,0 +1,197 @@
+.mine{
+    width: 100%;
+    height: 218rpx;
+    padding: 30rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+    margin-bottom: 60rpx;
+}
+.mine .card{
+    width: 100%;
+    height: 230rpx;
+    background: #fff;
+    border-radius: 20rpx;
+    box-shadow: #bebbbb 1rpx 7rpx 40rpx 1rpx;
+    display: flex;
+    padding: 50rpx 0 0 30rpx;
+    box-sizing: border-box;
+}
+.mine .card .card-left{
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 20rpx;
+    margin-right: 35rpx;
+}
+.mine .card .card-left image{
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 20rpx;
+}
+.mine .card .card-right{
+    width: 100%;
+}
+.mine .card .card-right .right-top{
+    font-size: 36rpx;
+    color: #000;
+    margin-bottom: 15rpx;
+}
+.mine .card .card-right .right-bottom{
+   display: flex;
+   justify-content: space-between;
+   padding-right: 50rpx;
+   box-sizing: border-box;
+   font-size: 30rpx;
+}
+.mine .card .card-right .right-bottom .flex{
+    display: flex;
+    justify-content: space-between;
+}
+.mine .card .card-right .right-bottom .img{
+    width: 33rpx;
+    height: 25rpx;
+    margin-right: 10rpx;
+}
+.mine .card .card-right .right-bottom .img image{
+    width: 33rpx;
+    height: 25rpx;
+}
+.mine .card .card-right .right-bottom .member{
+    color: #fe8821;
+    margin-right: 50rpx;
+}
+.mine .card .card-right .right-bottom .no-member{
+    color: #888;
+    margin-right: 20rpx;
+}
+.mine .card .card-right .right-bottom .cz{
+    width: 120rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    color: #fff;
+    background: #33CC99;
+    border-radius: 20rpx;
+    text-align: center;
+}
+.list{
+    width: 100%;
+}
+.list .list-list{
+    /* border: 1rpx solid red; */
+    width: 100%;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+    display: flex;
+    line-height: 115rpx;
+}
+.list .list-list .list-left{
+    width: 42rpx;
+    height: 42rpx;
+    margin-right: 30rpx;
+}
+.list .list-list .list-left image{
+    width: 42rpx;
+    height: 42rpx;
+}
+.list .list-list .list-left1{
+    width: 42rpx;
+    height: 36rpx;
+    margin-right: 30rpx;
+}
+.list .list-list .list-left1 image{
+    width: 42rpx;
+    height: 36rpx;
+}
+.list .list-list .list-left2{
+    width: 33rpx;
+    height: 42rpx;
+    margin-right: 42rpx;
+}
+.list .list-list .list-left2 image{
+    width: 33rpx;
+    height: 42rpx;
+}
+.list .list-list .list-left3{
+    width: 42rpx;
+    height: 42rpx;
+    margin-right: 30rpx;
+}
+.list .list-list .list-left3 image{
+    width: 42rpx;
+    height: 42rpx;
+}
+.list .list-list .list-left6{
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 25rpx;
+}
+.list .list-list .list-left6 image{
+    width: 48rpx;
+    height: 48rpx;
+}
+.list .list-list .list-left4{
+    width: 42rpx;
+    height: 36rpx;
+    margin-right: 30rpx;
+}
+.list .list-list .list-left4 image{
+    width: 42rpx;
+    height: 36rpx;
+}
+.list .list-list .list-left5{
+    width: 38rpx;
+    height: 36rpx;
+    margin-right: 30rpx;
+}
+.list .list-list .list-left5 image{
+    width: 38rpx;
+    height: 36rpx;
+}
+.list .list-list .list-right{
+    width: 100%;
+    line-height: 105rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30rpx;
+    box-sizing: border-box;
+}
+.list .list-list .list-right .text{
+    font-size: 36rpx;
+    color: #000;
+}
+.list .list-list .list-right .img{
+    width: 16rpx;
+    height: 28rpx;
+
+}
+.list .list-list .list-right .img image{
+    width: 16rpx;
+    height: 28rpx;
+}
+/* ////// */
+.list .list-list .list-right1{
+    width: 100%;
+    line-height: 105rpx;
+    padding-left: 0;
+    background: none;
+    border-bottom: 1rpx solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30rpx;
+    box-sizing: border-box;
+}
+.list .list-list .list-right1::after{
+border: none;
+}
+.list .list-list .list-right1 .text{
+    font-size: 36rpx;
+    color: #000;
+}
+.list .list-list .list-right1 .img{
+    width: 16rpx;
+    height: 28rpx;
+
+}
+.list .list-list .list-right1 .img image{
+    width: 16rpx;
+    height: 28rpx;
+}

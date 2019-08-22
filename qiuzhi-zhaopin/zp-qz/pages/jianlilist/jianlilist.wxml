@@ -1,0 +1,105 @@
+<view class='alljllist'>
+    <!-- 选择分类 -->
+    
+    <!-- //列表 -->
+    <view class="list-chat" wx:for="{{browserecord}}" wx:key data-index="{{index}}" catchtap='myresume3'>
+        <view class='chat-border'>
+            <view class='chat-top'>
+                <view class='top-left'>
+                    <!-- <text class='text1'>{{item.CustomerName}}</text> -->
+                    <text class='text1' wx:if="{{item.CustomerSex == false}}">{{item.asd}}先生</text>
+                    <text class='text1' wx:if="{{item.CustomerSex == true}}">{{item.asd}}女士</text>
+                    <text class='text2'>|</text>
+                    <text class='text1'>{{item.positionName}}</text>
+                    <!-- <text class='text2'>|</text> -->
+                    <!-- <text class='text1'>{{item.treatmentMinShow}}-{{item.treatmentMaxShow}}</text> -->
+                </view>
+                <view class='top-right'>{{item.ResumeUpdateDate}}日</view>
+            </view>
+            <view class='chat-bottom'>
+                <text class='text1' wx:if="{{item.CustomerSex == false}}">男</text>
+                <text class='text1' wx:if="{{item.CustomerSex == true}}">女</text>
+                <text class='text1'>{{item.sex}}</text>
+                <text class='text2'>|</text>
+                <text class='text1'>{{item.age}}岁</text>
+                <text class='text2'>|</text>
+                <text class='text1' wx:if="{{item.DirectWorkLife == 0}}">1年经验</text>
+                <text class='text1' wx:else>{{item.DirectWorkLife}}年经验</text>
+                <text class='text2'>|</text>
+                <text class='text1'>{{item.educationName}}</text>
+                <!-- <text class='text2'>|</text>
+                <text class='text1'>{{item.city}}</text> -->
+            </view>
+        </view>
+        <!-- 提示按钮 -->
+        <!-- <view class='tips' wx:if="{{inDex3 == index}}">
+            <view catchtap='vae02' data-index="{{index}}" wx:if="{{inDex3 == index}}">查看简历</view>
+            <view catchtap='vae5' data-index="{{index}}" wx:if="{{inDex3 == index}}">收藏简历</view>
+            <view catchtap='vae6' data-index="{{index}}" wx:if="{{inDex3 == index &&item.isBuy == 0}}">购买简历</view>
+            <view data-index="{{index}}" wx:if="{{inDex3 == index &&item.isBuy == 1}}">已购买</view>
+        </view> -->
+    </view>
+    <view class="classification">
+        <!-- <view class="ification {{bgshow1 == true?'green':''}}" bindtap='newtime'>
+            <text>{{latesttime}}</text>
+            <image src="{{bgshow1 == true?'../../images/icon/up.png':'../../images/icon/down.png'}}"></image>
+        </view>
+        <view class='shu'>|</view>
+        <view class="ification {{bgshow2 || bgshow4 == true?'green':''}}" bindtap='newcity'>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                <text>{{region[1]}}</text>
+                <image src="{{bgshow2 == true?'../../images/icon/up.png':'../../images/icon/down.png'}}"></image>
+            </picker>
+        </view>
+        <view class='shu'>|</view> -->
+        <view class="ification {{bgshow3 == true?'green':''}}" bindtap='huanyipi'>
+            <text>换一批</text>
+            <text wx:if="{{bgshow5}}"></text>
+            <image src="{{bgshow3 == true?'../../images/icon/up.png':'../../images/icon/down.png'}}"></image>
+        </view>
+    </view>
+</view>
+<!-- ///////////////////////// -->
+<!-- 更多弹出框 -->
+<view class="bglayer" wx:if="{{bgshow3}}" catchtouchmove="preventdefault" bindtap='bghide'></view>
+<view class="newmore" wx:if="{{bgshow3}}" catchtouchmove="preventdefault">
+    <view class='flex2'>
+        <scroll-view scroll-y="true" class="scoll-h" data-type='0' class='scoll-z'>
+            <!-- 职位 -->
+            <view class='education'>
+                <view class='edu-title'>职位</view>
+                <view class='edu-select'>
+                    <picker bindchange="bindstateChange" value="{{state}}" range="{{objectArray}}" range-key='positionName'>
+                        <text class='greentext' wx:if="{{positionzw}}">{{objectArray[state].positionName}}</text>
+                        <text wx:if="{{positionxz}}">请点击选择职位</text>
+                    </picker>
+                </view>
+            </view>
+            <!-- 学历 -->
+            <view class='education'>
+                <view class='edu-title'>学历</view>
+                <view class='edu-select'>
+                    <view class="{{curNav == index ? 'active4' : 'select-list'}}" wx:for="{{edulist}}" wx:key data-index="{{index}}" bindtap='clickedu'>{{item.educationName}}</view>
+                </view>
+            </view>
+            <!-- 工作经验 -->
+            <view class='education'>
+                <view class='edu-title'>工作经验</view>
+                <view class='edu-select'>
+                    <view class="{{curNav1 == index ? 'active4' : 'select-list'}}" wx:for="{{explist}}" wx:key data-index="{{index}}" bindtap='clickexp'>{{item.name}}</view>
+                </view>
+            </view>
+            <!-- 投递时间 -->
+            <view class='education'>
+                <view class='edu-title'>投递时间</view>
+                <view class='edu-select'>
+                    <view class="{{curNav2 == index ? 'active4' : 'select-list'}}" wx:for="{{datelist}}" wx:key data-index="{{index}}" bindtap="clicksalary">{{item.name}}</view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class='reset'>
+        <view class='reset-left' bindtap='reset4'>重置</view>
+        <view class='reset-right' bindtap='determine4'>确定</view>
+    </view>
+</view>

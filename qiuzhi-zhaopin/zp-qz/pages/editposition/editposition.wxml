@@ -1,0 +1,161 @@
+<form bindsubmit="formSubmit" report-submit="true">
+    <view class="editposition">
+        <view class='mentposition' wx:if="{{!options.positionId}}">智联网址</view>
+        <!-- 名称 -->
+        <view class='po-name' bindtap='editcomname1' wx:if="{{!options.positionId}}">
+            <view class='name-left'>
+                <!-- <text class='star'>*</text> -->
+                <text>网址</text>
+            </view>
+            <view class='name-right'>
+                <text>{{comName1}}</text>
+                <image src='../../images/icon/path.png'></image>
+            </view>
+        </view>
+        <view class='mentposition'>招聘职位</view>
+        <!-- 名称 -->
+        <view class='po-name' bindtap='editcomname'>
+            <view class='name-left'>
+                <!-- <text class='star'>*</text> -->
+                <text>名称</text>
+            </view>
+            <view class='name-right'>
+                <text>{{comName}}</text>
+                <image src='../../images/icon/path.png'></image>
+            </view>
+        </view>
+        <!-- 基本信息 -->
+        <view class='information'>基本信息</view>
+        <!-- 职能 -->
+        <view class='mation'>
+            <view class='same'>
+                <view class='same-left'>
+                    <!-- <text class='star'>*</text> -->
+                    <text>职能</text>
+                </view>
+                <view class='same-right'>
+                    <picker mode='multiSelector' bindchange='queryPositionByParent' bindcolumnchange='queryPositionBycolumnParent' value='{{queryPositionIndex}}' range="{{arrleft}}">
+                        <view class='picker'>
+                            {{selected}}
+                            <image src='../../images/icon/path.png'></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='same'>
+                <view class='same-left'>
+                    <!-- <text class='star'>*</text> -->
+                    <text>待遇</text>
+                </view>
+                <view class='same-right'>
+                    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                        <view class='picker daiyu'>
+                            <!-- <view class='mony' wx:if="{{hidden}}">请选择</view> -->
+                            <view class='mony' wx:if="{{hidden1}}">{{multiArray[0][multiIndex[0]]}}</view>
+                            <view class='gang' wx:if="{{hidden1}}">-</view>
+                            <!-- <view class='mony' wx:if="{{hidden}}">请选择</view> -->
+                            <view class='mony' wx:if="{{hidden1}}">{{multiArray[1][multiIndex[1]]}}</view>
+                            <image src='../../images/icon/path.png'></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='same'>
+                <view class='same-left'>
+                    <!-- <text class='star'>*</text> -->
+                    <text>学历</text>
+                </view>
+                <view class='same-right'>
+                    <picker mode='selector' bindchange='bindEducationChange' value='{{[educationIndex]}}' range='{{educationArray}}' range-key="{{'educationName'}}">
+                        <view class='picker'>{{educationArray[educationIndex].educationName}}
+                            <image src='../../images/icon/path.png'></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='same'>
+                <view class='same-left'>
+                    <!-- <text class='star'>*</text> -->
+                    <text>经验</text>
+                </view>
+                <view class='same-right'>
+                    <picker bindchange="bindWorkingLifeChange" value="{{workLifeIndex}}" range="{{workLife}}">
+                        <view class='picker'>
+                            <!-- <text class='text' wx:if="{{workLife[workLifeIndex] == '不限' || workLife[workLifeIndex] == '应届生' }}">{{workLife[workLifeIndex]}}</text> -->
+                            <text class='text'>{{workLife[workLifeIndex]}}</text>
+                            <image src='../../images/icon/path.png'></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class='location'>
+                <view class='same-left'>
+                    <!-- <text class='star'>*</text> -->
+                    <text>地点</text>
+                </view>
+                <view class='same-right'>
+                    <view class='dizhi' bindtap='onChangeAddress'>
+                        <view class='address'>{{address}}</view>
+                        <image src='../../images/icon/path.png'></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 岗位职责 -->
+        <!-- 工作描述 -->
+        <view class='information'>工作描述</view>
+        <view class='work'>
+            <textarea maxlength="3000" placeholder="岗位职责/任职要求" bindinput="bindTextwork" value='{{word}}'></textarea>
+            <view class='wordcount'>
+                <text>{{textcount}}</text>/3000</view>
+        </view>
+        <!-- 任职要求 -->
+        <!-- <view class='information'>工作描述</view>
+        <view class='work'>
+            <textarea maxlength="500" placeholder="请填写任职要求" bindinput="bindTextwork1" value='{{word1}}'></textarea>
+            <view class='wordcount'>
+                <text>{{textcount1}}</text>/500</view>
+        </view> -->
+        <!-- 岗位靓点 -->
+        <view class='information'>岗位靓点</view>
+        <view class='post' bindtap='navtopostdefect'>
+            <view class='post-left'>
+                <view class='welfare' wx:for="{{defectarr}}" wx:key>{{item.bright}}</view>
+            </view>
+            <view class='post-right'>
+                <image src='../../images/icon/path.png'></image>
+            </view>
+        </view>
+        <!-- 发布 -->
+        <button class='btn' bindtap='release' formType="submit" disabled='{{disabled}}'>发布</button>
+    </view>
+    <!-- 遮罩层弹出窗 -->
+    <!-- 选择公司名称 -->
+    <view class='bglayer' wx:if="{{comnameshow}}"></view>
+    <view class='popups' wx:if="{{comnameshow}}">
+        <view class='pop-top'>
+            <view class='top-title'>职位名称</view>
+            <input placeholder='请输入名称' data-name='account' name="account" bindinput="companyname" value='{{account}}' maxlength="40"></input>
+            <view class='top-number'>
+                <text>{{wordcount}}</text>/40
+            </view>
+            <view class='top-tips'>请输入职位名称</view>
+        </view>
+        <view class='pop-bottom' bindtap='savecomname'>保存</view>
+        <view class='close' bindtap='closecomname'>关闭</view>
+    </view>
+    <!-- 选择智联网址-->
+    <view class='bglayer' wx:if="{{comnameshow1}}"></view>
+    <view class='popups' wx:if="{{comnameshow1}}">
+        <view class='pop-top'>
+            <view class='top-title'>智联网址</view>
+            <input placeholder='请输入网址' data-name='account1' name="account1" bindinput="companyname1" value='{{account1}}' maxlength="200"></input>
+            <view class='top-number'>
+                <text>{{wordcount1}}</text>/200
+            </view>
+            <view class='top-tips'>请输入智联网址</view>
+        </view>
+        <view class='pop-bottom' bindtap='savecomname1'>保存</view>
+        <view class='close' bindtap='closecomname1'>关闭</view>
+    </view>
+</form>

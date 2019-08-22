@@ -1,0 +1,48 @@
+.postlist{
+    width: 100%;
+    padding: 60rpx 30rpx 0;
+    box-sizing: border-box;
+}
+.postlist .title{
+    font-size: 30rpx;
+    color: #888;
+    margin-bottom: 30rpx;
+}
+.postlist .list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.postlist .list .list-item{
+    /* width: 150rpx; */
+    /* height: 60rpx; */
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    color: #353535;
+    border-radius: 10rpx;
+    border: 1rpx solid #bcbcbc;
+    margin: 0 16rpx 20rpx 0;
+}
+.postlist .list .active{
+    background: #33cc99;
+    color: #fff;
+    border: 1rpx solid #33cc99;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    border-radius: 10rpx;
+    margin: 0 16rpx 20rpx 0;
+}
+button{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #33cc99;
+    color: #fff;
+    z-index: 10;
+}

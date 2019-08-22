@@ -1,0 +1,35 @@
+.messcenter{
+    width: 100%;
+    padding: 25rpx 30rpx 0 30rpx;
+    box-sizing: border-box;   
+}
+.messcenter .mess-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx 0;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #f4faf8;
+}
+.messcenter .mess-list .list-left{
+    width:90%;
+}
+.messcenter .mess-list .list-left .content{
+    width: 90%;
+    font-size: 30rpx;
+    color: #353535;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.messcenter .mess-list .list-left .time{
+    font-size: 26rpx;
+    color: #999;
+}
+.messcenter .mess-list .list-right{
+    width: 16rpx;
+    height: 25rpx;
+}
+.messcenter .mess-list .list-right image{
+    width: 16rpx;
+    height: 25rpx;
+}

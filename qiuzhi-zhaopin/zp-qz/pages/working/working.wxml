@@ -1,0 +1,30 @@
+<view class="working">
+    <view class='introduction'>公司简介</view>
+    <view class='textarea'>
+        <textarea placeholder='请简单介绍下公司' data-name='intro' name="intro" bindinput="intro" value='{{introname}}' maxlength="3000"></textarea>
+        <view class='number'><text>{{introcount}}</text>/3000</view>
+    </view>
+    <view class='introduction'>工作环境</view>
+    <view class='photo'>
+        <view class='fang upload' bindtap='chooseImg'>
+            <view class='img'>
+                <image src='../../images/photo.png'></image>
+            </view>
+            <view class='text'>上传</view>
+        </view>
+        <view class='fang logo' wx:for="{{imagesUrl}}" wx:key wx:if="{{item.status == 0}}">
+            <image mode='aspectFill' class='img' src='{{item.picUrl}}'></image>
+            <image src='../../images/icon/delete.png' class='img1' data-index="{{index}}" catchtap='deleteimg'></image>
+        </view>
+        <!-- <view class='fang logo'>
+            <image src='../../images/company.png'></image>
+            <image src='../../images/icon/delete.png' class='del'></image>
+        </view>
+        <view class='fang logo'>
+            <image src='../../images/company.png'></image>
+            <image src='../../images/icon/delete.png' class='del'></image>
+        </view> -->
+    </view>
+    <button class='save' bindtap='save'>保存</button>
+    <button class='jump' bindtap='directsave'>跳过，直接保存</button>
+</view>

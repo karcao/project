@@ -1,0 +1,632 @@
+page {
+}
+
+.jobdetails {
+    width: 100%;
+    padding: 20rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .job-card {
+    width: 100%;
+    height: 350rpx;
+    border-radius: 10rpx;
+    box-shadow: #bebbbb 1rpx 12rpx 30rpx 1rpx;
+    padding: 35rpx 25rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .job-card .card-top {
+    line-height: 50rpx;
+}
+
+.jobdetails .job-card .card-top .top-top {
+    font-size: 34rpx;
+    color: #000;
+}
+
+.jobdetails .job-card .card-top .top-in {
+    font-size: 26rpx;
+    color: #888;
+}
+
+.jobdetails .job-card .card-top .top-in text {
+    margin: 0 10rpx;
+}
+
+.jobdetails .job-card .card-top .top-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobdetails .job-card .card-top .top-bottom .bottom-left {
+    font-size: 30rpx;
+    color: #f33;
+}
+
+.jobdetails .job-card .card-top .top-bottom .bottom-right {
+    font-size: 26rpx;
+    color: #888;
+}
+
+.jobdetails .job-card .card-bottom {
+    display: flex;
+    border-top: 1rpx solid #e5e5e5;
+    padding-top: 25rpx;
+    box-sizing: border-box;
+    margin-top:40rpx;
+    position: relative;
+}
+
+.jobdetails .job-card .card-bottom .bottom-left {
+    width: 26rpx;
+    height: 30rpx;
+    margin-right: 15rpx;
+    margin-top: -4rpx;
+}
+
+.jobdetails .job-card .card-bottom .bottom-left image {
+    width: 26rpx;
+    height: 30rpx;
+}
+
+.jobdetails .job-card .card-bottom .bottom-right {
+    /* line-height: 50rpx; */
+    width: 80%;
+}
+
+.jobdetails .job-card .card-bottom .bottom-right .right-top {
+    font-size: 30rpx;
+    color: #353535;
+}
+
+.jobdetails .job-card .card-bottom .bottom-right .right-bottom {
+    font-size: 26rpx;
+    color: #888;
+}
+
+.jobdetails .job-card .card-bottom .path {
+    position: absolute;
+    right: 0;
+    top: 30rpx;
+    width: 16rpx;
+    height: 25rpx;
+}
+
+.jobdetails .job-card .card-bottom .path image {
+    width: 16rpx;
+    height: 25rpx;
+}
+
+/* /////////////////////////////// */
+
+.jobdetails .job-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #e5e5e5;
+    padding-bottom: 20rpx;
+    padding-top: 20rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .job-bottom .bottom-left {
+    padding: 24rpx 0 22rpx 0;
+    display: flex;
+}
+
+.jobdetails .job-bottom .bottom-left .left-left {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 20rpx;
+    margin-right: 30rpx;
+}
+
+.jobdetails .job-bottom .bottom-left .left-left image {
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.jobdetails .job-bottom .bottom-left .left-right {
+    padding-top: 20rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .job-bottom .bottom-left .left-right .entername {
+    font-size: 34rpx;
+    color: #000;
+}
+
+.jobdetails .job-bottom .bottom-left .left-right .scale {
+    font-size: 26rpx;
+    color: #888;
+}
+
+.jobdetails .job-bottom .bottom-left .left-right .scale text {
+    margin: 0 10rpx;
+}
+
+.jobdetails .job-bottom .bottom-right {
+    width: 16rpx;
+    height: 25rpx;
+    margin-top: 55rpx;
+    margin-right: 25rpx;
+}
+
+.jobdetails .job-bottom .bottom-right image {
+    width: 16rpx;
+    height: 25rpx;
+}
+
+/* ///////////////////// */
+
+.jobdetails .positiondefect {
+    border-bottom: 1rpx solid #e5e5e5;
+    padding-bottom: 30rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .positiondefect .title {
+    font-size: 34rpx;
+    color: #000;
+    margin: 50rpx 0 30rpx;
+}
+
+.jobdetails .positiondefect .welfare {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobdetails .positiondefect .welfare .class {
+    width: 165rpx;
+    height: 50rpx;
+    background: #f1f1f1;
+    font-size: 26rpx;
+    color: #666;
+    line-height: 50rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    margin-right: 40rpx;
+    margin-bottom: 20rpx;
+}
+
+/* 个人简介 */
+
+.jobdetails .rede-personal {
+    padding-top: 50rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.jobdetails .rede-personal .personel-title {
+    display: flex;
+}
+
+.jobdetails .rede-personal .duties {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    color: #4b4b4b;
+}
+
+.jobdetails .rede-personal .personel-title .title {
+    font-size: 36rpx;
+    color: #000;
+    vertical-align: middle;
+}
+
+.jobdetails .rede-personal .personel-content {
+    font-size: 28rpx;
+    line-height: 50rpx;
+    color: #4b4b4b;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.jobdetails .rede-personal .ellipsis {
+    -webkit-line-clamp: 3;
+    opacity: 0.75;
+    /* padding-left: 22rpx; */
+    box-sizing: border-box;
+    line-height: 60rpx;
+}
+
+.jobdetails .rede-personal .unellipsis {
+    -webkit-line-clamp: 0;
+    opacity: 1;
+    line-height: 60rpx;
+    box-sizing: border-box;
+}
+
+.jobdetails .rede-personal .xianshiall {
+    font-size: 28rpx;
+    color: #3c9;
+    text-align: right;
+    padding-top: 10rpx;
+    padding-right: 40rpx;
+    box-sizing: border-box;
+}
+/* 发布者 */
+.jobdetails .announcer{
+    padding-top: 50rpx;
+    margin-bottom: 120rpx;
+    box-sizing: border-box;
+    padding-bottom: 25rpx;
+    /* border-bottom: 1rpx solid #e5e5e5; */
+}
+.jobdetails .announcer .cer-title{
+    font-size: 34rpx;
+    color: #000;
+    margin-bottom: 40rpx;
+}
+.jobdetails .announcer .cer-name{
+    display: flex;
+}
+.jobdetails .announcer .cer-name .name-left{
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 25rpx;
+}
+.jobdetails .announcer .cer-name .name-left image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.jobdetails .announcer .cer-name .name-right{
+    
+}
+.jobdetails .announcer .cer-name .name-right .right-top{
+    font-size: 30rpx;
+    color: #000;
+    line-height: 50rpx;
+    margin-bottom: 10rpx;
+}
+.jobdetails .announcer .cer-name .name-right .right-bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+.jobdetails .announcer .cer-name .name-right .right-bottom .class{
+    width: 165rpx;
+    height: 50rpx;
+    background: #f1f1f1;
+    font-size: 26rpx;
+    color: #666;
+    line-height: 50rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    margin-right: 10rpx;
+}
+.jobdetails .announcer .cer-tips{
+    font-size: 26rpx;
+    color: #353535;
+    margin-top: 50rpx;
+    margin-bottom: 20rpx;
+}
+.jobdetails .announcer .cer-tips text{
+    color: #fc0000;
+    margin-right: 5rpx;
+}
+.jobdetails .announcer .cer-back{
+    font-size: 26rpx;
+    color: #888888;
+}
+.jobdetails .announcer .cer-back text{
+    color: #576b95;
+}
+/* ////// */
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    height: 100rpx;
+    padding: 10rpx 30rpx 10rpx 70rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1rpx solid #e5e5e5;
+}
+.footer .foot-left{
+    display: flex;
+}
+.footer .foot-left .left-left{
+    /* text-align: center; */
+    /* margin-right: 65rpx; */
+}
+.footer .foot-left .left-right{
+    
+    /* text-align: center; */
+}
+.footer .foot-left .text{
+    font-size: 20rpx;
+    color: #888;
+}
+.footer .foot-left .img{
+    width: 36rpx;
+    height: 36rpx;
+    margin-bottom: 12rpx;
+}
+.footer .foot-left .img image{
+    width: 36rpx;
+    height: 36rpx;
+}
+.footer .foot-right{
+    /* width:440rpx; */
+    /* height: 78rpx; */
+    display: flex;
+}
+.footer .foot-right .right-left{
+    width: 260rpx;
+    height: 70rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    font-size: 32rpx;
+    color: #33cc99;
+    line-height: 70rpx;
+    text-align: center;
+    border: 1rpx solid #33cc99;
+}
+.footer .foot-right .right-right{
+    width: 260rpx;
+    height: 70rpx;
+    background: #33cc99;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    font-size: 32rpx;
+    color: #fff;
+    line-height: 70rpx;
+    text-align: center;
+}
+.footer .foot-right .right-right2{
+    width: 260rpx;
+    height: 70rpx;
+    background: #afafaf;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    font-size: 32rpx;
+    color: #fff;
+    line-height: 70rpx;
+    text-align: center;
+}
+.footer .foot-right .right-left1{
+    width: 260rpx;
+    height: 70rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    font-size: 32rpx;
+    color: #33cc99;
+    line-height: 70rpx;
+    text-align: center;
+    border: 1rpx solid #33cc99;
+}
+.footer .foot-right .right-right1{
+    width: 260rpx;
+    height: 70rpx;
+    background: #bbbbbb;
+    border-radius: 10rpx;
+    margin-left: 20rpx;
+    font-size: 32rpx;
+    color: #fff;
+    line-height: 70rpx;
+    text-align: center;
+}
+.fadein{
+    position: fixed;
+    bottom: 175rpx;
+    right: 60rpx;
+    width: 78rpx;
+    height: 78rpx;
+}
+.fadein image{
+    width: 78rpx;
+    height: 78rpx;
+}
+
+/* 分享按钮 */
+.fenxiangbtn .buttom0 {
+    width: 100rpx;
+    height: 100rpx;
+    flex-direction: row;
+    position: fixed;
+    bottom: 139rpx;
+    right: 70rpx;
+    z-index: 1001;
+    /* display: none; */
+}
+.fenxiangbtn .buttom1 {
+    width: 100rpx;
+    height: 100rpx;
+    flex-direction: row;
+    position: fixed;
+    bottom: 139rpx;
+    right: 70rpx;
+    z-index: 1001;
+    /* display: none; */
+}
+.fenxiangbtn  .hb{
+    font-size: 22rpx;
+    color: #353535;
+    flex-direction: row;
+    position: fixed;
+    bottom: 130rpx;
+    right: 78rpx;
+    z-index: 1001;
+}
+.fenxiangbtn .btn1{
+    width: 100rpx;
+    height: 100rpx;
+    /* margin-top: 20rpx; */
+    background-color: white;
+    /* color: #999999; */
+    border-radius: 0rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 30rpx; */
+}
+.fenxiangbtn .btn1::after {
+    border: 0; 
+}
+.fenxiangbtn  .buttom2 {
+    width: 100rpx;
+    height: 100rpx;
+    /* display: none; */
+    flex-direction: row;
+    position: fixed;
+    bottom: 139rpx;
+    right: 70rpx;
+    z-index: 1001;
+}
+.fenxiangbtn  .zf{
+    font-size: 22rpx;
+    color: #353535;
+    flex-direction: row;
+    position: fixed;
+    bottom: 120rpx;
+    right: 75rpx;
+    z-index: 1001;
+}
+.fenxiangbtn  .buttom3 {
+    width: 120rpx;
+    height: 120rpx;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 120rpx;
+    right: 60rpx;
+    z-index: 1001;
+}
+
+.fenxiangbtn  .drawer_screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+}
+
+.fenxiangbtn  .drawer_box {
+    overflow: hidden;
+    position: fixed;
+    z-index: 1001;
+}
+
+/* canvas绘图及按钮样式 */
+
+canvas {
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 30rpx; */
+    /* left: 100%; */
+    background: #ffe200;
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.preview image {
+    width: 80%;
+    height:82%;
+    position: fixed;
+    top: 50rpx;
+    left: 50%;
+    margin-left: -40%;
+    z-index: 10;
+    border: 1px dashed #fff;
+}
+
+.preview .save {
+    width: 50%;
+    height: 70rpx;
+    font-size:28rpx;
+    line-height: 70rpx;
+    position: fixed;
+    bottom: 60rpx;
+    left: 10%;
+    background: #eac11d;
+    color: #fff;
+    border-radius: 44rpx;
+    /* z-index: 15; */
+}
+
+.preview .nosave {
+    width: 25%;
+    height: 70rpx;
+    font-size: 28rpx;
+    color: #353535;
+    line-height: 70rpx;
+    position: fixed;
+    bottom:60rpx;
+    right: 10%;
+    border-radius: 44rpx;
+    background: rgb(194, 192, 192);
+    z-index: 10;
+}
+
+/* 隐藏的弹出框 */
+.modal-container {
+    background: rgba(29, 28, 28, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.modal-container .auth-content {
+    width: 600rpx;
+    height: 400rpx;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4rpx;
+    transform: translate(-50%, -50%);
+}
+
+.modal-container .auth-login-title {
+    padding: 20rpx;
+    text-align: center;
+    color: rgb(100, 86, 3);
+    font-size: 32rpx;
+    border: solid #eee;
+    border-width: 0 0 2rpx 0;
+}
+
+.modal-container .auth-login-text {
+    font-size: 30rpx;
+    color: rgb(103, 99, 104);
+    text-align: center;
+    margin-top: 70rpx;
+    padding:  0 50rpx;
+    box-sizing: border-box;
+}
+
+.modal-container .auth-login-btn {
+    background: #49a22a;
+    color: #fff;
+    line-height: 65rpx;
+    font-size: 26rpx;
+    text-align: center;
+    width: 200rpx;
+    margin-top: 70rpx;
+}

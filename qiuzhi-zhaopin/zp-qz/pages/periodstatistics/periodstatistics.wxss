@@ -1,0 +1,57 @@
+.canvas{
+    width: 100%;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    font-size: 28rpx;
+    color: #333;
+    font-family: Helvetica, Arial, "Helvetica Neue", "Droid Sans", "Microsoft YaHei", sans-serif;
+    padding: 30rpx;
+}
+.title {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    justify-items: center;
+    -webkit-justify-content: center;
+    -webkit-justify-items: center;
+    text-align: left;
+    position: relative;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.flex view{
+    margin: 50rpx 20rpx;
+}
+picker{
+    margin: 0 20rpx;
+}
+.title>view {
+    width: 50%;
+}
+.active{
+    color: #47cce2;
+}
+.active1{
+    color: #47cce2;
+}
+.active4{
+    color: #47cce2;
+}
+.active5{
+    color: #47cce2;
+}
+.active6{
+    color: #47cce2;
+}

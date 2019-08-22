@@ -1,0 +1,142 @@
+<!--首页 -->
+<view class='index-all'>
+    <!--  tab切换 -->
+    <!-- <scroll-view class='index-header'> -->
+    <view class='head-tab'>
+        <view class="tab-text {{currentTab==0?'active':''}}" data-current="0" bindtap="processing">进行中</view>
+        <view class="tab-text {{currentTab==1?'active':''}}" data-current="1" bindtap="over">已结束</view>
+    </view>
+    <!-- </scroll-view> -->
+    <!-- 内容列表 -->
+    <!-- <view class='view'></view> -->
+    <!-- <swiper current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx"> -->
+    <!-- 进行中 -->
+    <!-- <swiper-item> -->
+    <!-- <view class='scoll-h' scroll-y="true" class="scoll-h" data-type='0' bindscrolltolower='scrolltolower'> -->
+    <view class='processing-list' wx:if="{{currentTab == 0}}">
+        <view class='list-content' wx:for="{{positionlist}}" wx:key wx:if="{{state == 0}}">
+            <view class='con-top' data-id="{{index}}" catchtap='navtojob'>
+                <view class='top-top'>
+                    <view class='top-left'>{{item.positionName}}</view>
+                    <view class='delete' data-index="{{index}}" catchtap='delete'>
+                        <image src='../../images/icon/delete1.png'></image>
+                    </view>
+                </view>
+                <view class='top-top'>
+                    <view class='bottom-left'>{{item.city}}
+                        <text>|</text>{{item.educationName}}
+                        <text>|</text>
+                        <text wx:if="{{item.workingLife != 0}}" class='jingyanbuxian'>{{item.workingLife}}年以上</text>
+                        <text wx:else class='jingyanbuxian'>经验不限</text>
+                    </view>
+                    <view class='top-right'>{{item.treatmentMinShow}}-{{item.treatmentMaxShow}}/月</view>
+                </view>
+                <view class='top-bottom'>
+                    <view class='bottom-left'>{{item.companyName}}</view>
+                    <view class='bottom-right'>{{item.relaseDate}}日</view>
+                </view>
+            </view>
+            <view class='con-bottom'>
+                <view class='bottom-left' data-id="{{index}}" catchtap='navtoonlookwg'>
+                    <image src='../../images/icon/onlookers.png'></image>
+                    <text>围观{{item.watchCount}}</text>
+                </view>
+                <view class='bottom-middle' data-id="{{index}}" catchtap='navtoonlookgxq'>
+                    <image src='../../images/icon/Interested.png'></image>
+                    <text>感兴趣{{item.collectionCount}}</text>
+                </view>
+                <view class='bottom-right' data-id="{{index}}" catchtap='navtoonlookwgz'>
+                    <image src='../../images/icon/concerned.png'></image>
+                    <text>我关注{{item.myCollectionCount}}</text>
+                </view>
+            </view>
+        </view>
+        <view class='notreleased' wx:if="{{state == 1}}">
+            <view class='not-name'>您还没有发布任何职位，快点击发布吧！</view>
+            <view class='img'>
+                <image src='../../images/null.png'></image>
+            </view>
+            <button class='btn-release' bindtap='navtoedit'>发布职位</button>
+            <!-- <button class='btn-addinfor' bindtap='navtoeditcompany' wx:if="{{addcom}}">添加公司信息</button>
+                        <button class='btn-addinfor' bindtap='navtoeditcompany1' wx:else>修改公司信息</button> -->
+        </view>
+    </view>
+    <!-- </view> -->
+    <!-- </swiper-item> -->
+    <!-- 已结束 -->
+    <!-- <swiper-item> -->
+    <!-- <view class='scoll-h' scroll-y="true" class="scoll-h" data-type='1' bindscrolltolower='scrolltolower'> -->
+    <view class='processing-list' wx:if="{{currentTab == 1}}">
+        <view class='list-content' wx:for="{{overlist}}" wx:key>
+            <view class='con-top' data-id="{{index}}" catchtap='navtojob1'>
+                <view class='top-top'>
+                    <view class='top-left'>{{item.positionName}}</view>
+                    <view class='delete' data-index="{{index}}" catchtap='delete1'>
+                        <image src='../../images/icon/delete1.png'></image>
+                    </view>
+                </view>
+                <view class='top-top'>
+                    <view class='bottom-left'>{{item.city}}
+                        <text>|</text>{{item.educationName}}
+                        <text>|</text>
+                        <text wx:if="{{item.workingLife != 0}}" class='jingyanbuxian'>{{item.workingLife}}年以上</text>
+                        <text wx:else class='jingyanbuxian'>经验不限</text>
+                    </view>
+                    <view class='top-right'>{{item.treatmentMinShow}}-{{item.treatmentMaxShow}}/月</view>
+                </view>
+                <view class='top-bottom'>
+                    <view class='bottom-left'>{{item.companyName}}</view>
+                    <view class='bottom-right'>{{item.relaseDate}}日</view>
+                </view>
+            </view>
+            <view class='con-bottom'>
+                <view class='bottom-left' data-id="{{index}}" catchtap='navtoonlookwg1'>
+                    <image src='../../images/icon/onlookers.png'></image>
+                    <text>围观{{item.watchCount}}</text>
+                </view>
+                <view class='bottom-middle' data-id="{{index}}" catchtap='navtoonlookgxq1'>
+                    <image src='../../images/icon/Interested.png'></image>
+                    <text>感兴趣{{item.collectionCount}}</text>
+                </view>
+                <view class='bottom-right' data-id="{{index}}" catchtap='navtoonlookwgz1'>
+                    <image src='../../images/icon/concerned.png'></image>
+                    <text>我关注{{item.myCollectionCount}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- </view> -->
+    <!-- </swiper-item> -->
+    <!-- </swiper> -->
+    <!-- 上拉触底加载 -->
+    <!-- <view class="loadmore" hidden='{{!showThis}}'>
+        <image class="icon {{showIcon?'aactive':''}}" src='../../images/icon/loading.png' hidden='{{!showIcon}}' />
+        <text>{{text}}</text>
+    </view> -->
+    <!-- <view> -->
+</view>
+<!-- 发布按钮 -->
+<view class='btnrelease' bindtap='btnrelease' wx:if="{{state == 0}}">
+    <view class='img'>
+        <image src='../../images/icon/edit.png'></image>
+    </view>
+    <view class='text'>发布职位</view>
+</view>
+
+<!-- 点击授权 -->
+<view class='modal-container' wx:if="{{modalShow}}">
+    <view class='auth-content'>
+        <view class='auth-login-title'>登录</view>
+        <view class='auth-login-text'>【速来】需要获取您的授权</view>
+        <button class='auth-login-btn' open-type='getUserInfo' bindgetuserinfo="getUserDetails">确定</button>
+    </view>
+</view>
+<!-- 点击授权手机号 -->
+<!-- <view class='modal-container1' wx:if="{{modalShow1}}">
+    <view class='auth-content'>
+        <view class='auth-login-title'>获取手机号码</view>
+        <view class='auth-login-text'>为了提供更好的服务</view>
+        <view class='auth-login-text1'>【任贤企】需要获取您的手机号码</view>
+        <button class='auth-login-btn' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">确认手机号</button>
+    </view>
+</view> -->

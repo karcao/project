@@ -1,0 +1,196 @@
+.alljllist{
+    /* padding-top: 41rpx; */
+    /* box-sizing: border-box; */
+}
+.alljllist .classification{
+    background: #fff;
+    width: 100%;
+    display: flex;
+    padding:25rpx 30rpx;
+    box-sizing: border-box;
+    /* border-bottom: 1rpx solid #e5e5e5; */
+    justify-content: center;
+    /* position: fixed;
+    top: 0;
+    z-index: 1; */
+}
+.alljllist .classification .shu{
+    color: #d8d7d7;
+}
+.alljllist .classification .ification{
+    width: 33.33%;
+    text-align: center;
+    font-size: 30rpx;
+    color: #000;
+}
+.alljllist .classification .ification text{
+    vertical-align: middle;
+    margin-right: 10rpx;
+}
+.alljllist .classification .ification.green{
+    width: 33.33%;
+    text-align: center;
+    font-size: 30rpx;
+    color: #33cc99;
+}
+.alljllist .classification .ification image{
+    width: 18rpx;
+    height: 12rpx;
+    vertical-align: middle;
+}
+/* //////////////////////////////////////////////////// */
+.alljllist .list-chat{
+    padding: 50rpx 30rpx 0 30rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+.alljllist .list-chat .chat-border{
+    border-bottom: 1rpx solid #cccccc;
+    padding-bottom: 40rpx;
+    box-sizing: border-box;
+}
+.alljllist .list-chat .chat-top{
+    display: flex;
+    justify-content: space-between;
+}
+.alljllist .list-chat .chat-top .top-left .text1{
+    font-size: 34rpx;
+    color: #000;
+    /* font-weight: 700; */
+}
+.alljllist .list-chat .chat-top .top-left .text2{
+    font-size: 34rpx;
+    color: #cccccc;
+    margin: 0 18rpx;
+}
+.alljllist .list-chat .chat-top .top-right{
+    font-size: 26rpx;
+    color: #888;
+    line-height: 62rpx;
+}
+.alljllist .list-chat .chat-bottom text{
+    font-size: 28rpx;
+    color: #888888;
+    /* font-weight: 700; */
+}
+.alljllist .list-chat .chat-bottom .text2{
+    margin: 0 18rpx;
+}
+.alljllist .list-chat .tips{
+    z-index: 9;
+    position: absolute;
+    right: 100rpx;
+    bottom: -195rpx;
+    width: 170rpx;
+    /* height: 250rpx; */
+    background: #fff;
+    /* border: 1rpx solid red; */
+    text-align: center;
+    font-size: 36rpx;
+    color: #000;
+    line-height: 80rpx;
+    box-shadow: #cfcece 1rpx 7rpx 35rpx 1rpx;
+}
+/* 背景遮罩弹窗 */
+.bglayer{
+    position:fixed;
+    z-index: 2;
+    width:100%;
+    height:100%;
+    top:83rpx;
+    bottom: 0;
+    background:rgba(75, 74, 74, 0.5);
+}
+/* 更多 */
+.newmore{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 83rpx;
+    z-index: 99;
+    /* padding-left: 30rpx; */
+    /* padding-right: 30rpx; */
+    box-sizing: border-box;
+}
+.newmore .flex2{
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    box-sizing: border-box;
+}
+.newmore .flex2 .scoll-z{
+    height: 700rpx;
+}
+.newmore .flex2 .education{
+    margin-top: 50rpx;
+}
+.newmore .flex2 .education .edu-title{
+    font-size: 28rpx;
+    margin-bottom: 30rpx;
+    color: #353535;
+}
+.newmore .flex2 .education .edu-select{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.newmore .flex2 .education .edu-select picker{
+    width: 100%;
+}
+.newmore .flex2 .education .edu-select picker text{
+    font-size: 34rpx;
+    color: #353535;
+    line-height: 70rpx;
+}
+.newmore .flex2 .education .edu-select picker .greentext{
+    font-size: 34rpx;
+    color: #33cc99;
+    line-height: 70rpx;
+}
+.newmore .flex2 .education .edu-select .select-list{
+    font-size: 28rpx;
+    color: #353535;
+    border: 1rpx solid #bfbfbf;
+    text-align: center;
+    line-height: 70rpx;
+    height: 70rpx;
+    margin: 0 15rpx 15rpx 0;
+    padding: 0 12rpx;
+    box-sizing: border-box;
+    border-radius: 15rpx;
+}
+.newmore .flex2 .education .edu-select .active4{
+    font-size: 28rpx;
+    color: #fff;
+    border: 1rpx solid #33cc99;
+    text-align: center;
+    line-height: 70rpx;
+    height: 70rpx;
+    margin: 0 15rpx 15rpx 0;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    border-radius: 15rpx;
+    background: #33cc99;
+}
+.newmore .reset{
+    width: 100%;
+    display: flex;
+    border-top: 1rpx solid #e2e2e2;
+}
+.newmore .reset .reset-left{
+    width: 50%;
+    height: 95rpx;
+    line-height: 95rpx;
+    color: #353535;
+    font-size: 36rpx;
+    text-align: center;
+    border-right: 1rpx solid #e2e2e2;
+}
+.newmore .reset .reset-right{
+    width: 50%;
+    height: 95rpx;
+    line-height: 95rpx;
+    background: #33cc99;
+    color: #fff;
+    font-size: 36rpx;
+    text-align: center;
+}

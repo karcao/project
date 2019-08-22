@@ -1,0 +1,31 @@
+<view class="reporter">
+    <view class='report-title'>举报对象</view>
+    <view class='wxname'>
+        <view class='job-top'>
+            <view class='top-top'>
+                <view class='top-left'>中级java</view>
+                <view class='top-right'>13K-15K/月</view>
+            </view>
+            <view class='top-bottom'>
+                郑州
+                <text>|</text>大专及以上
+                <text>|</text>5年以上
+            </view>
+        </view>
+    </view>
+    <view class='report-title'>详细描述</view>
+    <view class='description'>
+        <textarea placeholder='请详细描述举报对象的恶意行为'></textarea>
+        <view class='photo'>
+            <view class='photo-add'>
+                <image src='../../images/icon/add.png'></image>
+            </view>
+            <view class='photo-photo'>
+                <image class='img' src='../../images/company1.png'></image>
+                <image class='img1' src='../../images/icon/delete.png'></image>
+            </view>
+            <view class='text'>(最多4张)</view>
+        </view>
+    </view>
+    <button class='btn'>举报</button>
+</view>

@@ -1,0 +1,49 @@
+.remarks{
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+}
+.remarks .remark{
+    color: #888;
+    font-size: 36rpx;
+    line-height: 120rpx;
+}
+.remarks input{
+    border-bottom: 1rpx solid #e5e5e5;
+    height: 90rpx;
+}
+.remarks .ipt1{
+    position: relative;
+}
+.remarks .ipt1 image{
+    z-index: 99;
+    width: 36rpx;
+    height: 36rpx;
+    position: absolute;
+    right: 10rpx;
+    top: 30rpx;
+}
+.remarks .ipt2{
+    position: relative;
+}
+.remarks .ipt2 image{
+    z-index: 99;
+    width: 36rpx;
+    height: 36rpx;
+    position: absolute;
+    right: 10rpx;
+    top: 30rpx;
+}
+button{
+    margin-top: 150rpx;
+    border-radius: 15rpx;
+    line-height: 100rpx;
+    width: 690rpx;
+    height: 100rpx;
+    background: #33cc99;
+    color: #fff;
+    font-size: 34rpx;
+}
+button::after {
+    border: 0; 
+}

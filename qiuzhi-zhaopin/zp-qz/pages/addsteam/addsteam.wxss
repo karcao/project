@@ -1,0 +1,60 @@
+page{
+    background: #efeff4;
+}
+.addsteam{
+    width: 100%;
+    position: relative;
+}
+/* 搜索框 */
+.addsteam .searchfor{
+    width: 100%;
+    margin-bottom: 30rpx;
+    background: #fff;
+    padding-top: 15rpx;
+    padding-bottom: 5rpx;
+    box-sizing: border-box;
+}
+/* 内容 */
+.addsteam .content{
+    /* border: 1rpx solid red; */
+    background: #fff;
+    display: flex;
+    padding: 30rpx;
+    box-sizing: border-box;
+}
+.addsteam .content .con-left{
+    width: 130rpx;
+    height: 130rpx;
+    margin-right: 30rpx;
+}
+.addsteam .content .con-left image{
+    width: 130rpx;
+    height: 130rpx;
+}
+.addsteam .content .con-right .right-top{
+    font-size: 36rpx;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20rpx;
+}
+.addsteam .content .con-right .right-bottom{
+    font-size: 28rpx;
+    color: #353535;
+}
+.addsteam .content .con-right .right-bottom .shu{
+    color: #aca8a8;
+    margin: 0 15rpx;
+}
+button{
+    margin-top: 200rpx;
+    border-radius: 15rpx;
+    line-height: 100rpx;
+    width: 690rpx;
+    height: 100rpx;
+    background: #33cc99;
+    color: #fff;
+    font-size: 34rpx;
+}
+button::after {
+    border: 0; 
+}

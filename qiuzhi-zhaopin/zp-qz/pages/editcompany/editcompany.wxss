@@ -1,0 +1,353 @@
+
+.editposition{
+    width: 100%;
+}
+.editposition .mentposition{
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #eeeeee;
+    font-size: 30rpx;
+    color: #353535;
+}
+/* 名称 */
+.editposition .nameall{
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+.editposition .po-name{
+    width: 100%;
+    /* height: 85rpx; */
+    padding: 20rpx 30rpx 20rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    border-bottom: 1rpx solid #e5e5e5;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.editposition .po-name1{
+    border-bottom:none;
+}
+.editposition .po-name .star{
+    color: #f22929;
+}
+.editposition .po-name input{
+    text-align: right;
+    color: #888;
+}
+.editposition .po-name .name-right{
+    width: 80%;
+    text-align: right;
+    font-size: 28rpx;
+    line-height: 55rpx;
+    color: #888;
+    position: relative;
+}
+.editposition .po-name .name-right .phonebtn{
+    position: absolute;
+    right: 0rpx;
+    top: -2rpx;
+    width: 150rpx;
+    height: 60rpx;
+    background: #33cc99;
+    color: #fff;
+    border-radius: 13rpx;
+    text-align: center;
+    line-height: 60rpx;
+    font-size: 26rpx;
+}
+.editposition .po-name .name-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left: 20rpx;
+}
+/* 基本信息 */
+.editposition .information{
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #eeeeee;
+    font-size: 30rpx;
+    color: #353535;
+}
+.editposition .mation{
+    padding-left: 30rpx;
+    box-sizing: border-box;
+}
+.editposition .mation .same{
+    width: 100%;
+    border-bottom: 1rpx solid #e5e5e5;
+    /* height: 90rpx; */
+    padding: 25rpx 30rpx 25rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.editposition .mation .same .same-left .star{
+    color: #f22929;
+}
+.editposition .mation .same .same-right{
+    text-align: right;
+    width: 75%;
+}
+.editposition .mation .same .same-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left: 15rpx;
+}
+.editposition .mation .same .same-right .picker{
+    width: 100%;
+    color: #888;
+    text-align: right;
+    font-size: 28rpx;
+}
+.editposition .mation .location{
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.editposition .mation .location .same-right .dizhi{
+    text-align: right;
+    display: flex;
+    color: #888;
+    justify-content:flex-end;
+    
+}
+/* .editposition .mation .location .same-right .dizhi .address{
+    text-align: ;
+} */
+.editposition .mation .location .same-right .dizhi image{
+    margin-top: 15rpx;
+}
+.editposition .mation .same .same-right .picker .text{
+    margin-right: 10rpx;
+}
+.editposition .mation .same .same-right .daiyu{
+    display: flex;
+    justify-content: flex-end;
+}
+.editposition .mation .same .same-right .daiyu .gang{
+    margin: 0 15rpx;
+}
+.editposition .mation .same .same-right .daiyu .mony{
+    width: 120rpx;
+    height: 55rpx;
+    background: #eeeeee;
+    text-align: center;
+    line-height: 55rpx;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    color: #888888;
+}
+/* .editposition .mation .same .same-right .daiyu .money{
+    vertical-align: middle;
+} */
+.editposition .mation .same .same-right .daiyu image{
+    margin-top: 15rpx;
+}
+.editposition .mation .location{
+    width: 100%;
+    /* border-bottom: 1rpx solid #e5e5e5; */
+    /* height: 90rpx; */
+    padding: 25rpx 30rpx 25rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 34rpx;
+}
+.editposition .mation .location .same-left .star{
+    color: #f22929;
+}
+.editposition .mation .location .same-right{
+    text-align: right;
+    width: 75%;
+    
+}
+.editposition .mation .location .same-right image{
+    width: 16rpx;
+    height: 25rpx;
+    margin-left: 35rpx;
+}
+.editposition .mation .location .same-right .picker{
+    width: 100%;
+    color: #888;
+    
+}
+.editposition .photo{
+    width: 100%;
+    /* border: 1rpx solid rebeccapurple; */
+    padding-right: 30rpx;
+    padding-top: 50rpx;
+    padding-bottom: 50rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.editposition .photo .fang{
+    width: 160rpx;
+    height: 160rpx;
+    border: 2rpx solid #dddddd;
+    margin-right: 20rpx;
+}
+.editposition .photo .upload{
+    text-align: center;
+    background: #efefef;
+    padding-top: 30rpx;
+    box-sizing: border-box;
+}
+.editposition .photo .upload .text{
+    color: #888;
+    font-size: 26rpx;
+}
+.editposition .photo .upload .img{
+    margin: 0 auto 20rpx;
+    width: 70rpx;
+    height: 55rpx;
+}
+.editposition .photo .upload .img image{
+    width: 70rpx;
+    height: 55rpx;
+}
+.editposition .photo .logo image{
+    width: 160rpx;
+    height: 160rpx;
+}
+.editposition .btn{
+    /* margin-top: 50rpx; */
+    margin-bottom: 50rpx;
+    width: 690rpx;
+    height: 90rpx;
+    color: #fff;
+    font-size: 36rpx;
+    background: #33cc99;
+}
+
+/* 背景遮罩弹窗 */
+.bglayer{
+    position:fixed;
+    z-index: 9;
+    width:100%;
+    height:100%;
+    top:0;
+    bottom: 0;
+    background:rgba(75, 74, 74, 0.5);
+}
+.calls{
+    width: 600rpx;
+    position: relative;
+    background: #ffffff;
+    border-radius: 15rpx;
+    position: fixed;
+    top: 140rpx;
+    left: 50%;
+    margin-left: -300rpx;
+    z-index: 11;
+}
+.calls .pop-top .top-title{
+    font-size: 32rpx;
+    color: #000;
+    text-align: center;
+    line-height: 100rpx;
+}
+.calls .pop-top input{
+    width: 480rpx;
+    height: 90rpx;
+    border: 1rpx solid #ccc;
+    font-size: 28rpx;
+    margin: 0 auto;
+    border-radius: 10rpx;
+    color: #ccc;
+    text-align: center;
+}
+.calls .pop-top .top-number{
+    line-height: 60rpx;
+    padding-right: 60rpx;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 22rpx;
+    color: #888888;
+}
+.calls .pop-top .top-number text{
+    color: #33cc99;
+}
+.calls .pop-top .top-tips{
+    font-size: 22rpx;
+    color: #888;
+    text-align: center;
+}
+.calls .pop-bottom{
+    border-top: 1rpx solid #e3e3e3;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 32rpx;
+    color: #33cc99;
+    line-height: 100rpx;
+    margin-top: 20rpx;
+}
+.calls .close{
+    font-size: 28rpx;
+    color: #33cc99;
+    position: absolute;
+    right: 40rpx;
+    top: 30rpx;
+}
+
+/* 手机号 */
+.modal-container1 {
+    background: rgba(29, 28, 28, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.modal-container1  .auth-content {
+    width: 600rpx;
+    height: 400rpx;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 4rpx;
+    transform: translate(-50%, -50%);
+}
+
+.modal-container1 .auth-login-title {
+    padding: 20rpx;
+    text-align: center;
+    color: rgb(100, 86, 3);
+    font-size: 32rpx;
+    border: solid #eee;
+    border-width: 0 0 2rpx 0;
+}
+
+.modal-container1 .auth-login-text {
+    font-size: 30rpx;
+    color: rgb(103, 99, 104);
+    text-align: center;
+    margin-top: 50rpx;
+    padding:  0 50rpx;
+    box-sizing: border-box;
+}
+.modal-container1 .auth-login-text1 {
+    font-size: 30rpx;
+    color: rgb(103, 99, 104);
+    text-align: center;
+    margin-top: 10rpx;
+    padding:  0 50rpx;
+    box-sizing: border-box;
+}
+.modal-container1 .auth-login-btn {
+    background: #49a22a;
+    color: #fff;
+    line-height: 65rpx;
+    font-size: 26rpx;
+    text-align: center;
+    width: 200rpx;
+    margin-top: 50rpx;
+}
